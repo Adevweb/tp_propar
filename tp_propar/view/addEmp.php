@@ -43,25 +43,62 @@
   <div class="container ajouter">
     <div class="row justify-content-center">
       <form action="../controler/addEmp.action.php" method="post">
-        <div class="row">
+        <div class="row col-12">
           <div class="col-md-4  form-group" data-for="name">
             <input type="nom" class="form-control" name="nom" placeholder="Nom" required>
           </div>
           <div class="col-md-4  form-group" data-for="email">
             <input type="prenom" class="form-control" name="prenom" placeholder="Prenom" required>
           </div>
-          <div class="col-md-4  form-group">
+          <div class="col-md-4  form-group" data-for="fonction">
             <input type="fonction" class="form-control" name="fonction" placeholder="Fonction" required>
           </div>
-          <div class="display-5 col-12 text-center">
-            <button type="submit" id="addEmo" class="btn btn-light" value="Ajouter">Ajouter</button>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4  form-group" data-for="login">
+            <input type="login" class="form-control" name="login" placeholder="Login" required>
           </div>
+          <div class="col-md-4  form-group" data-for="mdp">
+            <input type="password" class="form-control" name="mdp" placeholder="Mot de passe" required>
+          </div>
+
+        </div>
+        <div class="display-5 col-12 text-center">
+          <button type="submit" id="addEmo" class="btn btn-light" value="Ajouter">Ajouter</button>
         </div>
       </form>
     </div>
   </div>
   <!-- FIN FORMULAIRE -->
 
+
+  <div class="container">
+    <div class="row col-12">
+      <h3 class="display-4 col-12 text-center title2">Modifier un employé</h3>
+      <h5 class="display-5 col-12 text-center sstitle">Veuillez renseigner les champs ci-dessous</h5>
+    </div>
+  </div>
+
+
+  <!-- FORMULAIRE -->
+  <div class="container ajouter2">
+    <div class="row justify-content-center">
+      <form action="../controler/addEmp.action.php" method="post">
+        <div class="row justify-content-center">
+          <div class="col-md-6  form-group" data-for="login">
+            <input type="ID employé" class="form-control" name="ID employé" placeholder="Identifiant de l'employé" required>
+          </div>
+          <div class="col-md-6  form-group" data-for="fonction">
+            <input type="fonction" class="form-control" name="fonction" placeholder="Nouvelle fonction" required>
+          </div>
+        </div>
+        <div class="display-5 col-12 text-center">
+          <button type="submit" id="addEmo" class="btn btn-light" value="Ajouter">Envoyer</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- FIN FORMULAIRE -->
 
 
 </body>

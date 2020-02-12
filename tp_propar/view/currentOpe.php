@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <title>Terminer une opération</title>
+    <title>Ajouter une opération</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/v4-shims.css">
 
-    <link rel="stylesheet" href="css/endOpe.css">
+    <link rel="stylesheet" href="css/currentOpe.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
@@ -34,40 +34,12 @@
     <!-- SECTION -->
     <div class="container">
         <div class="row col-12">
-            <h3 class="display-4 col-12 text-center title">Terminer une opération</h3>
-            <h5 class="display-5 col-12 text-center sstitle">Veuillez renseigner les champs ci-dessous</h5>
+            <h3 class="display-4 col-12 text-center title">Opérations en cours</h3>
         </div>
     </div>
 
     <!-- FORMULAIRE -->
     <div class="container ajouter">
-        <div class="row justify-content-center">
-            <form action="../controler/addEmp.action.php" method="post">
-                <div class="row">
-                    <div class="col-12 form-group" data-for="ID opéation">
-                        <input type="ID opéation" class="form-control" name="ID opéation" placeholder="Identifiant de l'opération terminé" required>
-                    </div>
-                    <div class="display-5 col-12 text-center">
-                        <button type="submit" id="addEmo" class="btn btn-light" value="Ajouter">Ajouter</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-
-
-    </div>
-    </div>
-    <!-- FIN FORMULAIRE -->
-
-
-    <div class="container">
-        <div class="row col-12">
-            <h3 class="display-4 col-12 text-center title2">Opération terminées</h3>
-        </div>
-    </div>
-
-        <!-- FORMULAIRE -->
-        <div class="container ajouter2">
         <div class="row justify-content-center">
             <div class="col-lg-8">
 
@@ -76,28 +48,25 @@
                         <table class="table table-hover">
                             <thead class="tabHead">
                                 <tr>
-                                    <td class="text-left"><strong>Date</strong></td>
-                                    <td class="text-center"><strong>ID Opération</strong></td>
-                                    <td class="text-center"><strong>Effectué par</strong></td>
-                                    <td class="text-center"><strong>Type</strong></td>
-                                    <td class="text-center"><strong>Statut</strong></td>
-                                    <td class="text-center"><strong>Client</strong></td>
-                                    <td class="text-right"><strong>Decription</strong></td>
+                                    <td class="text-left"><strong>ID employé</strong></td>
+                                    <td class="text-center"><strong>ID opération</strong></td>
+                                    <td class="text-right"><strong>Statut</strong></td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <!--  Generating one more line of table compared to .csv file for display results of addition-->
                                 <tr>
-                                    <th class="text-left">12/02/20</th>
+                                    <th class="text-left">123</th>
                                     <td class="text-center">456</td>
-                                    <td class="text-center">ADRIEN BENOIT</td>
-                                    <td class="text-center">PETITE MANOEUVRE</td>
-                                    <td class="text-center">En cours</td>
-                                    <td class="text-center">MACHIN TRUC</td>
-                                    <td class="text-right">blablabla blablabla</td>
-
+                                    <td class="text-right">En cours</td>
                                 </tr>
-
+                                <!-- DFisplay the result of all additions of products-->
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="text-center total"><strong>Opération total : </strong></td>
+                                    <td class="text-right total"></td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
