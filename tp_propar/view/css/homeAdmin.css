@@ -71,24 +71,17 @@ body {
 }
 .title {
     font-weight: bold !important;
-    color : rgb(71, 150, 240);
+    color : rgb(126, 153, 185);
     padding-top:5%;
 }
 section {
     margin-bottom : 8%;
     margin-top : 5%;
 }
-.btn {
-    margin-top : 5%;
-    border-radius: 45% !important;
-}
-.btn:hover {
-    background-color : rgb(71, 150, 240) !important;
-    border:none;
-}
+
 .centerTitle {
     font-family: 'Lobster' !important;
-    color : rgb(71, 150, 240);
+    color : rgb(126, 153, 185);
 }
 .article {
     background-color: #f0efef;
@@ -111,3 +104,11 @@ img {
   #map_canvas img {
     max-width: none;
   }
+
+.button[type=button] {
+    background-color:rgb(126, 153, 185);
+    color: #ffffff;
+    border:none;
+    margin-top : 5%;
+    border-radius: 45% !important;
+}

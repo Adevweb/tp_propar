@@ -44,13 +44,13 @@
           <img src="img/addOpe.jpg">
           <p class="h4 title"> Ajouter une opération </p>
           <p>En cliquant ici, vous pourrez ajouter une opération à effectuer par votre équipe.</p>
-          <button type="button" class="btn btn-outline-secondary">Go !</button>
+          <button type="button" class="btn btn-outline-light button">Go !</button>
         </div>
         <div class="row col-md-4 text-center d-flex justify-content-center article">
           <img src="img/endOpe.jpg">
           <p class="h4 title"> Terminer une opération </p>
           <p>En cliquant ici, vous pourrez déclarer un opération comme terminée.</p>
-          <button type="button" class="btn btn-outline-secondary">Go !</button>
+          <button type="button" class="btn btn-outline-light button">Go !</button>
         </div>
       </div>
     </section>
@@ -62,19 +62,19 @@
           <img src="img/addEmp.jpg">
           <p class="h4 title"> Ajouter un utilisateur </p>
           <p>En cliquant ici, vous pourrez ajouter un employé à votre équipe.</p>
-          <button type="button" class="btn btn-outline-secondary">Go !</button>
+          <button type="button" class="btn btn-outline-light button">Go !</button>
         </div>
         <div class="row col-md-3 text-center d-flex justify-content-center article">
           <img src="img/currentOpe.jpg">
           <p class="h4 title"> Liste des opérations en cours </p>
           <p>En cliquant ici, vous pourrez avoir un aperçu des opérations en cours</p>
-          <button type="button" class="btn btn-outline-secondary">Go !</button>
+          <button type="button" class="btn btn-outline-light button">Go !</button>
         </div>
         <div class="row col-md-3 text-center d-flex justify-content-center article">
           <img src="img/seeCa.jpg">
           <p class="h4 title"> Voir le chiffre d'affaire </p>
           <p>En cliquant ici, vous pourrez avoir un aperçu de votre chiffre d'affaire</p>
-          <button type="button" class="btn btn-outline-secondary">Go !</button>
+          <button type="button" class="btn btn-outline-light button">Go !</button>
         </div>
       </div>
     </section>

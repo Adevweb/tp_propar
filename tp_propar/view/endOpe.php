@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <title>Page Utilisateur</title>
+    <title>Terminer une opération</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/v4-shims.css">
 
-    <link rel="stylesheet" href="css/homeAdmin.css">
+    <link rel="stylesheet" href="css/addOpe.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
@@ -31,37 +31,36 @@
             <h5 class="headTitleRight"><span style="font-size:30px;"> <i class="fas fa-sign-out-alt"></i></span> </h5>
         </div>
     </div>
-    <!-- TITRE SECTION -->
+    <!-- SECTION -->
     <div class="container">
         <div class="row col-12">
-            <h3 class="display-4 col-12 text-center centerTitle">Vos Actions</h3>
-            <p class="h4 col-12 text-center centerSSTitle">Actions en tant qu'employé</p>
+            <h3 class="display-4 col-12 text-center title">Terminer une opération</h3>
+            <h5 class="display-5 col-12 text-center sstitle">Veuillez renseigner les champs ci-dessous</h5>
+        </div>
+    </div>
+
+    <!-- FORMULAIRE -->
+    <div class="container ajouter">
+        <div class="row justify-content-center">
+            <form action="../controler/addEmp.action.php" method="post">
+                <div class="row">
+                    <div class="col-12 form-group" data-for="ID opéation">
+                        <input type="ID opéation" class="form-control" name="ID opéation" placeholder="Identifiant de l'opération terminé" required>
+                    </div>
+                    <div class="display-5 col-12 text-center">
+                        <button type="submit" id="addEmo" class="btn btn-light" value="Ajouter">Ajouter</button>
+                    </div>
+                </div>
+            </form>
         </div>
 
-        <!-- LIGNE CONTENU SECTION -->
-        <section>
-            <div class="row col-12 d-flex justify-content-around">
-                <div class="row col-3 text-center d-flex justify-content-center article">
-                    <img src="img/addOpe.jpg">
-                    <p class="h4 title"> Ajouter une opération </p>
-                    <p>En cliquant ici, vous pourrez ajouter une opération à effectuer par votre équipe.</p>
-                    <button type="button" class="btn btn-outline-light button">Go !</button>
-                </div>
-                <div class="row col-3 text-center d-flex justify-content-center article">
-                    <img src="img/currentOpe.jpg">
-                    <p class="h4 title"> Liste des opérations en cours </p>
-                    <p>En cliquant ici, vous pourrez avoir un aperçu des opérations en cours</p>
-                    <button type="button" class="btn btn-outline-light button">Go !</button>
-                </div>
-                <div class="row col-3 text-center d-flex justify-content-center article">
-                    <img src="img/endOpe.jpg">
-                    <p class="h4 title"> Terminer une opération </p>
-                    <p>En cliquant ici, vous pourrez déclarer un opération comme terminée.</p>
-                    <button type="button" class="btn btn-outline-light button">Go !</button>
-                </div>
-            </div>
-        </section>
+
     </div>
+    </div>
+    <!-- FIN FORMULAIRE -->
+
+
+
 </body>
 
 </html>

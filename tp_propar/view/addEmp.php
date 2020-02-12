@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-  <title>Page Admin</title>
+  <title>Ajouter un employé</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -39,10 +39,10 @@
     </div>
   </div>
 
-
+  <!-- FORMULAIRE -->
   <div class="container ajouter">
     <div class="row justify-content-center">
-      <form action="../controler/cnx.action.php" method="post">
+      <form action="../controler/addEmp.action.php" method="post">
         <div class="row">
           <div class="col-md-4  form-group" data-for="name">
             <input type="nom" class="form-control" name="nom" placeholder="Nom" required>
@@ -53,11 +53,14 @@
           <div class="col-md-4  form-group">
             <input type="fonction" class="form-control" name="fonction" placeholder="Fonction" required>
           </div>
-          <button type="submit" id="addEmo" class="btn btn-outline-primary" value="Ajouter">Ajouter</button>
+          <div class="display-5 col-12 text-center">
+            <button type="submit" id="addEmo" class="btn btn-light" value="Ajouter">Ajouter</button>
+          </div>
         </div>
       </form>
     </div>
   </div>
+  <!-- FIN FORMULAIRE -->
 
 
 
