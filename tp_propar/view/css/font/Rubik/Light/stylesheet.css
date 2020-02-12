@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('Rubik-Light.eot');
+    src: url('Rubik-Light.eot?#iefix') format('embedded-opentype'),
+        url('Rubik-Light.woff2') format('woff2'),
+        url('Rubik-Light.woff') format('woff'),
+        url('Rubik-Light.ttf') format('truetype'),
+        url('Rubik-Light.svg#Rubik-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('Rubik-Bold.eot');
+    src: url('Rubik-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Rubik-Bold.woff2') format('woff2'),
+        url('Rubik-Bold.woff') format('woff'),
+        url('Rubik-Bold.ttf') format('truetype'),
+        url('Rubik-Bold.svg#Rubik-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+

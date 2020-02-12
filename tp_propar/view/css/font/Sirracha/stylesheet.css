@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Sriracha';
+    src: url('Sriracha-Regular.eot');
+    src: url('Sriracha-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Sriracha-Regular.woff2') format('woff2'),
+        url('Sriracha-Regular.woff') format('woff'),
+        url('Sriracha-Regular.ttf') format('truetype'),
+        url('Sriracha-Regular.svg#Sriracha-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
