@@ -29,12 +29,20 @@ class Operation {
         $this->_date = date("Y-m-d");
     }
 
-    public static function currentList() {
+    public static function currentList($id_user) {
         $dbi = Singleton::getInstance();
         $db=$dbi->getConnection();
-        $result = $db->query("SELECT * FROM operation WHERE statut = 'En cours' ");
+        $result = $db->query("SELECT * FROM operation WHERE statut = 'En cours' AND id_user_FAIT = $id_user");
         $result = $result->fetchAll(PDO::FETCH_ASSOC);
 
+        return $result;
+    }
+
+    public static function seeCA() {
+        $dbi = Singleton::getInstance();
+        $db=$dbi->getConnection();
+        $result = $db->query("SELECT SUM(cout) FROM end_ope WHERE statut = 'Terminer'");
+        $result = $result->fetch(PDO::FETCH_NUM);
         return $result;
     }
 

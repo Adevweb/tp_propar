@@ -70,11 +70,15 @@ class Expert extends Employe {
     }
 
     public static function endOperation($idOpe) {
+        // APPEL LE TRIGGER end_of_ope POUR ALIMENTER LA TABLE end_ope
         $dbi = Singleton::getInstance();
         $db=$dbi->getConnection();
         $db->query("UPDATE operation SET statut = 'Terminer' WHERE id_ope = $idOpe");
         $db->query("DELETE FROM operation WHERE id_ope = $idOpe");
     }
+
+
+
 
     /**
      * Get the value of _type
