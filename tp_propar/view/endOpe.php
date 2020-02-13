@@ -48,7 +48,7 @@
                         <input type="ID opéation" class="form-control" name="ID opéation" placeholder="Identifiant de l'opération terminé" required>
                     </div>
                     <div class="display-5 col-12 text-center">
-                        <button type="submit" id="addEmo" class="btn btn-light" value="Ajouter">Ajouter</button>
+                        <button type="submit" id="addEmo" class="btn btn-light" value="Ajouter"><span class="fa fa-plus-circle"></span> Ajouter</button>
                     </div>
                 </div>
             </form>
@@ -62,7 +62,7 @@
 
     <div class="container">
         <div class="row col-12">
-            <h3 class="display-4 col-12 text-center title2">Opération terminées</h3>
+            <h3 class="display-4 col-12 text-center title2">Opérations terminées</h3>
         </div>
     </div>
 
@@ -74,15 +74,15 @@
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-12">
                         <table class="table table-hover">
-                            <thead class="tabHead">
+                            <thead class="thead-dark">
                                 <tr>
-                                    <td class="text-left"><strong>Date</strong></td>
-                                    <td class="text-center"><strong>ID Opération</strong></td>
-                                    <td class="text-center"><strong>Effectué par</strong></td>
-                                    <td class="text-center"><strong>Type</strong></td>
-                                    <td class="text-center"><strong>Statut</strong></td>
-                                    <td class="text-center"><strong>Client</strong></td>
-                                    <td class="text-right"><strong>Decription</strong></td>
+                                    <td class="text-left"><strong class="font-weight-bold font-italic">Date</strong></td>
+                                    <td class="text-center"><strong class="font-weight-bold font-italic">ID Opération</strong></td>
+                                    <td class="text-center"><strong class="font-weight-bold font-italic">Effectué par</strong></td>
+                                    <td class="text-center"><strong class="font-weight-bold font-italic">Type</strong></td>
+                                    <td class="text-center"><strong class="font-weight-bold font-italic">Statut</strong></td>
+                                    <td class="text-center"><strong class="font-weight-bold font-italic">Client</strong></td>
+                                    <td class="text-right"><strong class="font-weight-bold font-italic">Decription</strong></td>
                                 </tr>
                             </thead>
                             <tbody>

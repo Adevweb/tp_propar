@@ -35,25 +35,25 @@
     <div class="container">
         <div class="row col-12">
             <h3 class="display-4 col-12 text-center centerTitle">Vos Actions</h3>
-            <p class="h4 col-12 text-center centerSSTitle">Actions en tant qu'employé</p>
+            <p class="h5 col-12 text-center centerSSTitle">Actions en tant qu'employé</p>
         </div>
 
         <!-- LIGNE CONTENU SECTION -->
         <section>
             <div class="row col-12 d-flex justify-content-around">
-                <div class="row col-3 text-center d-flex justify-content-center article">
+                <div class="row col-md-3 text-center d-flex justify-content-center article">
                     <img src="img/addOpe.jpg">
                     <p class="h4 title"> Ajouter une opération </p>
                     <p>En cliquant ici, vous pourrez ajouter une opération à effectuer par votre équipe.</p>
                     <button type="button" class="btn btn-outline-light button">Go !</button>
                 </div>
-                <div class="row col-3 text-center d-flex justify-content-center article">
+                <div class="row col-md-3 text-center d-flex justify-content-center article">
                     <img src="img/currentOpe.jpg">
                     <p class="h4 title"> Liste des opérations en cours </p>
                     <p>En cliquant ici, vous pourrez avoir un aperçu des opérations en cours</p>
                     <button type="button" class="btn btn-outline-light button">Go !</button>
                 </div>
-                <div class="row col-3 text-center d-flex justify-content-center article">
+                <div class="row col-md-3 text-center d-flex justify-content-center article">
                     <img src="img/endOpe.jpg">
                     <p class="h4 title"> Terminer une opération </p>
                     <p>En cliquant ici, vous pourrez déclarer un opération comme terminée.</p>

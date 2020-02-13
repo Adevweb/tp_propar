@@ -42,7 +42,7 @@
      <!-- FORMULAIRE -->
     <div class="container ajouter">
         <div class="row justify-content-center align-items-center"">
-            <div class="col-4">
+            <div class="col-md-4">
                 <div class="card">
                     <div class="card-body">
                         <form action="../controler/cnx_action.php" method="post">
@@ -52,7 +52,7 @@
                             <div class="form-group">
                                 <input type="password" class="form-control" name="mdp" placeholder="Mot de passe" required>
                             </div>
-                            <button type="submit" id="sendlogin" class="btn btn-outline-light" value="Se connecter">Se connecter</button>                            
+                            <button type="submit" id="sendlogin" class="btn btn-outline-light" value="Se connecter"><span class="fa fa-check-circle"></span> Se connecter</button>                            
                         </form>
                     </div>
                 </div>

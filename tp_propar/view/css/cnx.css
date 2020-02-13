@@ -89,8 +89,8 @@ body {
 button[type=submit] {
     border : none;
     border-radius:20px;
-    font-size: 20px;
-    width : 150px;
+    font-size: 18px;
+    width : 170px;
     align-content: center;
     background-color: rgb(94, 112, 119);
     color : #ffffff;

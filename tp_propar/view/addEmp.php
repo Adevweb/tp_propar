@@ -58,13 +58,13 @@
           <div class="col-md-4  form-group" data-for="login">
             <input type="login" class="form-control" name="login" placeholder="Login" required>
           </div>
-          <div class="col-md-4  form-group" data-for="mdp">
+          <div class="col-md-4 form-group" data-for="mdp">
             <input type="password" class="form-control" name="mdp" placeholder="Mot de passe" required>
           </div>
 
         </div>
         <div class="display-5 col-12 text-center">
-          <button type="submit" id="addEmo" class="btn btn-light" value="Ajouter">Ajouter</button>
+          <button type="submit" id="addEmo" class="btn btn-light" value="Ajouter"><span class="fa fa-plus-circle"></span> Ajouter</button>
         </div>
       </form>
     </div>
@@ -93,7 +93,7 @@
           </div>
         </div>
         <div class="display-5 col-12 text-center">
-          <button type="submit" id="addEmo" class="btn btn-light" value="Ajouter">Envoyer</button>
+          <button type="submit" id="addEmo" class="btn btn-light" value="Ajouter"><span class="fa fa-plus-circle"></span> Modifier</button>
         </div>
       </form>
     </div>

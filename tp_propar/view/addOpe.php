@@ -59,7 +59,7 @@
                             <textarea name="message" data-form-field="Message" class="form-control display-7" placeholder="Decription de l'opération"></textarea>
                         </div>
                         <div class="display-5 col-12 text-center">
-                            <button type="submit" id="addEmo" class="btn btn-light" value="Ajouter">Ajouter</button>
+                            <button type="submit" id="addEmo" class="btn btn-light" value="Ajouter"><span class="fa fa-plus-circle"></span> Ajouter</button>
                         </div>
                 </form>
             </div>

@@ -39,7 +39,7 @@
         </div>
     </div>
 
-    <!-- FORMULAIRE -->
+    <!-- BOUTON ACCUEIL -->
     <div class="container justify-content-center ajouter">
         <div class="row justify-content-center">
             <div class="col-lg-8">
@@ -51,7 +51,7 @@
             </div>
         </div>
     </div>
-    <!-- FIN FORMULAIRE -->
+    <!-- FIN BOUTON ACCUEIL -->
 
 
 

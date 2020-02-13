@@ -35,7 +35,7 @@
   <div class="container">
     <div class="row col-md-12">
       <h3 class="display-4 col-md-12 text-center centerTitle">Vos Actions</h3>
-      <p class="h4 col-md-12 text-center centerSSTitle">Actions en tant qu'admin</p>
+      <p class="h5 col-md-12 text-center centerSSTitle">Actions en tant qu'admin</p>
     </div>
   <!-- PREMIERE LIGNE CONTENU SECTION -->
     <section>

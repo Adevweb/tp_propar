@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/v4-shims.css">
 
-    <link rel="stylesheet" href="css/currentOpe.css">
+    <link rel="stylesheet" href="css/cnxError.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
@@ -34,48 +34,24 @@
     <!-- SECTION -->
     <div class="container">
         <div class="row col-12">
-            <h3 class="display-4 col-12 text-center title">Opérations en cours</h3>
+            <h3 class="display-4 col-12 text-center title">Action réalisée avec succès</h3>
+            <h5 class="display-5 col-12 text-center sstitle">Veuillez retourner au menu principal</h5>
         </div>
     </div>
 
-    <!-- FORMULAIRE -->
-    <div class="container ajouter">
+    <!-- BOUTON MENU -->
+    <div class="container justify-content-center ajouter">
         <div class="row justify-content-center">
             <div class="col-lg-8">
 
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-12">
-                        <table class="table table-hover">
-                            <thead class="thead-dark">
-                                <tr>
-                                    <td class="text-left"><strong class="font-weight-bold font-italic">ID employé</strong></td>
-                                    <td class="text-center"><strong class="font-weight-bold font-italic">ID opération</strong></td>
-                                    <td class="text-right"><strong class="font-weight-bold font-italic">Statut</strong></td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!--  Generating one more line of table compared to .csv file for display results of addition-->
-                                <tr>
-                                    <th class="text-left">123</th>
-                                    <td class="text-center">456</td>
-                                    <td class="text-right">En cours</td>
-                                </tr>
-                                <!-- DFisplay the result of all additions of products-->
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td class="text-center total"><strong>Opération total : </strong></td>
-                                    <td class="text-right total"></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                <div class="display-4 col-12 text-center">
+                    <a action="../controler/cnx_action.php" method="post"><button type="submit" id="home" class="btn btn-light" value="Home"><span class="fa fa-bars"></span> Menu</button></a>
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
-    <!-- FIN FORMULAIRE -->
+    <!-- FIN BOUTON MENU -->
 
 
 
