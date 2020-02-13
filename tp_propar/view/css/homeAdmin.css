@@ -71,7 +71,7 @@ body {
 }
 .title {
     font-weight: bold !important;
-    color : rgb(126, 153, 185);
+    color : rgb(92, 131, 146);
     padding-top:5%;
     
 }
@@ -82,7 +82,7 @@ section {
 
 .centerTitle {
     font-family: 'Lobster' !important;
-    color : rgb(126, 153, 185);
+    color : rgb(92, 131, 146);
     padding-top: 30px;
 
 }
@@ -109,7 +109,7 @@ img {
   }
 
 .button[type=button] {
-    background-color:rgb(126, 153, 185);
+    background-color: rgb(94, 112, 119);
     color: #ffffff;
     border:none;
     margin-top : 5%;

@@ -68,13 +68,13 @@ body {
 }
 .title {
     font-family: 'Lobster';
-    color : rgb(126, 153, 185);
+    color : rgb(92, 131, 146);
     padding-top: 30px;
 
 }
 
 .sstitle {
-    color: rgb(103, 109, 110);
+    color: rgb(132, 138, 139);
     padding-bottom: 30px;
 }
 
@@ -94,14 +94,14 @@ button[type=submit] {
     font-size: 20px;
     width : 150px;
     align-content: center;
-    background-color:rgb(126, 153, 185);
+    background-color: rgb(94, 112, 119);
     color : #ffffff;
 }
 
 
 .title2 {
     font-family: 'Lobster';
-    color : rgb(126, 153, 185);
+    color : rgb(92, 131, 146);
     padding-top: 100px;
 }
 

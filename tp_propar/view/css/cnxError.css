@@ -69,8 +69,8 @@ body {
 .title {
     font-family: 'Lobster';
     color : rgb(92, 131, 146);
-    padding-top: 30px;
-
+    padding-bottom: 10px;
+    padding-top: 50px;
 }
 
 .sstitle {
@@ -79,8 +79,8 @@ body {
 }
 
 .ajouter {
-    padding-top : 60px;
-    padding-bottom: 50px;
+    padding-top : 40px;
+    padding-bottom: 40px;
     background-color: #f0efef;
     box-shadow: 0px 0px 5px  #e2e0e0;
     border-radius : 40px;
