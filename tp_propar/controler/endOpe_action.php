@@ -5,6 +5,8 @@ require_once '../model/apprenti_class.php';
 
 session_start();
 
+$validation = true;
+
 if ($_POST) {
     // vérifie avec la fonction 'isset' que '$_POST['login']' est rempli, existe ET avec la fonction 'empty' qu'il n'est pas vide. 
     // Si une valeur non-vide a été envoyé alors ...
@@ -17,7 +19,18 @@ if ($_POST) {
 }
 
 if ($validation) {
-    if($_SESSION['type'] == 'EXPERT' ); // A CONTINUER
+    if($_SESSION['type'] == 'EXPERT' ) {
+        Expert::endOperation($id_ope);
+        header('location: ../view/endOpe.php');
+    }
+    elseif($_SESSION['type'] == 'SENIOR') {
+        Senior::endOperation($id_ope);
+        header('location: ../view/endOpe.php');
+    }
+    elseif ($_SESSION['type'] == 'APPRENTI') {
+        Apprenti::endOperation($id_ope);
+        header('location: ../view/endOpe.php');
+    }
 }
 
 ?>
