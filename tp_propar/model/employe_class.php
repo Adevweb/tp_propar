@@ -4,7 +4,7 @@ abstract class Employe {
     protected $_nom; //String
     protected $_prenom; //String
 
-    abstract static function addOperation($description, $cout, $id_client, $id_assignation);
+    abstract static function addOperation($description, $cout, $id_client, $id_assignation, $id_user_courant);
     abstract static function endOperation($id);
 
 

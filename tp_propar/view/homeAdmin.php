@@ -44,13 +44,13 @@
           <img src="img/addOpe.jpg">
           <p class="h4 title"> Ajouter une opération </p>
           <p>En cliquant ici, vous pourrez ajouter une opération à effectuer par votre équipe.</p>
-          <button type="button" class="btn btn-outline-light button">Go !</button>
+          <a href="addOpe.php"><button type="button" class="btn btn-outline-light button">Go !</button></a>
         </div>
         <div class="row col-md-4 text-center d-flex justify-content-center article">
           <img src="img/endOpe.jpg">
           <p class="h4 title"> Terminer une opération </p>
           <p>En cliquant ici, vous pourrez déclarer un opération comme terminée.</p>
-          <button type="button" class="btn btn-outline-light button">Go !</button>
+          <a href="endOpe.php"><button type="button" class="btn btn-outline-light button">Go !</button></a>
         </div>
       </div>
     </section>

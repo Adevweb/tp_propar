@@ -1,7 +1,9 @@
 <?php 
-
 require_once '../model/cnx_class.php';
-
+require_once '../model/expert_class.php';
+require_once '../model/senior_class.php';
+require_once '../model/apprenti_class.php';
+session_start();
 
 $validation = true;
 
@@ -20,22 +22,31 @@ if ($_POST) {
         $validation = false;
     }
 }
-
+//Si la validation des champs s'est correctement passer, on place les variables en session
 if ($validation) {
-
+$_SESSION['login'] = $login;
+$_SESSION['mdp'] = $mdp;
+//On appel checkUser pour vérifier dans la BDD l'existence des logins et retourne un OBJET
 $check = Connexion::checkUser($login, $mdp);
 
 if (isset($check) && !empty($check)) {
-    if ($check[2] == "EXPERT") {
+    //On place l'id du user connecté en session si l'objet retourné n'est pas vide 
+    $_SESSION['id_user'] = $check->get_id();
+    $_SESSION['type'] = $check->get_type();
+    $_SESSION['opMax'] = $check->get_opMax();
+    $_SESSION['nom'] = $check->get_nom();
+    $_SESSION['prenom'] = $check->get_prenom();
+    //Controler du type de user pour la bonne redirection
+    if ($check->get_type() == "EXPERT") {
         header('location: ../view/homeAdmin.php');
     } else {
         header('location: ../view/homeUser.php');
     }
 }
+//Si le tableau est vide, c'est un utilisateur inconnu en BDD il est donc redirigé vers la page d'erreur
 else {
-    header('location: ../view/connexion.php');
+    header('location: ../view/cnxError.php');
 }
 }
-
 
 ?>

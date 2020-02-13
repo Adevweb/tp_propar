@@ -1,3 +1,9 @@
+<?php
+session_start();
+
+
+?>
+
 <!doctype html>
 <html lang="fr">
 
@@ -42,10 +48,10 @@
     <!-- FORMULAIRE -->
     <div class="container ajouter">
         <div class="row justify-content-center">
-            <form action="../controler/addEmp.action.php" method="post">
+            <form action="../controler/endOpe_action.php" method="post">
                 <div class="row">
                     <div class="col-12 form-group" data-for="ID opéation">
-                        <input type="ID opéation" class="form-control" name="ID opéation" placeholder="Identifiant de l'opération terminé" required>
+                        <input type="texte" class="form-control" name="id_ope" placeholder="Identifiant de l'opération terminé" required>
                     </div>
                     <div class="display-5 col-12 text-center">
                         <button type="submit" id="addEmo" class="btn btn-light" value="Ajouter">Ajouter</button>
@@ -62,7 +68,7 @@
 
     <div class="container">
         <div class="row col-12">
-            <h3 class="display-4 col-12 text-center title2">Opération terminées</h3>
+            <h3 class="display-4 col-12 text-center title2">Opérations terminées</h3>
         </div>
     </div>
 
