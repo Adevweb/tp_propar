@@ -1,15 +1,19 @@
-BEGIN
+DELIMITER //
+	CREATE TRIGGER end_of_ope
+    BEFORE DELETE ON operation
+    FOR EACH ROW
+	BEGIN
     INSERT INTO end_ope (
-        `id_ope`,
-        `description`,
-        `type`,
-        `statut`,
-        `cout`,
-        `date_comm`,
-        `id_user`,
-        `id_user_FAIT`,
-        `id_client`,
-        `end_date`
+        id_ope,
+        description,
+        type,
+        statut,
+        cout,
+        date_comm,
+        id_user,
+        id_user_FAIT,
+        id_client,
+        end_date
         )
      VALUES (
          OLD.id_ope,
@@ -23,4 +27,5 @@ BEGIN
          OLD.id_client,
          DATE(NOW())
          );
-      END
+      END; //
+DELIMITER ;

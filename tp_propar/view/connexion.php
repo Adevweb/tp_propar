@@ -45,7 +45,7 @@
             <div class="col-4">
                 <div class="card">
                     <div class="card-body">
-                        <form action="../Controler/cnx.action.php" method="post">
+                        <form action="../controler/cnx_action.php" method="post">
                             <div class="form-group">                            
                                 <input type="text" class="form-control" name="login" placeholder="Login" required>
                             </div>
