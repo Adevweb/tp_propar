@@ -9,7 +9,8 @@ class Expert extends Employe {
     private $_login; //String
     private $_mdp; //String
     private $_nbOpe; //int
-    private const MAX_OPE = 5;
+    private $_id;
+    private $_opMax = 5;
 
     public function __construct($nom, $prenom, $login, $mdp) {
         $this->_nom = $nom;
@@ -52,7 +53,7 @@ class Expert extends Employe {
     }
 
 
-    public static function addOperation($description, $cout, $id_client, $id_assignation) {
+    public static function addOperation($description, $cout, $id_client, $id_assignation, $id_user_curr) {
         $ope = new Operation($cout, $description, $id_client, $id_assignation);
         $cout = $ope->get_cout();
         $description = $ope->get_descr();
@@ -61,7 +62,7 @@ class Expert extends Employe {
         $type = $ope->get_type();
         $statut = $ope->get_statut();
         $date = $ope->get_date();
-        $id_user = 1; // A MODIFIER = POST OU SESSION ID DE LUTILISATEUR CONNECTER
+        $id_user = $id_user_curr; // A MODIFIER = POST OU SESSION ID DE LUTILISATEUR CONNECTER
 
         $dbi = Singleton::getInstance();
         $db=$dbi->getConnection();
@@ -156,6 +157,48 @@ class Expert extends Employe {
     public function set_nbOpe($_nbOpe)
     {
         $this->_nbOpe = $_nbOpe;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of _id
+     */ 
+    public function get_id()
+    {
+        return $this->_id;
+    }
+
+    /**
+     * Set the value of _id
+     *
+     * @return  self
+     */ 
+    public function set_id($_id)
+    {
+        $this->_id = $_id;
+
+        return $this;
+    }
+
+    
+
+    /**
+     * Get the value of _opMax
+     */ 
+    public function get_opMax()
+    {
+        return $this->_opMax;
+    }
+
+    /**
+     * Set the value of _opMax
+     *
+     * @return  self
+     */ 
+    public function set_opMax($_opMax)
+    {
+        $this->_opMax = $_opMax;
 
         return $this;
     }

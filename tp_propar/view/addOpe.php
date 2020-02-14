@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html lang="fr">
 
@@ -44,22 +47,22 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
 
-                <form action="../controler/addEmp.action.php" method="post">
+                <form action="../controler/addOpe_action.php" method="post">
                     <div class="row">
                         <div class="col-md-4  form-group" data-for="ID client">
-                            <input type="ID client" class="form-control" name="ID client" placeholder="Identifiant client" required>
+                            <input type="text" class="form-control" name="id_client" placeholder="Identifiant client" required>
                         </div>
                         <div class="col-md-4  form-group" data-for="ID employé">
-                            <input type="ID employé" class="form-control" name="ID employé" placeholder="Identifiant employé" required>
+                            <input type="text" class="form-control" name="id_user" placeholder="Attribuer à l'employer (ID)" required>
                         </div>
                         <div class="col-md-4  form-group" data-for="coût">
-                            <input type="coût" class="form-control" name="coût" placeholder="Coût de l'opération" required>
+                            <input type="text" class="form-control" name="cout" placeholder="Coût de l'opération" required>
                         </div>
                         <div class="col-md-12 form-group" data-for="message">
-                            <textarea name="message" data-form-field="Message" class="form-control display-7" placeholder="Decription de l'opération"></textarea>
+                            <textarea name="descr" data-form-field="Message" class="form-control display-7" placeholder="Decription de l'opération"></textarea>
                         </div>
                         <div class="display-5 col-12 text-center">
-                            <button type="submit" id="addEmo" class="btn btn-light" value="Ajouter"><span class="fa fa-plus-circle"></span> Ajouter</button>
+                            <button type="submit" id="addOpe" class="btn btn-light" value="Ajouter"><span class="fa fa-plus-circle"></span> Ajouter</button>
                         </div>
                 </form>
             </div>
