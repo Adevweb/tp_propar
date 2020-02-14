@@ -1,5 +1,8 @@
 <?php
 require_once '../model/expert_class.php';
+require_once '../model/apprenti_class.php';
+require_once '../model/senior_class.php';
+require_once '../model/client_class.php';
 
 session_start();
 
@@ -31,11 +34,36 @@ if ($_POST) {
     }
 }
 
+//Verification de l'existence de l'utilisateur, si il existe déjà en BDD, renvoie vers erreur
+$check = Expert::checkUserModify($id_assignation);
+
+if (!$check) {
+    header('location: ../view/error.php');
+    die();
+}
+
+$check2 = Client::checkClientById($id_client);
+
+if (!$check2) {
+    header('location: ../view/addClient.php');
+    die();
+}
+
 if ($validation) {
     $id_user = $_SESSION['id_user'];
-Expert::addOperation($descr, $cout, $id_client, $id_assignation, $id_user);
-header('location: ../view/addOpe.php'); // A MODIFIER SI ON RENVOIE UN OBJET
-} else {
-    //AJOUTER PAGE ERREUR
+    if ($_SESSION['type'] == 'EXPERT') {
+        Expert::addOperation($descr, $cout, $id_client, $id_assignation, $id_user);
+        header('location: ../view/success.php');
+    }
+    elseif ($_SESSION['type'] == 'SENIOR') {
+        Senior::addOperation($descr, $cout, $id_client, $id_assignation, $id_user);
+        header('location: ../view/success.php');
+    }
+    elseif ($_SESSION['type'] == 'APPRENTI') {
+        Apprenti::addOperation($descr, $cout, $id_client, $id_assignation, $id_user);
+        header('location: ../view/success.php');
+    }else {
+        header('location: ../view/error.php');
+    }
 }
 ?>

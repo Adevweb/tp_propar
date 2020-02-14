@@ -1,3 +1,13 @@
+<?php
+require_once '../model/operation_class.php';
+session_start();
+
+$id_user = $_SESSION['id_user'];
+
+$list = $_SESSION['listOpeCurrent'] ;
+?>
+
+
 <!doctype html>
 <html lang="fr">
 
@@ -41,32 +51,36 @@
     <!-- FORMULAIRE -->
     <div class="container ajouter">
         <div class="row justify-content-center">
-            <div class="col-lg-8">
+            <div class="">
 
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-12">
                         <table class="table table-hover">
                             <thead class="thead-dark">
                                 <tr>
-                                    <td class="text-left"><strong class="font-weight-bold font-italic">ID employé</strong></td>
-                                    <td class="text-center"><strong class="font-weight-bold font-italic">ID opération</strong></td>
-                                    <td class="text-right"><strong class="font-weight-bold font-italic">Statut</strong></td>
+                                    <th class="text-left"><strong class="font-weight-bold font-italic">ID Opération</strong></th>
+                                    <th class="text-center"><strong class="font-weight-bold font-italic">Description</strong></th>
+                                    <th class="text-center"><strong class="font-weight-bold font-italic">Type d'Opé</strong></th>
+                                    <th class="text-center"><strong class="font-weight-bold font-italic">Statut</strong></th>
+                                    <th class="text-center"><strong class="font-weight-bold font-italic">Coût</strong></th>
+                                    <th class="text-center"><strong class="font-weight-bold font-italic">Date commencement</strong></th>
+                                    <th class="text-center"><strong class="font-weight-bold font-italic">Ajouter par n° </strong></th>
+                                    <th class="text-center"><strong class="font-weight-bold font-italic">Effectuer n°</strong></th>
+                                    <th class="text-right"><strong class="font-weight-bold font-italic">ID client</strong></th>
+
                                 </tr>
                             </thead>
                             <tbody>
                                 <!--  Generating one more line of table compared to .csv file for display results of addition-->
-                                <tr>
-                                    <th class="text-left">123</th>
-                                    <td class="text-center">456</td>
-                                    <td class="text-right">En cours</td>
-                                </tr>
-                                <!-- DFisplay the result of all additions of products-->
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td class="text-center total"><strong>Opération total : </strong></td>
-                                    <td class="text-right total"></td>
-                                </tr>
+
+                                <?php for ($i = 0; $i <= sizeof($list) - 1; $i++) { ?>
+                                    <tr>
+                                        <?php for ($j = 0; $j <= sizeof($list[$i]) - 1; $j++) { ?>
+                                            <td class="text-center"><?php echo $list[$i][$j] ?> </td>
+                                        <?php } ?>
+                                    </tr>
+
+                                <?php } ?>
                             </tbody>
                         </table>
                     </div>

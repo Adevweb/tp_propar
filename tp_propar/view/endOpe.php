@@ -1,7 +1,10 @@
 <?php
+require_once '../model/operation_class.php';
 session_start();
 
+$id_user = $_SESSION['id_user'];
 
+$list = $_SESSION['listOpeCurrent'] ;
 ?>
 
 <!doctype html>
@@ -68,42 +71,43 @@ session_start();
 
     <div class="container">
         <div class="row col-12">
-            <h3 class="display-4 col-12 text-center title2">Opérations terminées</h3>
+            <h3 class="display-4 col-12 text-center title2">Opérations en cours</h3>
         </div>
     </div>
 
         <!-- FORMULAIRE -->
         <div class="container ajouter2">
         <div class="row justify-content-center">
-            <div class="col-lg-8">
+            <div class="">
 
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-12">
-                        <table class="table table-hover">
+                    <table class="table table-hover">
                             <thead class="thead-dark">
                                 <tr>
-                                    <td class="text-left"><strong class="font-weight-bold font-italic">Date</strong></td>
-                                    <td class="text-center"><strong class="font-weight-bold font-italic">ID Opération</strong></td>
-                                    <td class="text-center"><strong class="font-weight-bold font-italic">Effectué par</strong></td>
-                                    <td class="text-center"><strong class="font-weight-bold font-italic">Type</strong></td>
-                                    <td class="text-center"><strong class="font-weight-bold font-italic">Statut</strong></td>
-                                    <td class="text-center"><strong class="font-weight-bold font-italic">Client</strong></td>
-                                    <td class="text-right"><strong class="font-weight-bold font-italic">Decription</strong></td>
+                                    <th class="text-left"><strong class="font-weight-bold font-italic">ID Opération</strong></th>
+                                    <th class="text-center"><strong class="font-weight-bold font-italic">Description</strong></th>
+                                    <th class="text-center"><strong class="font-weight-bold font-italic">Type d'Opé</strong></th>
+                                    <th class="text-center"><strong class="font-weight-bold font-italic">Statut</strong></th>
+                                    <th class="text-center"><strong class="font-weight-bold font-italic">Coût</strong></th>
+                                    <th class="text-center"><strong class="font-weight-bold font-italic">Date commencement</strong></th>
+                                    <th class="text-center"><strong class="font-weight-bold font-italic">Ajouter par n° </strong></th>
+                                    <th class="text-center"><strong class="font-weight-bold font-italic">Effectuer n°</strong></th>
+                                    <th class="text-right"><strong class="font-weight-bold font-italic">ID client</strong></th>
+
                                 </tr>
                             </thead>
                             <tbody>
                                 <!--  Generating one more line of table compared to .csv file for display results of addition-->
-                                <tr>
-                                    <th class="text-left">12/02/20</th>
-                                    <td class="text-center">456</td>
-                                    <td class="text-center">ADRIEN BENOIT</td>
-                                    <td class="text-center">PETITE MANOEUVRE</td>
-                                    <td class="text-center">En cours</td>
-                                    <td class="text-center">MACHIN TRUC</td>
-                                    <td class="text-right">blablabla blablabla</td>
 
-                                </tr>
+                                <?php for ($i = 0; $i <= sizeof($list) - 1; $i++) { ?>
+                                    <tr>
+                                        <?php for ($j = 0; $j <= sizeof($list[$i]) - 1; $j++) { ?>
+                                            <td class="text-center"><?php echo $list[$i][$j] ?> </td>
+                                        <?php } ?>
+                                    </tr>
 
+                                <?php } ?>
                             </tbody>
                         </table>
                     </div>

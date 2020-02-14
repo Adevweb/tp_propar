@@ -38,13 +38,36 @@ class Expert extends Employe {
         $user->set_nbOpe($result['nbOpe']);
         return $user; // Objet
     }
-
-    public static function createClient($nom, $prenom, $user_id /*Recupère le $POST */) {
+    
+    public static function checkUser($nom, $prenom, $type) {
         $dbi = Singleton::getInstance();
         $db=$dbi->getConnection();
-       //RECUPERER USER ID 
-        $db->query("INSERT INTO client (nom, prenom, id_user) VALUES ('$nom', '$prenom', '$user_id')");
+        $result = $db->query("SELECT nom, prenom, type FROM utilisateur WHERE nom = '$nom' AND prenom = '$prenom' AND type = '$type'");
+        $result = $result->fetch(PDO::FETCH_ASSOC);
+        $bool = false;
+        //return $result;
+        
+        if (isset($result) && !empty($result)) {
+            $bool = true;
+        }
+        return $bool;
     }
+
+    public static function checkUserModify($id_user) {
+        $dbi = Singleton::getInstance();
+        $db=$dbi->getConnection();
+        $result = $db->query("SELECT id_user, type FROM utilisateur WHERE id_user = '$id_user'");
+        $result = $result->fetch(PDO::FETCH_ASSOC);
+        $bool = false;
+        //return $result;
+        
+        if (isset($result) && !empty($result)) {
+            $bool = true;
+        }
+        return $bool;
+    }
+
+    
     
     public static function updateUser ($id_user, $type) {
         $dbi = Singleton::getInstance();
@@ -77,6 +100,8 @@ class Expert extends Employe {
         $db->query("UPDATE operation SET statut = 'Terminer' WHERE id_ope = $idOpe");
         $db->query("DELETE FROM operation WHERE id_ope = $idOpe");
     }
+
+    
 
 
 

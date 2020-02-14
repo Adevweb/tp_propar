@@ -24,6 +24,42 @@ class Client {
         $client->set_id_client($result['id_client']);
         return $client; // Objet
     }
+
+    public static function checkClient ($nom, $prenom) {
+        $dbi = Singleton::getInstance();
+        $db=$dbi->getConnection();
+        $result = $db->query("SELECT nom, prenom FROM client WHERE nom = '$nom' AND prenom = '$prenom'");
+        $result = $result->fetch(PDO::FETCH_ASSOC);
+        $bool = false;
+        //return $result;
+        
+        if (isset($result) && !empty($result)) {
+            $bool = true;
+        }
+        return $bool;
+    }
+
+    public static function checkClientById($id_client) {
+        $dbi = Singleton::getInstance();
+        $db=$dbi->getConnection();
+        $result = $db->query("SELECT id_client  FROM client WHERE id_client = '$id_client'");
+        $result = $result->fetch(PDO::FETCH_ASSOC);
+        $bool = false;
+        //return $result;
+        
+        if (isset($result) && !empty($result)) {
+            $bool = true;
+        }
+        return $bool;
+    }
+
+    public static function createClient($nom, $prenom, $user_id /*Recupère le $POST */) {
+        $dbi = Singleton::getInstance();
+        $db=$dbi->getConnection();
+       //RECUPERER USER ID 
+        $db->query("INSERT INTO client (nom, prenom, id_user) VALUES ('$nom', '$prenom', '$user_id')");
+    }
+    
     /**
      * Get the value of _nom
      */ 

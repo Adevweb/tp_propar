@@ -42,21 +42,21 @@
   <!-- FORMULAIRE -->
   <div class="container ajouter">
     <div class="row justify-content-center">
-      <form action="../controler/addEmp.action.php" method="post">
+      <form action="../controler/addUser_action.php" method="post">
         <div class="row col-12">
           <div class="col-md-4  form-group" data-for="name">
             <input type="nom" class="form-control" name="nom" placeholder="Nom" required>
           </div>
           <div class="col-md-4  form-group" data-for="email">
-            <input type="prenom" class="form-control" name="prenom" placeholder="Prenom" required>
+            <input type="text" class="form-control" name="prenom" placeholder="Prenom" required>
           </div>
           <div class="col-md-4  form-group" data-for="fonction">
-            <input type="fonction" class="form-control" name="fonction" placeholder="Fonction" required>
+            <input type="text" class="form-control" name="type" placeholder="Fonction" required>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4  form-group" data-for="login">
-            <input type="login" class="form-control" name="login" placeholder="Login" required>
+            <input type="text" class="form-control" name="login" placeholder="Login" required>
           </div>
           <div class="col-md-4 form-group" data-for="mdp">
             <input type="password" class="form-control" name="mdp" placeholder="Mot de passe" required>
@@ -83,13 +83,13 @@
   <!-- FORMULAIRE -->
   <div class="container ajouter2">
     <div class="row justify-content-center">
-      <form action="../controler/addEmp.action.php" method="post">
+      <form action="../controler/modifyUser_action.php" method="post">
         <div class="row justify-content-center">
           <div class="col-md-6  form-group" data-for="login">
-            <input type="ID employé" class="form-control" name="ID employé" placeholder="Identifiant de l'employé" required>
+            <input type="text" class="form-control" name="id_user" placeholder="Identifiant de l'employé" required>
           </div>
           <div class="col-md-6  form-group" data-for="fonction">
-            <input type="fonction" class="form-control" name="fonction" placeholder="Nouvelle fonction" required>
+            <input type="text" class="form-control" name="type" placeholder="Nouvelle fonction" required>
           </div>
         </div>
         <div class="display-5 col-12 text-center">

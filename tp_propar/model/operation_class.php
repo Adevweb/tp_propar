@@ -33,9 +33,18 @@ class Operation {
         $dbi = Singleton::getInstance();
         $db=$dbi->getConnection();
         $result = $db->query("SELECT * FROM operation WHERE statut = 'En cours' AND id_user_FAIT = $id_user");
-        $result = $result->fetchAll(PDO::FETCH_ASSOC);
-
+        $result = $result->fetchAll(PDO::FETCH_NUM);
         return $result;
+        
+    }
+
+    public static function finishList($id) {
+        $dbi = Singleton::getInstance();
+        $db=$dbi->getConnection();
+        $result = $db->query("SELECT * FROM end_ope WHERE id_user_FAIT = '$id' ");
+        $result = $result->fetchAll(PDO::FETCH_NUM);
+        return $result;
+        
     }
 
     public static function seeCA() {
@@ -43,7 +52,21 @@ class Operation {
         $db=$dbi->getConnection();
         $result = $db->query("SELECT SUM(cout) FROM end_ope WHERE statut = 'Terminer'");
         $result = $result->fetch(PDO::FETCH_NUM);
-        return $result;
+        $ca = $result[0];
+        return $ca;
+    }
+
+    public static function endOpeCheck ($idOpe) {
+        $dbi = Singleton::getInstance();
+        $db=$dbi->getConnection();
+        $result = $db->query("SELECT id_ope FROM operation WHERE id_ope = '$idOpe'");
+        $result = $result->fetch(PDO::FETCH_ASSOC);
+        $bool = false;
+        //return $result;
+        if (isset($result) && !empty($result)) {
+            $bool = true;
+        }
+        return $bool;
     }
 
     /**

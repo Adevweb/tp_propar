@@ -3,7 +3,10 @@ require_once '../model/cnx_class.php';
 require_once '../model/expert_class.php';
 require_once '../model/senior_class.php';
 require_once '../model/apprenti_class.php';
+require_once '../model/operation_class.php';
+
 session_start();
+
 
 $validation = true;
 
@@ -32,10 +35,18 @@ $check = Connexion::checkUser($login, $mdp);
 if (isset($check) && !empty($check)) {
     //On place l'id du user connecté en session si l'objet retourné n'est pas vide 
     $_SESSION['id_user'] = $check->get_id();
+    $id_user = $_SESSION['id_user'];
     $_SESSION['type'] = $check->get_type();
     $_SESSION['opMax'] = $check->get_opMax();
     $_SESSION['nom'] = $check->get_nom();
     $_SESSION['prenom'] = $check->get_prenom();
+
+
+    $list = Operation::currentList($id_user);
+    $_SESSION['listOpeCurrent'] = $list;
+    $finishList = Operation::finishList($id_user);
+    $_SESSION['finishList'] = $finishList;
+    
     //Controler du type de user pour la bonne redirection
     if ($check->get_type() == "EXPERT") {
         header('location: ../view/homeAdmin.php');
@@ -48,5 +59,4 @@ else {
     header('location: ../view/cnxError.php');
 }
 }
-
 ?>

@@ -1,13 +1,8 @@
-<?php
-session_start();
-//Recupération de la variable de session
-$ca = $_SESSION['ca'];
-?>
 <!doctype html>
 <html lang="fr">
 
 <head>
-  <title>Ajouter un employé</title>
+  <title>Ajouter un client</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,7 +10,7 @@ $ca = $_SESSION['ca'];
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/v4-shims.css">
 
-  <link rel="stylesheet" href="css/seeCA.css">
+  <link rel="stylesheet" href="css/addEmp.css">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
@@ -39,20 +34,33 @@ $ca = $_SESSION['ca'];
   <!-- SECTION -->
   <div class="container">
     <div class="row col-12">
-      <h3 class="display-4 col-12 text-center title">Chiffre d'Affaires</h3>
+      <h3 class="display-4 col-12 text-center title">Le client n'existe pas !</h3>
+      <h5 class="display-5 col-12 text-center sstitle">Veuillez l'enregistrer ci-dessous</h5>
     </div>
   </div>
 
-  <!-- ZONE D'AFFICHAGE -->
+  <!-- FORMULAIRE -->
   <div class="container ajouter">
     <div class="row justify-content-center">
+      <form action="../controler/addClient_action.php" method="post">
+        <div class="row col-12">
+          <div class="col-md-4  form-group" data-for="name">
+            <input type="text" class="form-control" name="nom" placeholder="Nom" required>
+          </div>
+          <div class="col-md-4  form-group" data-for="prenom">
+            <input type="text" class="form-control" name="prenom" placeholder="Prenom" required>
+          </div>
+        </div>
 
-    <p class="display-4"><?php echo $ca ?> € </p>
-    
+
+        </div>
+        <div class="display-5 col-12 text-center">
+          <button type="submit" id="addClient" class="btn btn-light" value="Ajouter"><span class="fa fa-plus-circle"></span> Ajouter</button>
+        </div>
+      </form>
     </div>
   </div>
-  <!-- FIN ZONE D'AFFICHAGE -->
-
+  <!-- FIN FORMULAIRE -->
 
 
 </body>
