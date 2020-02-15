@@ -9,12 +9,11 @@ session_start();
 
 $validation = true;
 
-
+//Verifie que les champs ne sont pas vides : boolean
 if ($_POST) {
-    // vérifie avec la fonction 'isset' que '$_POST['login']' est rempli, existe ET avec la fonction 'empty' qu'il n'est pas vide. 
-    // Si une valeur non-vide a été envoyé alors ...
+    //Si les champs ne sont pas vides...
     if (isset($_POST['id_ope']) && !empty($_POST['id_ope'])) {
-        // On stocke donc la valeur du champ dans une variable.
+        //Stock la variables $_POST dans une variable
         $id_ope = $_POST['id_ope'];
     } else {
         $validation = false;

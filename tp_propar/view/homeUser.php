@@ -40,7 +40,7 @@ $finishList = $_SESSION['finishList'];
     <div class="container-fluid">
         <div class="row d-flex justify-content-between header">
             <h1 class="headTitleLeft"> PROPAR </h1>
-            <h5 class="headTitleRight"><span style="font-size:30px;"> <i class="fas fa-sign-out-alt"></i></span> </h5>
+            <a href="../controler/endSession_action.php"><h5 class="headTitleRight"><span style="font-size:30px;"> <i class="fas fa-sign-out-alt"></i></span> </h5></a>
         </div>
     </div>
     <!-- TITRE SECTION -->
@@ -57,7 +57,7 @@ $finishList = $_SESSION['finishList'];
                     <img src="img/addOpe.jpg">
                     <p class="h4 title"> Ajouter une opération </p>
                     <p>En cliquant ici, vous pourrez ajouter une opération à effectuer par votre équipe.</p>
-                    <a href="addOpe.php"><button type="button" class="btn btn-outline-light button">Go !</button></a>
+                    <a href="../controler/clientListFROMmenu_action.php"><button type="button" class="btn btn-outline-light button">Go !</button></a>
                 </div>
                 <div class="row col-md-3 text-center d-flex justify-content-center article">
                     <img src="img/currentOpe.jpg">
@@ -69,7 +69,7 @@ $finishList = $_SESSION['finishList'];
                     <img src="img/endOpe.jpg">
                     <p class="h4 title"> Terminer une opération </p>
                     <p>En cliquant ici, vous pourrez déclarer un opération comme terminée.</p>
-                    <a href="current_opeFROMmenu.php"><button type="button" class="btn btn-outline-light button">Go !</button></a>
+                    <a href="../controler/current_opeFROMmenu.php"><button type="button" class="btn btn-outline-light button">Go !</button></a>
                 </div>
             </div>
         </section>

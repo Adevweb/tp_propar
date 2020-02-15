@@ -8,11 +8,11 @@ session_start();
 
 $validation = true; 
 
+//Verifie que les champs ne sont pas vides : boolean
 if ($_POST) {
-    // vérifie avec la fonction 'isset' que '$_POST['login']' est rempli, existe ET avec la fonction 'empty' qu'il n'est pas vide. 
-    // Si une valeur non-vide a été envoyé alors ...
+    //Si les champs ne sont pas vides...
     if (isset($_POST['id_client']) && !empty($_POST['id_client'])) {
-        // On stocke donc la valeur du champ dans une variable.
+        //Stock la variables $_POST dans une variable
         $id_client = $_POST['id_client'];
     } else {
         $validation = false;
@@ -42,6 +42,8 @@ if (!$check) {
     die();
 }
 
+/* Verificaction de l'existence du client en BDD, 
+s'il n'existe pas redirection vers addClient */
 $check2 = Client::checkClientById($id_client);
 
 if (!$check2) {
@@ -49,6 +51,8 @@ if (!$check2) {
     die();
 }
 
+//Si $validation = true alors verification du type de USER connecté
+//Appel de la méthodes correspondantes et redirection vers succes/error
 if ($validation) {
     $id_user = $_SESSION['id_user'];
     if ($_SESSION['type'] == 'EXPERT') {

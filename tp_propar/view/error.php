@@ -45,7 +45,7 @@
             <div class="col-lg-8">
 
                 <div class="display-4 col-12 text-center">
-                    <a action="../controler/type_control.php" method="post"><button type="submit" id="home" class="btn btn-light" value="Home"><span class="fa fa-bars"></span> Menu</button></a>
+                    <a href="../controler/type_control.php" method="post"><button type="submit" id="home" class="btn btn-light" value="Home"><span class="fa fa-bars"></span> Menu</button></a>
                 </div>
 
             </div>

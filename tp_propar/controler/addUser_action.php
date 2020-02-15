@@ -6,11 +6,11 @@ session_start();
 
 $validation = true;
 
+//Verifie que les champs ne sont pas vides : boolean
 if ($_POST) {
-    // vérifie avec la fonction 'isset' que '$_POST['login']' est rempli, existe ET avec la fonction 'empty' qu'il n'est pas vide. 
-    // Si une valeur non-vide a été envoyé alors ...
+    //Si les champs ne sont pas vides...
     if (isset($_POST['nom']) && !empty($_POST['nom'])) {
-        // On stocke donc la valeur du champ dans une variable.
+        //Stock la variables $_POST dans une variable
         $nom = $_POST['nom'];
     } else {
         $validation = false;
@@ -44,7 +44,7 @@ if ($check) {
     die();
 }
 
-//Si il n'existe pas, il est créé
+//Si il n'existe pas, il est créé : redirection vers success
 if ($validation) {
     Expert::createUser($nom, $prenom, $type, $login, $mdp);
     header('location: ../view/success.php');

@@ -59,6 +59,14 @@ class Client {
        //RECUPERER USER ID 
         $db->query("INSERT INTO client (nom, prenom, id_user) VALUES ('$nom', '$prenom', '$user_id')");
     }
+
+    public static function clientList() {
+        $dbi = Singleton::getInstance();
+        $db=$dbi->getConnection();
+        $result = $db->query("SELECT id_client, nom, prenom FROM client  ");
+        $result = $result->fetchAll(PDO::FETCH_NUM);
+        return $result;
+    }
     
     /**
      * Get the value of _nom

@@ -1,5 +1,6 @@
 <?php
 session_start();
+$clientList = $_SESSION['clientList'];
 ?>
 <!doctype html>
 <html lang="fr">
@@ -64,13 +65,43 @@ session_start();
                         <div class="display-5 col-12 text-center">
                             <button type="submit" id="addOpe" class="btn btn-light" value="Ajouter"><span class="fa fa-plus-circle"></span> Ajouter</button>
                         </div>
+                    </div>
                 </form>
             </div>
 
         </div>
-    </div>
     <!-- FIN FORMULAIRE -->
+    <!-- FORMULAIRE -->
+        <div class="row justify-content-center">
+            <div class="">
 
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-12">
+                        <table class="table table-hover">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th class="text-left"><strong class="font-weight-bold font-italic">ID Client</strong></th>
+                                    <th class="text-center"><strong class="font-weight-bold font-italic">NOM</strong></th>
+                                    <th class="text-right"><strong class="font-weight-bold font-italic">Prénom</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!--  Generating one more line of table compared to .csv file for display results of addition-->
+
+                                <?php for ($i = 0; $i <= sizeof($clientList) - 1; $i++) { ?>
+                                    <tr>
+                                        <?php for ($j = 0; $j <= sizeof($clientList[$i]) - 1; $j++) { ?>
+                                            <td class="text-center"><?php echo $clientList[$i][$j] ?> </td>
+                                        <?php } ?>
+                                    </tr>
+                                <?php } ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 </body>

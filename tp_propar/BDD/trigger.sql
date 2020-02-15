@@ -11,7 +11,7 @@ DELIMITER //
         cout,
         date_comm,
         id_user,
-        id_user_FAIT,
+        id_user_FAIT, /* Verif BDD le nom */
         id_client,
         end_date
         )
