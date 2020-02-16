@@ -55,7 +55,12 @@ $userList = $_SESSION['userList'];
             <input type="text" class="form-control" name="prenom" placeholder="Prenom" required>
           </div>
           <div class="col-md-4  form-group" data-for="fonction">
-            <input type="text" class="form-control" name="type" placeholder="Fonction" required>
+            <select class="form-control" type="text" class="form-control" name="type" placeholder="Fonction" required>
+              <option disabled selected>Fonction</option>
+              <option>Expert</option>
+              <option>Senior</option>
+              <option>Apprenti</option>
+            </select>
           </div>
         </div>
         <div class="row justify-content-center">
@@ -93,7 +98,12 @@ $userList = $_SESSION['userList'];
             <input type="text" class="form-control" name="id_user" placeholder="Identifiant de l'employé" required>
           </div>
           <div class="col-md-6  form-group" data-for="fonction">
-            <input type="text" class="form-control" name="type" placeholder="Nouvelle fonction" required>
+            <select class="form-control" type="text" class="form-control" name="type" placeholder="Fonction" required>
+              <option disabled selected>Fonction</option>
+              <option>Expert</option>
+              <option>Senior</option>
+              <option>Apprenti</option>
+            </select>
           </div>
         </div>
         <div class="display-5 col-12 text-center">
