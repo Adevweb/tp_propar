@@ -30,21 +30,12 @@ if (!$check) {
 }
 //Si bool = true et que validation = true, vérification du type de user et appel la méthode qui correspond, sinon renvoie vers page d'erreur
 if ($validation) {
-    if($_SESSION['type'] == 'EXPERT' ) {
-        Expert::endOperation($id_ope);
-        header('location: ../view/success.php');
-    }
-    elseif($_SESSION['type'] == 'SENIOR') {
-        Senior::endOperation($id_ope);
-        header('location: ../view/success.php');
-    }
-    elseif ($_SESSION['type'] == 'APPRENTI') {
-        Apprenti::endOperation($id_ope);
+        Operation::endOperation($id_ope);
         header('location: ../view/success.php');
     }
     else {
         header('location: ../view/error.php');
     }
-}
+
 
 ?>

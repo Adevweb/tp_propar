@@ -1,3 +1,7 @@
+<?php
+session_start();
+$userList = $_SESSION['userList'];
+?>
 <!doctype html>
 <html lang="fr">
 
@@ -27,7 +31,7 @@
   <!-- HEADER -->
   <div class="container-fluid">
     <div class="row d-flex justify-content-between header">
-      <h1 class="headTitleLeft"> PROPAR </h1>
+      <h1 class="headTitleLeft"> PROPAR </h1></a>
       <h5 class="headTitleRight"><span style="font-size:30px;"> <i class="fas fa-sign-out-alt"></i></span> </h5>
     </div>
   </div>
@@ -96,6 +100,36 @@
           <button type="submit" id="addEmo" class="btn btn-light" value="Ajouter"><span class="fa fa-plus-circle"></span> Modifier</button>
         </div>
       </form>
+    </div>
+    <div class="row justify-content-center">
+      <div class="">
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-12">
+            <table class="table table-hover">
+              <thead class="thead-dark">
+                <tr>
+                  <th class="text-left"><strong class="font-weight-bold font-italic">ID Utilisateur</strong></th>
+                  <th class="text-center"><strong class="font-weight-bold font-italic">NOM</strong></th>
+                  <th class="text-center"><strong class="font-weight-bold font-italic">Prénom</strong></th>
+                  <th class="text-center"><strong class="font-weight-bold font-italic">Type</strong></th>
+                </tr>
+              </thead>
+              <tbody>
+                <!--  Generating one more line of table compared to .csv file for display results of addition-->
+
+                <?php for ($i = 0; $i <= sizeof($userList) - 1; $i++) { ?>
+                  <tr>
+                    <?php for ($j = 0; $j <= sizeof($userList[$i]) - 1; $j++) { ?>
+                      <td class="text-center"><?php echo $userList[$i][$j] ?> </td>
+                    <?php } ?>
+                  </tr>
+                <?php } ?>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <!-- FIN FORMULAIRE -->

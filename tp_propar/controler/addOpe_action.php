@@ -3,7 +3,7 @@ require_once '../model/expert_class.php';
 require_once '../model/apprenti_class.php';
 require_once '../model/senior_class.php';
 require_once '../model/client_class.php';
-
+require_once '../model/employe_class.php';
 session_start();
 
 $validation = true; 
@@ -51,20 +51,16 @@ if (!$check2) {
     die();
 }
 
+$userAssign = Employe::getUserById($id_assignation);
+$nbOpMax = $userAssign->get_opMax();
+$nbOpe = Employe::nbCurrentOpe($id_assignation);
+
 //Si $validation = true alors verification du type de USER connecté
 //Appel de la méthodes correspondantes et redirection vers succes/error
 if ($validation) {
     $id_user = $_SESSION['id_user'];
-    if ($_SESSION['type'] == 'EXPERT') {
-        Expert::addOperation($descr, $cout, $id_client, $id_assignation, $id_user);
-        header('location: ../view/success.php');
-    }
-    elseif ($_SESSION['type'] == 'SENIOR') {
-        Senior::addOperation($descr, $cout, $id_client, $id_assignation, $id_user);
-        header('location: ../view/success.php');
-    }
-    elseif ($_SESSION['type'] == 'APPRENTI') {
-        Apprenti::addOperation($descr, $cout, $id_client, $id_assignation, $id_user);
+    if ($nbOpe < $nbOpMax) {
+        Operation::addOperation($descr, $cout, $id_client, $id_assignation, $id_user);
         header('location: ../view/success.php');
     }else {
         header('location: ../view/error.php');

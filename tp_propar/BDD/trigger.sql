@@ -29,3 +29,35 @@ DELIMITER //
          );
       END; //
 DELIMITER ;
+
+/* TRIGGER POUR METTRE LES INSERT EN MAJ SUR TAB USER */
+
+DELIMITER //
+	CREATE TRIGGER maj_user
+    BEFORE INSERT ON utilisateur
+    FOR EACH ROW
+	BEGIN
+    SET NEW.nom = UPPER(NEW.nom);
+    SET NEW.type = UPPER(NEW.type); 
+    END; //
+DELIMITER ;
+
+/* TRIGGER POUR METTRE LES INSERT EN MAJ SUR TAB CLIENT */
+
+DELIMITER //
+	CREATE TRIGGER maj_client
+    BEFORE INSERT ON client
+    FOR EACH ROW
+	BEGIN
+    SET NEW.nom = UPPER(NEW.nom);
+    END; //
+DELIMITER ;
+
+/* Procédure stockées pour le CA */
+
+DELIMITER //
+    CREATE PROCEDURE see_CA()
+    BEGIN
+        SELECT SUM(cout) FROM end_ope WHERE statut = 'Terminer';
+    END //
+DELIMITER ;

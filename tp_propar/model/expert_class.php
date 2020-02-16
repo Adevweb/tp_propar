@@ -26,18 +26,6 @@ class Expert extends Employe {
         $db->query("INSERT INTO utilisateur (nom, prenom, type, login, mdp) VALUES ('$nom', '$prenom', '$type', '$login', '$mdp')");
 
     }
-
-    public static function getUserById ($id) : object {
-        $dbi = Singleton::getInstance();
-        $db=$dbi->getConnection();
-        $result = $db->query("SELECT * FROM utilisateur WHERE id_user = $id ");
-        $result = $result->fetch(PDO::FETCH_ASSOC);
-
-
-        $user = new Expert ($result['nom'], $result['prenom'], $result['login'], $result['mdp']);
-        $user->set_nbOpe($result['nbOpe']);
-        return $user; // Objet
-    }
     
     public static function checkUser($nom, $prenom, $type) {
         $dbi = Singleton::getInstance();
@@ -75,36 +63,13 @@ class Expert extends Employe {
         $db->query("UPDATE utilisateur SET type = '$type' WHERE id_user = $id_user");
     }
 
-
-    public static function addOperation($description, $cout, $id_client, $id_assignation, $id_user_curr) {
-        $ope = new Operation($cout, $description, $id_client, $id_assignation);
-        $cout = $ope->get_cout();
-        $description = $ope->get_descr();
-        $id_client = $ope->get_id_client();
-        $id_assignation = $ope->get_id_assignation();
-        $type = $ope->get_type();
-        $statut = $ope->get_statut();
-        $date = $ope->get_date();
-        $id_user = $id_user_curr; // A MODIFIER = POST OU SESSION ID DE LUTILISATEUR CONNECTER
-
-        $dbi = Singleton::getInstance();
-        $db=$dbi->getConnection();
-       //RECUPERER USER ID EN SESSION OU POST
-        $db->query("INSERT INTO operation (description, type, statut, cout, date_comm, id_user, id_user_FAIT, id_client) VALUES ('$description', '$type', '$statut', '$cout', '$date', '$id_user', '$id_assignation', '$id_client')");  
+    public static function userList() {
+            $dbi = Singleton::getInstance();
+            $db=$dbi->getConnection();
+            $result = $db->query("SELECT id_user, nom, prenom, type FROM utilisateur");
+            $result = $result->fetchAll(PDO::FETCH_NUM);
+            return $result;
     }
-
-    public static function endOperation($idOpe) {
-        // APPEL LE TRIGGER end_of_ope POUR ALIMENTER LA TABLE end_ope
-        $dbi = Singleton::getInstance();
-        $db=$dbi->getConnection();
-        $db->query("UPDATE operation SET statut = 'Terminer' WHERE id_ope = $idOpe");
-        $db->query("DELETE FROM operation WHERE id_ope = $idOpe");
-    }
-
-    
-
-
-
 
     /**
      * Get the value of _type

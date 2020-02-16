@@ -72,7 +72,7 @@ $finishList = $_SESSION['finishList'];
           <img src="img/addEmp.jpg">
           <p class="h4 title"> Ajouter un utilisateur </p>
           <p>En cliquant ici, vous pourrez ajouter un employé à votre équipe.</p>
-          <a href="addUser.php"><button type="button" class="btn btn-outline-light button">Go !</button></a>
+          <a href="../controler/userListFROMmenu_action.php"><button type="button" class="btn btn-outline-light button">Go !</button></a>
         </div>
         <div class="row col-md-3 text-center d-flex justify-content-center article">
           <img src="img/currentOpe.jpg">

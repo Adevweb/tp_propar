@@ -6,6 +6,5 @@ require_once 'cnx_class.php';
 require_once 'client_class.php';
 
 
-print_r(Client::clientList());
-
+print_r($test = Employe::getUserById(1));
 ?>
