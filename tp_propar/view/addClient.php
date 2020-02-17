@@ -44,10 +44,10 @@
     <div class="row justify-content-center">
       <form action="../controler/addClient_action.php" method="post">
         <div class="row col-12">
-          <div class="col-md-4  form-group" data-for="name">
+          <div class="col-md-6  form-group" data-for="name">
             <input type="text" class="form-control" name="nom" placeholder="Nom" required>
           </div>
-          <div class="col-md-4  form-group" data-for="prenom">
+          <div class="col-md-6  form-group" data-for="prenom">
             <input type="text" class="form-control" name="prenom" placeholder="Prenom" required>
           </div>
         </div>
@@ -65,7 +65,7 @@
   <!-- BOUTON MENU -->
 
   <div class="menu">
-    <a action="../controler/type_control.php" method="post"><button type="button" id="home" class="btn btn-light btn-sm mb-2" value="Home"><span class="fa fa-bars"></span> Menu</button></a>
+    <a href="../controler/type_control.php"><button type="button" id="home" class="btn btn-light btn-sm mb-2" value="Home"><span class="fa fa-bars"></span> Menu</button></a>
   </div>
 
   <!-- FIN BOUTON MENU -->
