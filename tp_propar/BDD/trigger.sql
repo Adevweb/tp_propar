@@ -39,6 +39,7 @@ DELIMITER //
 	BEGIN
     SET NEW.nom = UPPER(NEW.nom);
     SET NEW.type = UPPER(NEW.type); 
+    SET NEW.prenom = UPPER(NEW.prenom);
     END; //
 DELIMITER ;
 
@@ -50,6 +51,7 @@ DELIMITER //
     FOR EACH ROW
 	BEGIN
     SET NEW.nom = UPPER(NEW.nom);
+    SET NEW.prenom = UPPER(NEW.prenom);
     END; //
 DELIMITER ;
 

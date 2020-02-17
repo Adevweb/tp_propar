@@ -50,15 +50,18 @@ if (!$check2) {
     header('location: ../view/addClient.php');
     die();
 }
-
+//Appel la fonction qui nous retourne un objet avec les infos de l'employe assigné à la tâche
 $userAssign = Employe::getUserById($id_assignation);
+//On récupère le nb d'opération maximum pour cet emploi (Expet, senior, apprenti)
 $nbOpMax = $userAssign->get_opMax();
+//On récupère le nombre de tâches en cours qu'il effectue
 $nbOpe = Employe::nbCurrentOpe($id_assignation);
 
 //Si $validation = true alors verification du type de USER connecté
 //Appel de la méthodes correspondantes et redirection vers succes/error
 if ($validation) {
     $id_user = $_SESSION['id_user'];
+    //Compare le nombre de tâches en cours au nombre d'opération maximum
     if ($nbOpe < $nbOpMax) {
         Operation::addOperation($descr, $cout, $id_client, $id_assignation, $id_user);
         header('location: ../view/success.php');
