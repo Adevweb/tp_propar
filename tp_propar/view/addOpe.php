@@ -1,6 +1,12 @@
 <?php
 session_start();
 $clientList = $_SESSION['clientList'];
+$userList = $_SESSION['userList'];
+//Verification SI le login en session est vide, donc un accès par URL -> redirection vers page connexion.
+if (!isset($_SESSION['login'])) {
+    header('location: connexion.php');
+}
+
 ?>
 <!doctype html>
 <html lang="fr">
@@ -32,7 +38,9 @@ $clientList = $_SESSION['clientList'];
     <div class="container-fluid">
         <div class="row d-flex justify-content-between header">
             <h1 class="headTitleLeft"> PROPAR </h1>
-            <a href="../controler/endSession_action.php" class="headTitleRight"><h5><span style="font-size:30px;"> <i class="fas fa-sign-out-alt"></i></span> </h5></a>
+            <a href="../controler/endSession_action.php" class="headTitleRight">
+                <h5><span style="font-size:30px;"> <i class="fas fa-sign-out-alt"></i></span> </h5>
+            </a>
         </div>
     </div>
     <!-- SECTION -->
@@ -47,7 +55,6 @@ $clientList = $_SESSION['clientList'];
     <div class="container ajouter">
         <div class="row justify-content-center">
             <div class="col-lg-8">
-
                 <form action="../controler/addOpe_action.php" method="post">
                     <div class="row">
                         <div class="col-md-4  form-group" data-for="ID client">
@@ -68,37 +75,61 @@ $clientList = $_SESSION['clientList'];
                     </div>
                 </form>
             </div>
-
         </div>
         <!-- FIN FORMULAIRE -->
         <!-- FORMULAIRE -->
-        <div class="row justify-content-center">
-            <div class="">
+        <div class="row col-md-12 justify-content-around tabZone">
 
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-12">
-                        <table class="table table-hover">
-                            <thead class="thead-dark">
-                                <tr>
-                                    <th class="text-left"><strong class="font-weight-bold font-italic">ID Client</strong></th>
-                                    <th class="text-center"><strong class="font-weight-bold font-italic">NOM</strong></th>
-                                    <th class="text-right"><strong class="font-weight-bold font-italic">Prénom</strong></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!--  Generating one more line of table compared to .csv file for display results of addition-->
-
-                                <?php for ($i = 0; $i <= sizeof($clientList) - 1; $i++) { ?>
-                                    <tr>
-                                        <?php for ($j = 0; $j <= sizeof($clientList[$i]) - 1; $j++) { ?>
-                                            <td class="text-center"><?php echo $clientList[$i][$j] ?> </td>
-                                        <?php } ?>
-                                    </tr>
-                                <?php } ?>
-                            </tbody>
-                        </table>
-                    </div>
+            <div class="col-md-5">
+                <div>
+                    <h3 class="display-4 col-12 text-center tabTitle">Liste des clients</h3>
                 </div>
+                <table class="table table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th class="text-left"><strong class="font-weight-bold font-italic">ID Client</strong></th>
+                            <th class="text-center"><strong class="font-weight-bold font-italic">NOM</strong></th>
+                            <th class="text-right"><strong class="font-weight-bold font-italic">Prénom</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--  Generating one more line of table compared to .csv file for display results of addition-->
+                        <?php for ($i = 0; $i <= sizeof($clientList) - 1; $i++) { ?>
+                            <tr>
+                                <?php for ($j = 0; $j <= sizeof($clientList[$i]) - 1; $j++) { ?>
+                                    <td class="text-center"><?php echo $clientList[$i][$j] ?> </td>
+                                <?php } ?>
+                            </tr>
+                        <?php } ?>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-md-5">
+                <div>
+                    <h3 class="display-4 col-12 text-center tabTitle">Liste des Utilisateurs</h3>
+                </div>
+                <table class="table table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th class="text-left"><strong class="font-weight-bold font-italic">ID Utilisateur</strong></th>
+                            <th class="text-center"><strong class="font-weight-bold font-italic">NOM</strong></th>
+                            <th class="text-center"><strong class="font-weight-bold font-italic">Prénom</strong></th>
+                            <th class="text-right"><strong class="font-weight-bold font-italic">Type</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--  Generating one more line of table compared to .csv file for display results of addition-->
+
+                        <?php for ($i = 0; $i <= sizeof($userList) - 1; $i++) { ?>
+                            <tr>
+                                <?php for ($j = 0; $j <= sizeof($userList[$i]) - 1; $j++) { ?>
+                                    <td class="text-center"><?php echo $userList[$i][$j] ?> </td>
+                                <?php } ?>
+                            </tr>
+                        <?php } ?>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

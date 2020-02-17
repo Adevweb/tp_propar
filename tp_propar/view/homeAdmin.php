@@ -6,6 +6,15 @@ $id_user = $_SESSION['id_user'];
 
 $list = $_SESSION['listOpeCurrent'];
 $finishList = $_SESSION['finishList'];
+//Verification SI le login en session est vide, donc un accès par URL -> redirection vers page connexion.
+if (!isset($_SESSION['login'])) {
+  header('location: connexion.php');
+}
+/* Verification SI le type en session est différent de EXPERT, donc un accès par URL -> redirection vers page l'accueil qui 
+correspond au type de profil. */
+if ($_SESSION['type'] != 'EXPERT') {
+  header('location: homeUser.php');
+}
 ?>
 
 <!doctype html>

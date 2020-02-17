@@ -5,6 +5,11 @@ session_start();
 $id_user = $_SESSION['id_user'];
 
 $list = $_SESSION['listOpeCurrent'];
+//Verification SI le login en session est vide, donc un accès par URL -> redirection vers page connexion.
+if (!isset($_SESSION['login'])) {
+  header('location: connexion.php');
+}
+
 ?>
 
 

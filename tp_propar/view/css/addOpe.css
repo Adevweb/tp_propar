@@ -103,9 +103,6 @@ button[type=submit] {
     color : #ffffff;
 }
 
-.table {
-    margin-top : 100px;
-}
 
 button[type=button] {
     margin-top: 50px;
@@ -117,4 +114,15 @@ button[type=button] {
     align-content: center;
     background-color: rgb(94, 112, 119);
     color : #ffffff;
+}
+
+.tabTitle {
+    font-family: 'Lobster';
+    color : rgb(92, 131, 146);
+    padding-top: 30px;
+    font-size: 2em !important;
+}
+
+.tabZone {
+    margin-top : 50px;
 }

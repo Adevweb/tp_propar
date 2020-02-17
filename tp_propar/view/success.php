@@ -1,3 +1,10 @@
+<?php
+session_start();
+//Verification SI le login en session est vide, donc un accès par URL -> redirection vers page connexion.
+if (!isset($_SESSION['login'])) {
+  header('location: connexion.php');
+}
+?>
 <!doctype html>
 <html lang="fr">
 
