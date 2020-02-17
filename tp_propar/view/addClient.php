@@ -28,7 +28,7 @@
   <div class="container-fluid">
     <div class="row d-flex justify-content-between header">
       <a<h1 class="headTitleLeft"> PROPAR </h1>
-      <h5 class="headTitleRight"><span style="font-size:30px;"> <i class="fas fa-sign-out-alt"></i></span> </h5>
+        <h5 class="headTitleRight"><span style="font-size:30px;"> <i class="fas fa-sign-out-alt"></i></span> </h5>
     </div>
   </div>
   <!-- SECTION -->
@@ -53,15 +53,22 @@
         </div>
 
 
-        </div>
-        <div class="display-5 col-12 text-center">
-          <button type="submit" id="addClient" class="btn btn-light" value="Ajouter"><span class="fa fa-plus-circle"></span> Ajouter</button>
-        </div>
-      </form>
     </div>
+    <div class="display-5 col-12 text-center">
+      <button type="submit" id="addClient" class="btn btn-light" value="Ajouter"><span class="fa fa-plus-circle"></span> Ajouter</button>
+    </div>
+    </form>
+  </div>
   </div>
   <!-- FIN FORMULAIRE -->
 
+  <!-- BOUTON MENU -->
+
+  <div class="menu">
+    <a action="../controler/type_control.php" method="post"><button type="button" id="home" class="btn btn-light btn-sm mb-2" value="Home"><span class="fa fa-bars"></span> Menu</button></a>
+  </div>
+
+  <!-- FIN BOUTON MENU -->
 
 </body>
 

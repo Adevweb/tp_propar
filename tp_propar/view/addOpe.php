@@ -70,8 +70,8 @@ $clientList = $_SESSION['clientList'];
             </div>
 
         </div>
-    <!-- FIN FORMULAIRE -->
-    <!-- FORMULAIRE -->
+        <!-- FIN FORMULAIRE -->
+        <!-- FORMULAIRE -->
         <div class="row justify-content-center">
             <div class="">
 
@@ -102,6 +102,14 @@ $clientList = $_SESSION['clientList'];
             </div>
         </div>
     </div>
+
+    <!-- BOUTON MENU -->
+
+    <div class="menu">
+        <a action="../controler/type_control.php" method="post"><button type="button" id="home" class="btn btn-light btn-sm mb-2" value="Home"><span class="fa fa-bars"></span> Menu</button></a>
+    </div>
+
+    <!-- FIN BOUTON MENU -->
 
 
 </body>

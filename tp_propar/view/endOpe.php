@@ -4,7 +4,7 @@ session_start();
 
 $id_user = $_SESSION['id_user'];
 
-$list = $_SESSION['listOpeCurrent'] ;
+$list = $_SESSION['listOpeCurrent'];
 ?>
 
 <!doctype html>
@@ -75,14 +75,14 @@ $list = $_SESSION['listOpeCurrent'] ;
         </div>
     </div>
 
-        <!-- FORMULAIRE -->
-        <div class="container ajouter2">
+    <!-- FORMULAIRE -->
+    <div class="container ajouter2">
         <div class="row justify-content-center">
             <div class="">
 
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-12">
-                    <table class="table table-hover">
+                        <table class="table table-hover">
                             <thead class="thead-dark">
                                 <tr>
                                     <th class="text-left"><strong class="font-weight-bold font-italic">ID Opération</strong></th>
@@ -118,7 +118,13 @@ $list = $_SESSION['listOpeCurrent'] ;
     </div>
     <!-- FIN FORMULAIRE -->
 
+    <!-- BOUTON MENU -->
 
+    <div class="menu">
+        <a action="../controler/type_control.php" method="post"><button type="button" id="home" class="btn btn-light btn-sm mb-2" value="Home"><span class="fa fa-bars"></span> Menu</button></a>
+    </div>
+
+    <!-- FIN BOUTON MENU -->
 
 </body>
 

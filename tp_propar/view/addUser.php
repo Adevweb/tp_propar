@@ -144,6 +144,13 @@ $userList = $_SESSION['userList'];
   </div>
   <!-- FIN FORMULAIRE -->
 
+  <!-- BOUTON MENU -->
+
+  <div class="menu">
+    <a action="../controler/type_control.php" method="post"><button type="button" id="home" class="btn btn-light btn-sm mb-2" value="Home"><span class="fa fa-bars"></span> Menu</button></a>
+  </div>
+
+  <!-- FIN BOUTON MENU -->
 
 </body>
 
