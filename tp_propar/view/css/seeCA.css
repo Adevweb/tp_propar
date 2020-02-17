@@ -66,6 +66,10 @@ body {
 .fas {
     font-size:50px;
 }
+.fas:hover {
+    color :#818D92; 
+}
+
 .title {
     font-family: 'Lobster';
     color : rgb(92, 131, 146);

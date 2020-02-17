@@ -58,6 +58,11 @@ body {
     color : white;
     text-shadow : 0px 0px 5px  #818D92;
 }
+
+.fas:hover {
+    color :#818D92; 
+}
+
 .header  {
     padding-top : 20px;
     padding-bottom : 10px;

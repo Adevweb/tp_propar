@@ -54,7 +54,7 @@ body {
     text-shadow : 0px 0px 5px  #818D92;
 }
 .headTitleRight {
-    margin-right : 5%;
+    margin-right : 5% !important;
     color : white;
     text-shadow : 0px 0px 5px  #818D92;
 }

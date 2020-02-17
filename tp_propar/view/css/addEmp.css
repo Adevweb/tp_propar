@@ -46,7 +46,7 @@ body {
 /* HEADER */
 
 .headTitleLeft {
-    margin-left: 5%;
+    margin-left: 50%;
     color : white;
     font-family: 'Rubik';
     font-weight: bold;
@@ -54,9 +54,12 @@ body {
     text-shadow : 0px 0px 5px  #818D92;
 }
 .headTitleRight  {
-    margin-right : 5%;
+    margin-right : 5% !important;
     color : white;
     text-shadow : 0px 0px 5px  #818D92;
+}
+.fas:hover {
+    color :#818D92; 
 }
 .header  {
     padding-top : 20px;
