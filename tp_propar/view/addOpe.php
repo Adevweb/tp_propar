@@ -32,7 +32,7 @@ $clientList = $_SESSION['clientList'];
     <div class="container-fluid">
         <div class="row d-flex justify-content-between header">
             <h1 class="headTitleLeft"> PROPAR </h1>
-            <h5 class="headTitleRight"><span style="font-size:30px;"> <i class="fas fa-sign-out-alt"></i></span> </h5>
+            <a href="../controler/endSession_action.php" class="headTitleRight"><h5><span style="font-size:30px;"> <i class="fas fa-sign-out-alt"></i></span> </h5></a>
         </div>
     </div>
     <!-- SECTION -->
