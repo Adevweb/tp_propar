@@ -2,3 +2,20 @@
 2020-02-18T10:42:56+00:00 TRACE connexion Un utilisateur s'est connecté
 2020-02-18T10:43:32+00:00 TRACE connexion Un utilisateur s'est connecté
 2020-02-18T10:44:20+00:00 TRACE connexion L'utilisateur adnbnt s'est connecté
+2020-02-18T12:29:07+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté
+2020-02-18T12:29:55+00:00 TRACE AJOUT CLIENT L'utilisateur a crée un client déjà existant
+2020-02-18T13:06:32+00:00 TRACE FINIR OPERATION L'utilisateur 1 s'est déconnecté
+2020-02-18T13:07:25+00:00 TRACE FINIR OPERATION L'utilisateur  s'est déconnecté
+2020-02-18T13:07:38+00:00 TRACE FINIR OPERATION L'utilisateur  s'est déconnecté
+2020-02-18T13:09:39+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté
+2020-02-18T13:09:43+00:00 TRACE FINIR OPERATION L'utilisateur 1 s'est déconnecté
+2020-02-18T13:10:15+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté
+2020-02-18T13:10:19+00:00 TRACE DECONNEXION L'utilisateur 1 s'est déconnecté
+2020-02-18T13:11:11+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté
+2020-02-18T13:11:13+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-18T13:16:07+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté
+2020-02-18T13:27:53+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté
+2020-02-18T13:28:11+00:00 TRACE AJOUT OPERATION adnbnt à ajouter une opération à un utilisateur qui été déjà à son maximum
+2020-02-18T13:29:45+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-18T13:33:34+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté
+2020-02-18T13:34:28+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération

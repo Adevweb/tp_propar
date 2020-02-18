@@ -19,7 +19,7 @@ class Connexion {
         $db=$dbi->getConnection();
         $result = $db->query("SELECT login, mdp, type, id_user, nom, prenom FROM utilisateur WHERE login = '$login' AND mdp = '$mdp'");
         $result = $result->fetch(PDO::FETCH_NUM);
-        //return $result;
+
         if ($result[2] == 'EXPERT') {
             $obj = new Expert($result[4], $result[5], $result[0], $result[1]);
             $obj->set_id($result[3]);
@@ -32,7 +32,6 @@ class Connexion {
         }
 
          return $obj; 
-        // [0] => login [1] => mdp [2] => type [3] => id_user  
     }
 
     /**

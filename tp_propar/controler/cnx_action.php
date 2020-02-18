@@ -5,8 +5,11 @@ require_once '../model/senior_class.php';
 require_once '../model/apprenti_class.php';
 require_once '../model/operation_class.php';
 
+//import de log4php
 include('../log/log4php/Logger.php');
+//Set la configuration
 Logger::configure('../log/config.xml');
+//Crée le logger
 $log = Logger::getLogger('CONNEXION');
 
 
@@ -22,11 +25,13 @@ if ($_POST) {
         //Stock la variables $_POST dans une variable
         $login = $_POST['login'];
     } else {
+        $log->debug("L'utilisateur a réussi à valider un champ vide");
         $validation = false;
     }
     if (isset($_POST['mdp']) && !empty($_POST['mdp'])) {
         $mdp = $_POST['mdp'];
     } else {
+        $log->debug("L'utilisateur a réussi à valider un champ vide");
         $validation = false;
     }
 }
@@ -57,6 +62,7 @@ if ($validation) {
     
     //Controle du type de user pour la bonne redirection
         if ($check->get_type() == "EXPERT") {
+                //Ajout d'un log avec l'utilisateur qui s'est connecté
                 $log->trace("L'utilisateur $login s'est connecté");   // Not logged because TRACE < WARN
                 header('location: ../view/homeAdmin.php');
             } else {
@@ -66,6 +72,7 @@ if ($validation) {
     }
 //Si le tableau est vide, c'est un utilisateur inconnu en BDD il est donc redirigé vers la page d'erreur
 else {
+    // Ajout d'un log si les login sont mauvais
     $log->info("L'utilisateur s'est connecté avec le mauvais Login ou MDP");    // Not logged because INFO < WARN
     header('location: ../view/cnxError.php');
     }
