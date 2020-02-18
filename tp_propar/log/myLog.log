@@ -35,3 +35,11 @@
 2020-02-18T14:52:01+00:00 TRACE AJOUT UTILISATEUR adnbnt a ajouter un utilisateur
 2020-02-18T14:52:09+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
 2020-02-18T14:52:18+00:00 TRACE CONNEXION L'utilisateur md5 s'est connecté
+2020-02-18T15:15:36+00:00 TRACE CONNEXION L'utilisateur md5 s'est connecté
+2020-02-18T15:17:58+00:00 TRACE AJOUT UTILISATEUR md5 a ajouter un utilisateur
+2020-02-18T15:18:02+00:00 TRACE DECONNEXION L'utilisateur md5 s'est déconnecté
+2020-02-18T15:18:07+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté
+2020-02-18T15:18:37+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération à un utilisateur non existant
+2020-02-18T15:19:09+00:00 INFO  AJOUT CLIENT adnbnt à ajouter un client
+2020-02-18T15:19:31+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
+2020-02-18T15:19:49+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
