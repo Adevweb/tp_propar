@@ -1,4 +1,17 @@
-AuthName "Page protégée : administration, veuillez vous identifier :"
+AuthName "Page protégée : Veuillez entrée vos identifiants d'entreprise :"
 AuthType Basic
 AuthUserFile "C:\wamp64\www\propar\src\tp_propar\.htpasswd"
 Require valid-user
+
+
+RewriteCond %{REQUEST_METHOD} POST
+RewriteCond %{REQUEST_URI} .wp-comments-post\.php*
+RewriteCond %{HTTP_REFERER} !.localhost/propar/src/tp_propar/.* [OR]
+RewriteCond %{HTTP_USER_AGENT} ^$
+RewriteRule (.*) ^http://%{REMOTE_ADDR}/$ [R=301,L]
+
+RewriteCond %{REQUEST_METHOD} GET
+RewriteCond %{QUERY_STRING} [a-zA-Z0-9_]=http:// [OR]
+RewriteCond %{QUERY_STRING} [a-zA-Z0-9_]=(\.\.//?)+ [OR]
+RewriteCond %{QUERY_STRING} [a-zA-Z0-9_]=/([a-z0-9_.]//?)+ [NC]
+RewriteRule .* - [F]
