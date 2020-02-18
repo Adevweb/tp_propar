@@ -23,3 +23,15 @@
 2020-02-18T13:56:19+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté
 2020-02-18T13:56:36+00:00 TRACE AJOUT UTILISATEUR cyn a ajouter un utilisateur
 2020-02-18T13:57:59+00:00 TRACE AJOUT UTILISATEUR adnbnt a ajouter un utilisateur
+2020-02-18T14:41:02+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-18T14:41:05+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté
+2020-02-18T14:41:12+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
+2020-02-18T14:41:16+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
+2020-02-18T14:41:44+00:00 TRACE AJOUT UTILISATEUR adnbnt a ajouter un utilisateur
+2020-02-18T14:45:45+00:00 TRACE AJOUT UTILISATEUR adnbnt a ajouter un utilisateur
+2020-02-18T14:45:59+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-18T14:49:00+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté
+2020-02-18T14:49:29+00:00 TRACE AJOUT UTILISATEUR adnbnt a ajouter un utilisateur
+2020-02-18T14:52:01+00:00 TRACE AJOUT UTILISATEUR adnbnt a ajouter un utilisateur
+2020-02-18T14:52:09+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-18T14:52:18+00:00 TRACE CONNEXION L'utilisateur md5 s'est connecté

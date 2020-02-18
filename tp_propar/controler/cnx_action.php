@@ -29,7 +29,7 @@ if ($_POST) {
         $validation = false;
     }
     if (isset($_POST['mdp']) && !empty($_POST['mdp'])) {
-        $mdp = $_POST['mdp'];
+        $mdp = md5($_POST['mdp']);
     } else {
         $log->debug("L'utilisateur a réussi à valider un champ vide");
         $validation = false;
