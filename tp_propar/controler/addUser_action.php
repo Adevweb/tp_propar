@@ -10,7 +10,7 @@ Logger::configure('../log/config.xml');
 //Crée le logger
 $log = Logger::getLogger('AJOUT UTILISATEUR');
 
-$login = $_SESSION['login'];
+$loginUser = $_SESSION['login'];
 
 $validation = true;
 
@@ -60,7 +60,7 @@ if ($check) {
 
 //Si il n'existe pas, il est créé : redirection vers success
 if ($validation) {
-    $log->trace("$login a ajouter un utilisateur");
+    $log->trace("$loginUser a ajouter un utilisateur");
     Expert::createUser($nom, $prenom, $type, $login, $mdp);
     header('location: ../view/success.php');
 }

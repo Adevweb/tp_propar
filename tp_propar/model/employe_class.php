@@ -25,7 +25,7 @@ abstract class Employe {
         }
     }
 
-    public static function nbCurrentOpe($idUser) {
+    public static function nbCurrentOpe($idUser) : int {
         $dbi = Singleton::getInstance();
         $db=$dbi->getConnection();
         $result = $db->query("SELECT COUNT(*) FROM operation WHERE id_user_FAIT = $idUser ");
@@ -76,5 +76,3 @@ abstract class Employe {
         return $this;
     }
 }
-
-?>

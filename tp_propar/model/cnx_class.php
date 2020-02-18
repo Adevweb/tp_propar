@@ -14,7 +14,7 @@ class Connexion {
         $this->_mdp = $mdp;
     }
 
-    public static function checkUser ($login, $mdp) {
+    public static function checkUser ($login, $mdp) : object {
         $dbi = Singleton::getInstance();
         $db=$dbi->getConnection();
         $result = $db->query("SELECT login, mdp, type, id_user, nom, prenom FROM utilisateur WHERE login = '$login' AND mdp = '$mdp'");

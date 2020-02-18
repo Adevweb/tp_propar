@@ -9,8 +9,8 @@ class Expert extends Employe {
     private $_login; //String
     private $_mdp; //String
     private $_nbOpe; //int
-    private $_id;
-    private $_opMax = 5;
+    private $_id; //int
+    private $_opMax = 5; //int
 
     public function __construct($nom, $prenom, $login, $mdp) {
         $this->_nom = $nom;
@@ -27,7 +27,7 @@ class Expert extends Employe {
 
     }
     
-    public static function checkUser($nom, $prenom, $type) {
+    public static function checkUser($nom, $prenom, $type) : bool {
         $dbi = Singleton::getInstance();
         $db=$dbi->getConnection();
         $result = $db->query("SELECT nom, prenom, type FROM utilisateur WHERE nom = '$nom' AND prenom = '$prenom' AND type = '$type'");
@@ -41,7 +41,7 @@ class Expert extends Employe {
         return $bool;
     }
 
-    public static function checkUserModify($id_user) {
+    public static function checkUserModify($id_user) : bool {
         $dbi = Singleton::getInstance();
         $db=$dbi->getConnection();
         $result = $db->query("SELECT id_user, type FROM utilisateur WHERE id_user = '$id_user'");
@@ -193,6 +193,3 @@ class Expert extends Employe {
         return $this;
     }
 }
-
-
-?>

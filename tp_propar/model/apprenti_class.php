@@ -138,6 +138,26 @@ class Apprenti extends Employe {
 
         return $this;
     }
+
+    /**
+     * Get the value of nbOp
+     */ 
+    public function getNbOp()
+    {
+        return $this->nbOp;
+    }
+
+    /**
+     * Set the value of nbOp
+     *
+     * @return  self
+     */ 
+    public function setNbOp($nbOp)
+    {
+        $this->nbOp = $nbOp;
+
+        return $this;
+    }
 }
 
 ?>

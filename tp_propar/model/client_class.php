@@ -13,7 +13,7 @@ class Client {
         $this->_prenom = $prenom;
     }
     
-    public static function getClientById ($id_client)  {
+    public static function getClientById ($id_client) : object  {
         $dbi = Singleton::getInstance();
         $db=$dbi->getConnection();
         $result = $db->query("SELECT * FROM client WHERE id_client = $id_client ");
@@ -25,13 +25,12 @@ class Client {
         return $client; // Objet
     }
 
-    public static function checkClient ($nom, $prenom) {
+    public static function checkClient ($nom, $prenom) : bool {
         $dbi = Singleton::getInstance();
         $db=$dbi->getConnection();
         $result = $db->query("SELECT nom, prenom FROM client WHERE nom = '$nom' AND prenom = '$prenom'");
         $result = $result->fetch(PDO::FETCH_ASSOC);
         $bool = false;
-        //return $result;
         
         if (isset($result) && !empty($result)) {
             $bool = true;
@@ -39,7 +38,7 @@ class Client {
         return $bool;
     }
 
-    public static function checkClientById($id_client) {
+    public static function checkClientById($id_client) : bool {
         $dbi = Singleton::getInstance();
         $db=$dbi->getConnection();
         $result = $db->query("SELECT id_client  FROM client WHERE id_client = '$id_client'");
@@ -53,14 +52,14 @@ class Client {
         return $bool;
     }
 
-    public static function createClient($nom, $prenom, $user_id /*Recupère le $POST */) {
+    public static function createClient($nom, $prenom, $user_id) : void {
         $dbi = Singleton::getInstance();
         $db=$dbi->getConnection();
        //RECUPERER USER ID 
         $db->query("INSERT INTO client (nom, prenom, id_user) VALUES ('$nom', '$prenom', '$user_id')");
     }
 
-    public static function clientList() {
+    public static function clientList() : array {
         $dbi = Singleton::getInstance();
         $db=$dbi->getConnection();
         $result = $db->query("SELECT id_client, nom, prenom FROM client  ");

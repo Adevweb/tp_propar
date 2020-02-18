@@ -29,16 +29,15 @@ class Operation {
         $this->_date = date("Y-m-d");
     }
 
-    public static function currentList($id_user) {
+    public static function currentList($id_user) : array {
         $dbi = Singleton::getInstance();
         $db=$dbi->getConnection();
         $result = $db->query("SELECT * FROM operation WHERE statut = 'En cours' AND id_user_FAIT = $id_user");
         $result = $result->fetchAll(PDO::FETCH_NUM);
         return $result;
-        
     }
 
-    public static function finishList($id) {
+    public static function finishList($id) : array {
         $dbi = Singleton::getInstance();
         $db=$dbi->getConnection();
         $result = $db->query("SELECT * FROM end_ope WHERE id_user_FAIT = '$id' ");
@@ -47,7 +46,7 @@ class Operation {
         
     }
 
-    public static function seeCA() {
+    public static function seeCA() : int {
         $dbi = Singleton::getInstance();
         $db=$dbi->getConnection();
         $result = $db->query("CALL see_CA();");
@@ -56,7 +55,7 @@ class Operation {
         return $ca;
     }
 
-    public static function endOpeCheck ($idOpe) {
+    public static function endOpeCheck ($idOpe) : bool {
         $dbi = Singleton::getInstance();
         $db=$dbi->getConnection();
         $result = $db->query("SELECT id_ope FROM operation WHERE id_ope = '$idOpe'");
@@ -69,7 +68,7 @@ class Operation {
         return $bool;
     }
 
-    public static function addOperation($description, $cout, $id_client, $id_assignation, $id_user_curr) {
+    public static function addOperation($description, $cout, $id_client, $id_assignation, $id_user_curr) : void {
         $ope = new Operation($cout, $description, $id_client, $id_assignation);
         $cout = $ope->get_cout();
         $description = $ope->get_descr();
@@ -78,15 +77,14 @@ class Operation {
         $type = $ope->get_type();
         $statut = $ope->get_statut();
         $date = $ope->get_date();
-        $id_user = $id_user_curr; // A MODIFIER = POST OU SESSION ID DE LUTILISATEUR CONNECTER
+        $id_user = $id_user_curr; 
 
         $dbi = Singleton::getInstance();
         $db=$dbi->getConnection();
-       //RECUPERER USER ID EN SESSION OU POST
         $db->query("INSERT INTO operation (description, type, statut, cout, date_comm, id_user, id_user_FAIT, id_client) VALUES ('$description', '$type', '$statut', '$cout', '$date', '$id_user', '$id_assignation', '$id_client')");  
     }
     
-    public static function endOperation($idOpe) {
+    public static function endOperation($idOpe) : void {
         // APPEL LE TRIGGER end_of_ope POUR ALIMENTER LA TABLE end_ope
         $dbi = Singleton::getInstance();
         $db=$dbi->getConnection();
