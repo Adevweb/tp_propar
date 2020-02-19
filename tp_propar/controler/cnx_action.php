@@ -5,16 +5,14 @@ require_once '../model/senior_class.php';
 require_once '../model/apprenti_class.php';
 require_once '../model/operation_class.php';
 
+session_start();
+
 //import de log4php
 include('../log/log4php/Logger.php');
 //Set la configuration
 Logger::configure('../log/config.xml');
 //Crée le logger
 $log = Logger::getLogger('CONNEXION');
-
-
-session_start();
-
 
 $validation = true;
 
@@ -38,16 +36,22 @@ if ($_POST) {
 
 //Si la validation des champs s'est correctement passer, on place les variables en session
 if ($validation) {
-    
-    //On appel checkUser pour vérifier dans la BDD l'existence des logins et retourne un OBJET
-    $check = Connexion::checkUser($login, $mdp);
+    //On TRY checkUser pour vérifier dans la BDD l'existence des logins et retourne un OBJET si le TRY fonctionne
+    try {
+        $check = Connexion::checkUser($login, $mdp);
+    } catch (Exception $e) {
+        //Sinon, un exception a été crée : elle crée un LOG et redirige vers la page de connexion
+        $log->warn("$e");   // Not logged because TRACE < WARN
+        header('location: "../view/error.php');
+    }
+
     //Si l'objet n'est pas vide...
     if (isset($check) && !empty($check)) {
         //Récupération des attributs 
         $_SESSION['login'] = $login;
         $_SESSION['mdp'] = $mdp;
         $_SESSION['id_user'] = $check->get_id();
-        $id_user = $_SESSION['id_user'];
+        $id_user = $_SESSION['id_user']; //Pour appel de méthodes : opération en cours, opération terminé et les log
         $_SESSION['type'] = $check->get_type();
         $_SESSION['opMax'] = $check->get_opMax();
         $_SESSION['nom'] = $check->get_nom();
@@ -70,10 +74,8 @@ if ($validation) {
                 header('location: ../view/homeUser.php');
             }
     }
-//Si le tableau est vide, c'est un utilisateur inconnu en BDD il est donc redirigé vers la page d'erreur
+//Si le tableau est vide et que le try/catch ne fonctionne plus, c'est un utilisateur inconnu en BDD il est donc redirigé vers la page d'erreur
 else {
-    // Ajout d'un log si les login sont mauvais
-    $log->info("L'utilisateur s'est connecté avec le mauvais Login ou MDP");    // Not logged because INFO < WARN
     header('location: ../view/cnxError.php');
     }
 }

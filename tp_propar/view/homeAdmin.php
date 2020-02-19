@@ -41,25 +41,57 @@ if ($_SESSION['type'] != 'EXPERT') {
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" ></script>
+  <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
+
   <script>
-  $(document).ready(function() {
-    $('#currentOp').DataTable();
-} ); </script>
-<script>
-  $(document).ready(function() {
-    $('#finishOp').DataTable();
-} ); </script>
+    // Tableau réduit en fonctionnalités
+    $(document).ready(function() {
+      $('#currentOp').DataTable({
+        "language": {
+          "lengthMenu": "Voir _MENU_ opérations par page",
+          "zeroRecords": "Aucune données",
+          "infoEmpty": "Aucune pages.",
+          "infoFiltered": "(Filtré sur _MAX_ lignes)",
+          "paginate": {
+            "previous": "Précédent",
+            "next": "Suivant"
+          },
+        },
+        "paging": false,
+        "info": false,
+        "searching": false
+      });
+    });
+
+    $(document).ready(function() {
+      $('#finishOp').DataTable({
+        "language": {
+          "lengthMenu": "Voir _MENU_ opérations par page",
+          "zeroRecords": "Aucune données",
+          "info": "Page  _PAGE_  sur  _PAGES_ ",
+          "infoEmpty": "Aucune pages.",
+          "infoFiltered": "(Filtré sur _MAX_ lignes)",
+          "search": "Rechercher :",
+          "paginate": {
+            "previous": "Précédent",
+            "next": "Suivant"
+          },
+        },
+        "pagingType": "simple",
+      });
+    });
+  </script>
 
   <!-- HEADER -->
   <div class="container-fluid">
     <div class="row d-flex justify-content-between header">
       <h1 class="headTitleLeft"> PROPAR </h1>
-      <a href="../controler/endSession_action.php" class="headTitleRight"><h5><span style="font-size:30px;"> <i class="fas fa-sign-out-alt"></i></span> </h5></a>
+      <a href="../controler/endSession_action.php" class="headTitleRight">
+        <h5><span style="font-size:30px;"> <i class="fas fa-sign-out-alt"></i></span> </h5>
+      </a>
     </div>
   </div>
   <!-- TITRE SECTION -->
@@ -121,18 +153,18 @@ if ($_SESSION['type'] != 'EXPERT') {
 
           <div class="row d-flex justify-content-center">
             <div class="col-md-12">
-              <table id ="currentOp" class="table table-hover">
-                <thead class="thead-dark">
+              <table id="currentOp" class="table table-hover table-sm">
+                <thead class="justify-content-center">
                   <tr>
-                    <th class="text-left"><strong class="font-weight-bold font-italic">ID Opération</strong></th>
-                    <th class="text-center"><strong class="font-weight-bold font-italic">Description</strong></th>
-                    <th class="text-center"><strong class="font-weight-bold font-italic">Type d'Opé</strong></th>
-                    <th class="text-center"><strong class="font-weight-bold font-italic">Statut</strong></th>
-                    <th class="text-center"><strong class="font-weight-bold font-italic">Coût</strong></th>
-                    <th class="text-center"><strong class="font-weight-bold font-italic">Date commencement</strong></th>
-                    <th class="text-center"><strong class="font-weight-bold font-italic">Ajouter par n° </strong></th>
-                    <th class="text-center"><strong class="font-weight-bold font-italic">Effectuer n°</strong></th>
-                    <th class="text-right"><strong class="font-weight-bold font-italic">ID client</strong></th>
+                    <th class="text-left table-info"><strong class="font-weight-bold font-italic">#</strong></th>
+                    <th class="text-center table-info"><strong class="font-weight-bold font-italic">Description</strong></th>
+                    <th class="text-center table-info"><strong class="font-weight-bold font-italic">Type d'Opé</strong></th>
+                    <th class="text-center table-info"><strong class="font-weight-bold font-italic">Statut</strong></th>
+                    <th class="text-center table-info"><strong class="font-weight-bold font-italic">Coût</strong></th>
+                    <th class="text-center table-info"><strong class="font-weight-bold font-italic">Date commencement</strong></th>
+                    <th class="text-center table-info"><strong class="font-weight-bold font-italic">Ajouter par n° </strong></th>
+                    <th class="text-center table-info"><strong class="font-weight-bold font-italic">Effectuer n°</strong></th>
+                    <th class="text-center table-info"><strong class="font-weight-bold font-italic">ID client</strong></th>
 
                   </tr>
                 </thead>
@@ -166,19 +198,19 @@ if ($_SESSION['type'] != 'EXPERT') {
 
           <div class="row d-flex justify-content-center">
             <div class="col-md-12">
-              <table id="finishOp" class="table table-hover">
-                <thead class="thead-dark">
+              <table id="finishOp" class="table table-hover table-sm">
+                <thead class=" justify-content-center">
                   <tr>
-                    <th class="text-left"><strong class="font-weight-bold font-italic">ID Opération</strong></th>
-                    <th class="text-center"><strong class="font-weight-bold font-italic">Description</strong></th>
-                    <th class="text-center"><strong class="font-weight-bold font-italic">Type d'Opé</strong></th>
-                    <th class="text-center"><strong class="font-weight-bold font-italic">Statut</strong></th>
-                    <th class="text-center"><strong class="font-weight-bold font-italic">Coût</strong></th>
-                    <th class="text-center"><strong class="font-weight-bold font-italic">Date commencement</strong></th>
-                    <th class="text-center"><strong class="font-weight-bold font-italic">Ajouter par n° </strong></th>
-                    <th class="text-center"><strong class="font-weight-bold font-italic">Effectuer n°</strong></th>
-                    <th class="text-right"><strong class="font-weight-bold font-italic">ID client</strong></th>
-                    <th class="text-right"><strong class="font-weight-bold font-italic">Date de fin</strong></th>
+                    <th class="text-left table-info"><strong class="font-weight-bold font-italic">#</strong></th>
+                    <th class="text-center table-info"><strong class="font-weight-bold font-italic">Description</strong></th>
+                    <th class="text-center table-info"><strong class="font-weight-bold font-italic">Type d'Opé</strong></th>
+                    <th class="text-center table-info"><strong class="font-weight-bold font-italic">Statut</strong></th>
+                    <th class="text-center table-info"><strong class="font-weight-bold font-italic">Coût</strong></th>
+                    <th class="text-center table-info"><strong class="font-weight-bold font-italic">Date commencement</strong></th>
+                    <th class="text-center table-info"><strong class="font-weight-bold font-italic">Ajouter par n° </strong></th>
+                    <th class="text-center table-info"><strong class="font-weight-bold font-italic">Effectuer n°</strong></th>
+                    <th class="text-center table-info"><strong class="font-weight-bold font-italic">ID client</strong></th>
+                    <th class="text-center table-info"><strong class="font-weight-bold font-italic">Date de fin</strong></th>
                   </tr>
                 </thead>
                 <tbody>

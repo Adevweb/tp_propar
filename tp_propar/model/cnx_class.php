@@ -20,18 +20,23 @@ class Connexion {
         $result = $db->query("SELECT login, mdp, type, id_user, nom, prenom FROM utilisateur WHERE login = '$login' AND mdp = '$mdp'");
         $result = $result->fetch(PDO::FETCH_NUM);
 
-        if ($result[2] == 'EXPERT') {
-            $obj = new Expert($result[4], $result[5], $result[0], $result[1]);
-            $obj->set_id($result[3]);
-        } elseif ($result[2] == 'SENIOR') {
-            $obj = new Senior($result[4], $result[5], $result[0], $result[1]);
-            $obj->set_id($result[3]);
-        } elseif ($result[2] == 'APPRENTI') {
-            $obj = new Apprenti($result[4], $result[5], $result[0], $result[1]);
-            $obj->set_id($result[3]);
-        }
 
-         return $obj; 
+
+        if (isset($result) && !empty($result)) {
+            if ($result[2] == 'EXPERT') {
+                $obj = new Expert($result[4], $result[5], $result[0], $result[1]);
+                $obj->set_id($result[3]);
+            } elseif ($result[2] == 'SENIOR') {
+                $obj = new Senior($result[4], $result[5], $result[0], $result[1]);
+                $obj->set_id($result[3]);
+            } elseif ($result[2] == 'APPRENTI') {
+                $obj = new Apprenti($result[4], $result[5], $result[0], $result[1]);
+                $obj->set_id($result[3]);
+            }
+            return $obj; 
+        } else {
+            throw new Exception("L'utilisateur n'existe pas !");
+        }
     }
 
     /**

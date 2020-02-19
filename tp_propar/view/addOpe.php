@@ -32,8 +32,51 @@ if (!isset($_SESSION['login'])) {
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        // Tableau réduit en fonctionnalités
+        $(document).ready(function() {
+            $('#tabClient').DataTable({
+                "language": {
+                    "lengthMenu": "Voir _MENU_ opérations par page",
+                    "zeroRecords": "Aucune données",
+                    "info": "Page  _PAGE_  sur  _PAGES_ ",
+                    "infoEmpty": "Aucune pages.",
+                    "infoFiltered": "(Filtré sur _MAX_ lignes)",
+                    "search": "Rechercher :",
+                    "paginate": {
+                        "previous": "Précédent",
+                        "next": "Suivant"
+                    },
+                },
+                "pagingType": "simple",
+                "lengthChange" : false,
+            });
+        });
+
+        $(document).ready(function() {
+            $('#tabUser').DataTable({
+                "language": {
+                    "lengthMenu": "Voir _MENU_ opérations par page",
+                    "zeroRecords": "Aucune données",
+                    "info": "Page  _PAGE_  sur  _PAGES_ ",
+                    "infoEmpty": "Aucune pages.",
+                    "infoFiltered": "(Filtré sur _MAX_ lignes)",
+                    "search": "Rechercher :",
+                    "paginate": {
+                        "previous": "Précédent",
+                        "next": "Suivant"
+                    },
+                },
+                "pagingType": "simple",
+                "lengthChange" : false,
+            });
+        });
+    </script>
+
     <!-- HEADER -->
     <div class="container-fluid">
         <div class="row d-flex justify-content-between header">
@@ -84,12 +127,12 @@ if (!isset($_SESSION['login'])) {
                 <div>
                     <h3 class="display-4 col-12 text-center tabTitle">Liste des clients</h3>
                 </div>
-                <table class="table table-hover">
-                    <thead class="thead-dark">
+                <table id="tabClient" class="table table-hover table-sm">
+                    <thead class="justify-content-center">
                         <tr>
-                            <th class="text-left"><strong class="font-weight-bold font-italic">ID Client</strong></th>
-                            <th class="text-center"><strong class="font-weight-bold font-italic">NOM</strong></th>
-                            <th class="text-right"><strong class="font-weight-bold font-italic">Prénom</strong></th>
+                            <th class="text-left table-info"><strong class="font-weight-bold font-italic">#</strong></th>
+                            <th class="text-center table-info"><strong class="font-weight-bold font-italic">NOM</strong></th>
+                            <th class="text-center table-info"><strong class="font-weight-bold font-italic">Prénom</strong></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -109,13 +152,13 @@ if (!isset($_SESSION['login'])) {
                 <div>
                     <h3 class="display-4 col-12 text-center tabTitle">Liste des Utilisateurs</h3>
                 </div>
-                <table class="table table-hover">
-                    <thead class="thead-dark">
+                <table id="tabUser" class="table table-hover table-sm">
+                    <thead class="justify-content-center">
                         <tr>
-                            <th class="text-left"><strong class="font-weight-bold font-italic">ID Utilisateur</strong></th>
-                            <th class="text-center"><strong class="font-weight-bold font-italic">NOM</strong></th>
-                            <th class="text-center"><strong class="font-weight-bold font-italic">Prénom</strong></th>
-                            <th class="text-right"><strong class="font-weight-bold font-italic">Type</strong></th>
+                            <th class="text-left table-info"><strong class="font-weight-bold font-italic">#</strong></th>
+                            <th class="text-center table-info"><strong class="font-weight-bold font-italic">NOM</strong></th>
+                            <th class="text-center table-info"><strong class="font-weight-bold font-italic">Prénom</strong></th>
+                            <th class="text-center table-info"><strong class="font-weight-bold font-italic">Type</strong></th>
                         </tr>
                     </thead>
                     <tbody>

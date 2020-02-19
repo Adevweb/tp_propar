@@ -61,7 +61,8 @@ body {
 .header  {
     padding-top : 20px;
     padding-bottom : 10px;
-    background-image: url("../img/back.jpg");
+    background-image: url("../img/back4.png");
+    background-size: cover;
 }
 .fas {
     font-size:50px;
@@ -73,7 +74,7 @@ body {
 
 .title {
     font-family: 'Lobster';
-    color : rgb(92, 131, 146);
+    color : rgb(92, 146, 137, 0.616);
     padding-top: 30px;
 
 }
@@ -99,7 +100,7 @@ button[type=submit] {
     font-size: 20px;
     width : 150px;
     align-content: center;
-    background-color: rgb(94, 112, 119);
+    background-color: rgb(92, 146, 137, 0.616);
     color : #ffffff;
 }
 
@@ -130,6 +131,18 @@ button[type=button] {
     font-size: 16px;
     width : 100px;
     align-content: center;
-    background-color: rgb(94, 112, 119);
+    background-color: rgb(92, 146, 137, 0.616);
     color : #ffffff;
+}
+
+th {
+    color:rgb(92, 146, 137);
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+    border:none;
+    text-align : center;
 }

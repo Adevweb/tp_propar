@@ -61,7 +61,8 @@ body {
 .header  {
     padding-top : 20px;
     padding-bottom : 10px;
-    background-image: url("../img/back.jpg");
+    background-image: url("../img/back4.png");
+    background-size: cover;
 }
 .fas {
     font-size:50px;
@@ -71,7 +72,7 @@ body {
 }
 .title {
     font-weight: bold !important;
-    color : rgb(92, 131, 146);
+    color : rgb(92, 146, 137, 0.616);
     padding-top:5%;
     
 }
@@ -82,9 +83,8 @@ section {
 
 .centerTitle {
     font-family: 'Lobster' !important;
-    color : rgb(92, 131, 146);
+    color : rgb(92, 146, 137, 0.616);
     padding-top: 30px;
-
 }
 .article {
     background-color: #f0efef;
@@ -109,9 +109,20 @@ img {
   }
 
 .button[type=button] {
-    background-color: rgb(94, 112, 119);
+    background-color: rgb(92, 146, 137, 0.616);
     color: #ffffff;
     border:none;
     margin-top : 5%;
     border-radius: 45% !important;
+}
+
+th {
+    color:rgb(92, 146, 137);
+}
+table {
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+    border:none;
+    text-align : center;
 }
