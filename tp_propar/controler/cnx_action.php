@@ -25,7 +25,7 @@ if ($_POST) {
         $log->debug("L'utilisateur a réussi à valider un champ vide");
         $validation = false;
     }
-    if (isset($_POST['mdp']) && !empty($_POST['mdp'])) {
+    if (isset($_POST['mdp']) && !empty($_POST['mdp']) && preg_match('/^(?=.*[a-z])(?=.*\d).{6,30}$/i', $_POST['mdp'])) {
         $mdp = md5($_POST['mdp']);
     } else {
         $log->debug("L'utilisateur a réussi à valider un champ vide");

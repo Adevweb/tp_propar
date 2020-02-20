@@ -11,7 +11,7 @@ Logger::configure('../log/config.xml');
 $log = Logger::getLogger('AJOUT UTILISATEUR');
 
 $loginUser = $_SESSION['login'];
-
+$type = $_SESSION['type'];
 $validation = true;
 
 //Verifie que les champs ne sont pas vides : boolean

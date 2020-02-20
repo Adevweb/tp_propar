@@ -20,7 +20,7 @@ $(document).ready(function(){
                     window.location.href = '../view/homeUser.php'
                 }
                 else { 
-                    $("#ajaxRes").html("<p> Les identifiants sont incorrect. </p>");
+                    $("#ajaxRes").html("<p> Les identifiants sont incorrect. <br><br> Veuillez entrer un mot de passe compris entre 6-30 caractères et contenant au moins 1 lettre et 1 chiffre.  </p>");
                 }
 
             },

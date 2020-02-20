@@ -154,7 +154,7 @@ if (!isset($_SESSION['login'])) {
     <!-- BOUTON MENU -->
 
     <div class="menu">
-        <button type="button" id="home"  class="btn btn-light btn-sm mb-2" value="Home"><span class="fa fa-bars"></span> Menu</button>
+        <a href="../controler/type_control.php"><button type="button" id="home" class="btn btn-light btn-sm mb-2" value="Home"><span class="fa fa-bars"></span> Menu</button></a>
     </div>
 
     <!-- FIN BOUTON MENU -->

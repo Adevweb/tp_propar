@@ -21,29 +21,32 @@ $validation = true;
 //Verifie que les champs ne sont pas vides : boolean
 if ($_POST) {
     //Si les champs ne sont pas vides...
-    if (isset($_POST['id_client']) && !empty($_POST['id_client'])) {
+    if (isset($_POST['id_client']) && !empty($_POST['id_client']) && preg_match('[0-9]',$_POST['id_client'])) {
         //Stock la variables $_POST dans une variable
         $id_client = $_POST['id_client'];
     } else {
-        $log->debug("$login à valider un champ vide");
+        $log->debug("$login à valider un champ vide ou pas au bon format");
+        header('location: ../view/error.php');
         $validation = false;
     }
-    if (isset($_POST['id_user']) && !empty($_POST['id_user'])) {
+    if (isset($_POST['id_user']) && !empty($_POST['id_user']) && preg_match('[0-9]',$_POST['id_user'])) {
         $id_assignation = $_POST['id_user'];
     } else {
-        $log->debug("$login à valider un champ vide");
+        $log->debug("$login à valider un champ vide ou pas au bon format");
+        header('location: ../view/error.php');
         $validation = false;
     }
-    if (isset($_POST['cout']) && !empty($_POST['cout'])) {
+    if (isset($_POST['cout']) && !empty($_POST['cout']) && preg_match('[0-9]',$_POST['cout'])) {
         $cout = $_POST['cout'];
     } else {
-        $log->debug("$login à valider un champ vide");
+        $log->debug("$login à valider un champ vide ou pas au bon format");
+        header('location: ../view/error.php');
         $validation = false;
     }
     if (isset($_POST['descr']) && !empty($_POST['descr'])) {
         $descr = $_POST['descr'];
     } else {
-        $log->debug("$login à valider un champ vide");
+        $log->debug("$login à valider un champ vide ou pas au bon format");
         $validation = false;
     }
 }
