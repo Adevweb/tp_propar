@@ -7,7 +7,7 @@ $id_user = $_SESSION['id_user'];
 $list = $_SESSION['listOpeCurrent'];
 //Verification SI le login en session est vide, donc un accès par URL -> redirection vers page connexion.
 if (!isset($_SESSION['login'])) {
-  header('location: connexion.php');
+    header('location: connexion.php');
 }
 
 ?>
@@ -41,33 +41,35 @@ if (!isset($_SESSION['login'])) {
     <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
+
     <script>
-    $(document).ready(function() {
+        // Tableau réduit en fonctionnalités
+        $(document).ready(function() {
             $('#currentOp').DataTable({
                 "language": {
                     "lengthMenu": "Voir _MENU_ opérations par page",
-                    "zeroRecords": "Aucune données.",
-                    "info": "Page  _PAGE_  sur  _PAGES_ ",
+                    "zeroRecords": "Aucune données",
                     "infoEmpty": "Aucune pages.",
                     "infoFiltered": "(Filtré sur _MAX_ lignes)",
-                    "search": "Rechercher :",
                     "paginate": {
                         "previous": "Précédent",
                         "next": "Suivant"
                     },
                 },
-                "pagingType": "simple",
-                "lengthChange" : false,
+                "paging": false,
+                "info": false,
+                "searching": false
             });
         });
     </script>
-    
+
     <!-- HEADER -->
     <div class="container-fluid">
         <div class="row d-flex justify-content-between header">
             <h1 class="headTitleLeft"> PROPAR </h1>
-            <a href="../controler/endSession_action.php" class="headTitleRight"><h5><span style="font-size:30px;"> <i class="fas fa-sign-out-alt"></i></span> </h5></a>
+            <a href="../controler/endSession_action.php" class="headTitleRight">
+                <h5><span style="font-size:30px;"> <i class="fas fa-sign-out-alt"></i></span> </h5>
+            </a>
         </div>
     </div>
     <!-- SECTION -->
@@ -100,8 +102,6 @@ if (!isset($_SESSION['login'])) {
                                 </tr>
                             </thead>
                             <tbody>
-                                <!--  Generating one more line of table compared to .csv file for display results of addition-->
-
                                 <?php for ($i = 0; $i <= sizeof($list) - 1; $i++) { ?>
                                     <tr>
                                         <?php for ($j = 0; $j <= sizeof($list[$i]) - 1; $j++) { ?>

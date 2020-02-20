@@ -5,7 +5,6 @@ require_once '../model/senior_class.php';
 require_once '../model/apprenti_class.php';
 require_once '../model/operation_class.php';
 
-session_start();
 
 //import de log4php
 include('../log/log4php/Logger.php');
@@ -39,14 +38,17 @@ if ($validation) {
     //On TRY checkUser pour vérifier dans la BDD l'existence des logins et retourne un OBJET si le TRY fonctionne
     try {
         $check = Connexion::checkUser($login, $mdp);
+
     } catch (Exception $e) {
         //Sinon, un exception a été crée : elle crée un LOG et redirige vers la page de connexion
-        $log->warn("$e");   // Not logged because TRACE < WARN
-        header('location: "../view/error.php');
+        $log->warn("$e");   
+        //header('location: "../view/error.php');
+        echo 'Failed';
     }
 
     //Si l'objet n'est pas vide...
     if (isset($check) && !empty($check)) {
+        session_start(); //Démarrage d'une session
         //Récupération des attributs 
         $_SESSION['login'] = $login;
         $_SESSION['mdp'] = $mdp;
@@ -63,19 +65,17 @@ if ($validation) {
         //Appel de la fonction qui liste les opérations terminées et place en $_SESSION
         $finishList = Operation::finishList($id_user);
         $_SESSION['finishList'] = $finishList;
-    
+    }
+
     //Controle du type de user pour la bonne redirection
         if ($check->get_type() == "EXPERT") {
                 //Ajout d'un log avec l'utilisateur qui s'est connecté
-                $log->trace("L'utilisateur $login s'est connecté");   // Not logged because TRACE < WARN
-                header('location: ../view/homeAdmin.php');
+                $log->trace("L'utilisateur $login s'est connecté en tant qu'Expert");   
+                //header('location: ../view/homeAdmin.php');
+                echo 'ExpertOK';
             } else {
-                $log->trace("L'utilisateur $login s'est connecté");   // Not logged because TRACE < WARN
-                header('location: ../view/homeUser.php');
+                $log->trace("L'utilisateur $login s'est connecté en tant qu'utilisateur");   
+                //header('location: ../view/homeUser.php');
+                echo 'UserOK';
             }
-    }
-//Si le tableau est vide et que le try/catch ne fonctionne plus, c'est un utilisateur inconnu en BDD il est donc redirigé vers la page d'erreur
-else {
-    header('location: ../view/cnxError.php');
-    }
 }

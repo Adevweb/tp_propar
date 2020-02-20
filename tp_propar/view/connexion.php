@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="fr">
 
@@ -24,6 +25,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/cnx.js"></script>
     <!-- HEADER -->
     <div class="container-fluid">
         <div class="row d-flex justify-content-center header">
@@ -45,14 +48,17 @@
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-body">
-                        <form action="../controler/cnx_action.php" method="post">
+                        <form>
                             <div class="form-group">                            
-                                <input type="text" class="form-control" name="login" placeholder="Login" required>
+                                <input type="text" class="form-control" id="login" name="login" placeholder="Login" required>
                             </div>
                             <div class="form-group">
-                                <input type="password" class="form-control" name="mdp" placeholder="Mot de passe" required>
+                                <input type="password" class="form-control" id="mdp" name="mdp" placeholder="Mot de passe" required>
                             </div>
-                            <button type="submit" id="sendlogin" class="btn btn-outline-light" value="Se connecter"><span class="fa fa-check-circle"></span> Se connecter</button>                            
+                            <div id="ajaxRes">
+                                
+                            </div>
+                            <button type="submit" id="sendLogin" class="btn btn-outline-light" value="Se connecter"><span class="fa fa-check-circle"></span> Se connecter</button>                            
                         </form>
                     </div>
                 </div>
@@ -65,3 +71,5 @@
 </body>
 
 </html>
+
+ 

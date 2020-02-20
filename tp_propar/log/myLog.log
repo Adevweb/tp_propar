@@ -1,108 +1,24 @@
-2020-02-18T10:42:38+00:00 INFO  connexion L'utilisateur s'est connecté avec le mauvais Login ou MDP
-2020-02-18T10:42:56+00:00 TRACE connexion Un utilisateur s'est connecté
-2020-02-18T10:43:32+00:00 TRACE connexion Un utilisateur s'est connecté
-2020-02-18T10:44:20+00:00 TRACE connexion L'utilisateur adnbnt s'est connecté
-2020-02-18T12:29:07+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté
-2020-02-18T12:29:55+00:00 TRACE AJOUT CLIENT L'utilisateur a crée un client déjà existant
-2020-02-18T13:06:32+00:00 TRACE FINIR OPERATION L'utilisateur 1 s'est déconnecté
-2020-02-18T13:07:25+00:00 TRACE FINIR OPERATION L'utilisateur  s'est déconnecté
-2020-02-18T13:07:38+00:00 TRACE FINIR OPERATION L'utilisateur  s'est déconnecté
-2020-02-18T13:09:39+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté
-2020-02-18T13:09:43+00:00 TRACE FINIR OPERATION L'utilisateur 1 s'est déconnecté
-2020-02-18T13:10:15+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté
-2020-02-18T13:10:19+00:00 TRACE DECONNEXION L'utilisateur 1 s'est déconnecté
-2020-02-18T13:11:11+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté
-2020-02-18T13:11:13+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
-2020-02-18T13:16:07+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté
-2020-02-18T13:27:53+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté
-2020-02-18T13:28:11+00:00 TRACE AJOUT OPERATION adnbnt à ajouter une opération à un utilisateur qui été déjà à son maximum
-2020-02-18T13:29:45+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
-2020-02-18T13:33:34+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté
-2020-02-18T13:34:28+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
-2020-02-18T13:56:11+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
-2020-02-18T13:56:19+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté
-2020-02-18T13:56:36+00:00 TRACE AJOUT UTILISATEUR cyn a ajouter un utilisateur
-2020-02-18T13:57:59+00:00 TRACE AJOUT UTILISATEUR adnbnt a ajouter un utilisateur
-2020-02-18T14:41:02+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
-2020-02-18T14:41:05+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté
-2020-02-18T14:41:12+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
-2020-02-18T14:41:16+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
-2020-02-18T14:41:44+00:00 TRACE AJOUT UTILISATEUR adnbnt a ajouter un utilisateur
-2020-02-18T14:45:45+00:00 TRACE AJOUT UTILISATEUR adnbnt a ajouter un utilisateur
-2020-02-18T14:45:59+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
-2020-02-18T14:49:00+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté
-2020-02-18T14:49:29+00:00 TRACE AJOUT UTILISATEUR adnbnt a ajouter un utilisateur
-2020-02-18T14:52:01+00:00 TRACE AJOUT UTILISATEUR adnbnt a ajouter un utilisateur
-2020-02-18T14:52:09+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
-2020-02-18T14:52:18+00:00 TRACE CONNEXION L'utilisateur md5 s'est connecté
-2020-02-18T15:15:36+00:00 TRACE CONNEXION L'utilisateur md5 s'est connecté
-2020-02-18T15:17:58+00:00 TRACE AJOUT UTILISATEUR md5 a ajouter un utilisateur
-2020-02-18T15:18:02+00:00 TRACE DECONNEXION L'utilisateur md5 s'est déconnecté
-2020-02-18T15:18:07+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté
-2020-02-18T15:18:37+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération à un utilisateur non existant
-2020-02-18T15:19:09+00:00 INFO  AJOUT CLIENT adnbnt à ajouter un client
-2020-02-18T15:19:31+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
-2020-02-18T15:19:49+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
-2020-02-19T08:02:24+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté
-2020-02-19T08:41:56+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
-2020-02-19T08:42:38+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
-2020-02-19T08:43:02+00:00 INFO  AJOUT CLIENT adnbnt à ajouter un client
-2020-02-19T08:43:13+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
-2020-02-19T08:43:26+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
-2020-02-19T08:49:50+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
-2020-02-19T08:50:02+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté
-2020-02-19T08:50:15+00:00 TRACE AJOUT UTILISATEUR adnbnt a ajouter un utilisateur
-2020-02-19T08:50:25+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
-2020-02-19T08:50:29+00:00 TRACE CONNEXION L'utilisateur lolo s'est connecté
-2020-02-19T08:54:09+00:00 TRACE DECONNEXION L'utilisateur lolo s'est déconnecté
-2020-02-19T08:56:02+00:00 INFO  CONNEXION L'utilisateur s'est connecté avec le mauvais Login ou MDP
-2020-02-19T09:53:40+00:00 WARN  CONNEXION L'utilisateur s'est connecté avec de mauvais identifiants
-2020-02-19T09:53:40+00:00 INFO  CONNEXION L'utilisateur s'est connecté avec le mauvais Login ou MDP
-2020-02-19T09:57:05+00:00 WARN  CONNEXION L'utilisateur s'est connecté avec de mauvais identifiants
-2020-02-19T09:57:05+00:00 INFO  CONNEXION L'utilisateur s'est connecté avec le mauvais Login ou MDP
-2020-02-19T09:57:12+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté
-2020-02-19T09:57:27+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
-2020-02-19T10:00:16+00:00 WARN  CONNEXION L'utilisateur s'est connecté avec de mauvais identifiants
-2020-02-19T10:00:16+00:00 INFO  CONNEXION L'utilisateur s'est connecté avec le mauvais Login ou MDP
-2020-02-19T10:03:52+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:38
+2020-02-20T10:27:22+00:00 TRACE CONNEXION L'utilisateur lolo s'est connecté en tant qu'utilisateur
+2020-02-20T10:29:37+00:00 TRACE CONNEXION L'utilisateur lolo s'est connecté en tant qu'utilisateur
+2020-02-20T10:29:38+00:00 TRACE CONNEXION L'utilisateur lolo s'est connecté en tant qu'utilisateur
+2020-02-20T10:29:38+00:00 TRACE CONNEXION L'utilisateur lolo s'est connecté en tant qu'utilisateur
+2020-02-20T10:29:39+00:00 TRACE CONNEXION L'utilisateur lolo s'est connecté en tant qu'utilisateur
+2020-02-20T10:31:14+00:00 TRACE CONNEXION L'utilisateur lolo s'est connecté en tant qu'utilisateur
+2020-02-20T10:32:54+00:00 TRACE CONNEXION L'utilisateur lolo s'est connecté en tant qu'utilisateur
+2020-02-20T10:33:02+00:00 TRACE DECONNEXION L'utilisateur lolo s'est déconnecté
+2020-02-20T10:33:27+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-20T10:35:00+00:00 TRACE AJOUT UTILISATEUR adnbnt a ajouter un utilisateur
+2020-02-20T10:35:08+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-20T10:35:15+00:00 TRACE CONNEXION L'utilisateur alex s'est connecté en tant qu'utilisateur
+2020-02-20T10:35:30+00:00 TRACE DECONNEXION L'utilisateur alex s'est déconnecté
+2020-02-20T10:35:35+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:38
 Stack trace:
-#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(44): Connexion::checkUser('fdgfd', 'c21d560be051a1a...')
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('md5', '202cb962ac59075...')
 #1 {main}
-2020-02-19T10:03:52+00:00 INFO  CONNEXION L'utilisateur s'est connecté avec le mauvais Login ou MDP
-2020-02-19T10:05:00+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:38
-Stack trace:
-#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(44): Connexion::checkUser('drdy', 'd8ad72d9220290c...')
-#1 {main}
-2020-02-19T10:05:48+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:38
-Stack trace:
-#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(44): Connexion::checkUser('fdsgfdg', 'c21d560be051a1a...')
-#1 {main}
-2020-02-19T10:16:43+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté
-2020-02-19T10:56:26+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
-2020-02-19T10:56:31+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
-2020-02-19T11:11:36+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
-2020-02-19T11:11:47+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
-2020-02-19T11:12:00+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
-2020-02-19T11:12:12+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
-2020-02-19T11:12:27+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
-2020-02-19T11:12:41+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
-2020-02-19T11:12:51+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
-2020-02-19T11:12:57+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
-2020-02-19T11:13:02+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
-2020-02-19T11:13:07+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
-2020-02-19T11:13:12+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
-2020-02-19T12:08:49+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
-2020-02-19T12:09:02+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
-2020-02-19T12:09:12+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
-2020-02-19T12:09:23+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
-2020-02-19T12:09:34+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
-2020-02-19T12:09:46+00:00 TRACE AJOUT OPERATION adnbnt à ajouter une opération à un utilisateur qui été déjà à son maximum
-2020-02-19T12:09:52+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
-2020-02-19T12:09:56+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
-2020-02-19T12:10:01+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
-2020-02-19T12:10:06+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
-2020-02-19T12:10:10+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
-2020-02-19T12:51:02+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
-2020-02-19T13:02:02+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté
-2020-02-19T13:37:04+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
-2020-02-19T13:37:18+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté
+2020-02-20T10:35:59+00:00 TRACE CONNEXION L'utilisateur md5 s'est connecté en tant qu'Expert
+2020-02-20T10:36:06+00:00 TRACE DECONNEXION L'utilisateur md5 s'est déconnecté
+2020-02-20T10:38:15+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-20T12:05:57+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
+2020-02-20T12:19:09+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
+2020-02-20T12:19:18+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
+2020-02-20T12:19:32+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération

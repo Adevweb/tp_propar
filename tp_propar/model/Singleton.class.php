@@ -19,10 +19,10 @@ class Singleton
 	public static function getInstance()
 	{
 		if (!self::$_instance) {
-			echo "create ...." . PHP_EOL;
+			//echo "create ...." . PHP_EOL;
 			self::$_instance = new Singleton();
 		} {
-			echo "Already created" . PHP_EOL;
+			//echo "Already created" . PHP_EOL;
 		}
 		return self::$_instance;
 	}
@@ -31,7 +31,7 @@ class Singleton
 	// Constructeur
 	private function __construct()
 	{
-		echo "__construct" . PHP_EOL;
+		//echo "__construct" . PHP_EOL;
 		try {
 
 			$this->_connection = new PDO(
@@ -41,7 +41,7 @@ class Singleton
 			);
 		} catch (PdoException $e) {
 
-			echo 'Error : ' . $e->getMessage();
+			//echo 'Error : ' . $e->getMessage();
 		}
 	}
 
