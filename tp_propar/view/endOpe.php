@@ -5,6 +5,7 @@ session_start();
 $id_user = $_SESSION['id_user'];
 
 $list = $_SESSION['listOpeCurrent'];
+
 //Verification SI le login en session est vide, donc un accès par URL -> redirection vers page connexion.
 if (!isset($_SESSION['login'])) {
     header('location: connexion.php');
@@ -35,11 +36,13 @@ if (!isset($_SESSION['login'])) {
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
     <script>
         // Tableau réduit en fonctionnalités
         $(document).ready(function() {
@@ -81,13 +84,14 @@ if (!isset($_SESSION['login'])) {
     <!-- FORMULAIRE -->
     <div class="container ajouter">
         <div class="row justify-content-center">
-            <form action="../controler/endOpe_action.php" method="post">
+            <form action="../controler/endOpe_action.php" method="POST">
                 <div class="row">
                     <div class="col-12 form-group" data-for="ID opéation">
-                        <input type="texte" class="form-control" name="id_ope" placeholder="Identifiant de l'opération terminé" required>
+                        <input type="texte"  class="form-control" id="id_ope" name="id_ope" placeholder="Identifiant de l'opération terminé" required>
                     </div>
+                    
                     <div class="display-5 col-12 text-center">
-                        <button type="submit" id="addEmo" class="btn btn-light" value="Ajouter"><span class="fa fa-plus-circle"></span> Ajouter</button>
+                        <button type="submit"  class="btn btn-light" value="Ajouter"><span class="fa fa-plus-circle"></span> Ajouter</button>
                     </div>
                 </div>
             </form>
@@ -150,7 +154,7 @@ if (!isset($_SESSION['login'])) {
     <!-- BOUTON MENU -->
 
     <div class="menu">
-        <a href="../controler/type_control.php"><button type="button" id="home" class="btn btn-light btn-sm mb-2" value="Home"><span class="fa fa-bars"></span> Menu</button></a>
+        <button type="button" id="home"  class="btn btn-light btn-sm mb-2" value="Home"><span class="fa fa-bars"></span> Menu</button>
     </div>
 
     <!-- FIN BOUTON MENU -->

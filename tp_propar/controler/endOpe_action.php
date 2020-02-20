@@ -37,6 +37,7 @@ if (!$check) {
     header('location: ../view/error.php');
     die();
 }
+
 //Si bool = true et que validation = true, vérification du type de user et appel la méthode qui correspond, sinon renvoie vers page d'erreur
 if ($validation) {
         Operation::endOperation($id_ope);

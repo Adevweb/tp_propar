@@ -22,3 +22,26 @@ Stack trace:
 2020-02-20T12:19:09+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
 2020-02-20T12:19:18+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
 2020-02-20T12:19:32+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
+2020-02-20T12:37:55+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-20T12:37:59+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:38
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('hgfhgf', 'b2dec7ee96f5b47...')
+#1 {main}
+2020-02-20T12:38:10+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-20T14:19:45+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-20T14:19:48+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:38
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('cgfhfh', '30bea55b94dffa9...')
+#1 {main}
+2020-02-20T14:20:02+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-20T14:28:56+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-20T14:29:00+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-20T14:31:25+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-20T14:33:15+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-20T14:33:21+00:00 INFO  FINIR OPERATION adnbnt mit fin à une opération qui n'existe pas
+2020-02-20T14:33:28+00:00 INFO  FINIR OPERATION adnbnt mit fin à une opération qui n'existe pas
+2020-02-20T14:36:36+00:00 INFO  FINIR OPERATION adnbnt mit fin à une opération qui n'existe pas
+2020-02-20T14:36:43+00:00 INFO  FINIR OPERATION adnbnt mit fin à une opération qui n'existe pas
+2020-02-20T14:38:42+00:00 INFO  FINIR OPERATION adnbnt mit fin à une opération qui n'existe pas
+2020-02-20T14:39:44+00:00 INFO  FINIR OPERATION adnbnt mit fin à une opération qui n'existe pas
+2020-02-20T14:40:58+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
