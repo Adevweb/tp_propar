@@ -24,18 +24,16 @@ if (!isset($_SESSION['login'])) {
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+  <script src="js/addUser.js"></script>
 
 </head>
 
 <body>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
-  <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script>
     $(document).ready(function() {
             $('#currentUser').DataTable({
@@ -75,16 +73,16 @@ if (!isset($_SESSION['login'])) {
   <!-- FORMULAIRE AJOUT EMPLOYE -->
   <div class="container ajouter">
     <div class="row justify-content-center">
-      <form action="../controler/addUser_action.php" method="post">
+      <form>
         <div class="row col-12">
           <div class="col-md-4  form-group" data-for="name">
-            <input type="nom" class="form-control" name="nom" placeholder="Nom" required>
+            <input type="nom" class="form-control" name="nom" id="nom" placeholder="Nom" required>
           </div>
           <div class="col-md-4  form-group" data-for="email">
-            <input type="text" class="form-control" name="prenom" placeholder="Prenom" required>
+            <input type="text" class="form-control" name="prenom" id="prenom" placeholder="Prenom" required>
           </div>
           <div class="col-md-4  form-group" data-for="fonction">
-            <select class="form-control" type="text" class="form-control" name="type" placeholder="Fonction" required>
+            <select class="form-control" type="text" class="form-control" id="type" name="type" placeholder="Fonction" required>
               <option disabled selected>Fonction</option>
               <option>Expert</option>
               <option>Senior</option>
@@ -94,15 +92,17 @@ if (!isset($_SESSION['login'])) {
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4  form-group" data-for="login">
-            <input type="text" class="form-control" name="login" placeholder="Login" required>
+            <input type="text" class="form-control" name="login" id="login" placeholder="Login" required>
           </div>
           <div class="col-md-4 form-group" data-for="mdp">
-            <input type="password" class="form-control" name="mdp" placeholder="Mot de passe" required>
+            <input type="password" class="form-control" name="mdp" id="mdp" placeholder="Mot de passe" required>
           </div>
+        <div id="ajaxRes">
 
         </div>
+        </div>
         <div class="display-5 col-12 text-center">
-          <button type="submit" id="addEmo" class="btn btn-light" value="Ajouter"><span class="fa fa-plus-circle"></span> Ajouter</button>
+          <button type="submit" id="addUser" class="btn btn-light" value="Ajouter"><span class="fa fa-plus-circle"></span> Ajouter</button>
         </div>
       </form>
     </div>
@@ -136,7 +136,7 @@ if (!isset($_SESSION['login'])) {
           </div>
         </div>
         <div class="display-5 col-12 text-center">
-          <button type="submit" id="addEmo" class="btn btn-light" value="Ajouter"><span class="fa fa-plus-circle"></span> Modifier</button>
+          <button type="submit" class="btn btn-light" value="Ajouter"><span class="fa fa-plus-circle"></span> Modifier</button>
         </div>
       </form>
     </div>

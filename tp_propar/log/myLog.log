@@ -106,3 +106,129 @@ Stack trace:
 2020-02-20T15:22:48+00:00 DEBUG AJOUT UTILISATEUR adnbnt à valider un champ vide
 2020-02-20T15:25:05+00:00 TRACE AJOUT UTILISATEUR toto a ajouter un utilisateur
 2020-02-20T15:25:59+00:00 TRACE AJOUT UTILISATEUR toto a ajouter un utilisateur
+2020-02-21T07:55:17+00:00 TRACE CONNEXION L'utilisateur toto s'est connecté en tant qu'Expert
+2020-02-21T07:55:41+00:00 TRACE AJOUT UTILISATEUR toto a ajouter un utilisateur
+2020-02-21T07:56:40+00:00 TRACE DECONNEXION L'utilisateur toto s'est déconnecté
+2020-02-21T07:56:46+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-21T07:56:54+00:00 TRACE CONNEXION L'utilisateur adn s'est connecté en tant qu'Expert
+2020-02-21T08:03:09+00:00 TRACE DECONNEXION L'utilisateur adn s'est déconnecté
+2020-02-21T08:03:15+00:00 TRACE CONNEXION L'utilisateur toto s'est connecté en tant qu'Expert
+2020-02-21T08:05:53+00:00 TRACE AJOUT UTILISATEUR toto a ajouter un utilisateur
+2020-02-21T08:05:56+00:00 TRACE DECONNEXION L'utilisateur toto s'est déconnecté
+2020-02-21T08:06:01+00:00 TRACE CONNEXION L'utilisateur lolo s'est connecté en tant qu'utilisateur
+2020-02-21T08:09:05+00:00 TRACE DECONNEXION L'utilisateur lolo s'est déconnecté
+2020-02-21T08:09:09+00:00 TRACE CONNEXION L'utilisateur adn s'est connecté en tant qu'Expert
+2020-02-21T08:09:29+00:00 DEBUG AJOUT UTILISATEUR bribri à valider un champ vide
+2020-02-21T08:32:47+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T08:32:47+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T08:32:47+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T08:32:47+00:00 DEBUG AJOUT UTILISATEUR lol à valider un champ vide
+2020-02-21T08:33:11+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T08:33:11+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T08:33:11+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T08:33:11+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T08:33:11+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T08:33:11+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T08:33:12+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T08:33:12+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T08:33:12+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T08:46:04+00:00 TRACE AJOUT UTILISATEUR adn a ajouter un utilisateur
+2020-02-21T08:47:45+00:00 DEBUG AJOUT UTILISATEUR lolo à valider un champ vide
+2020-02-21T08:47:52+00:00 TRACE AJOUT UTILISATEUR adn a ajouter un utilisateur
+2020-02-21T09:23:58+00:00 DEBUG MODIF UTILISATEUR  à valider un champ vide ou pas au bon format
+2020-02-21T09:23:58+00:00 INFO  MODIF UTILISATEUR  à modifier un utilisateur qui n'existe pas
+2020-02-21T09:25:03+00:00 DEBUG MODIF UTILISATEUR  à valider un champ vide ou pas au bon format
+2020-02-21T09:25:03+00:00 INFO  MODIF UTILISATEUR  à modifier un utilisateur qui n'existe pas
+2020-02-21T09:27:59+00:00 DEBUG MODIF UTILISATEUR  à valider un champ vide ou pas au bon format
+2020-02-21T09:27:59+00:00 INFO  MODIF UTILISATEUR  à modifier un utilisateur qui n'existe pas
+2020-02-21T09:30:16+00:00 TRACE DECONNEXION L'utilisateur adn s'est déconnecté
+2020-02-21T09:30:26+00:00 TRACE CONNEXION L'utilisateur toto s'est connecté en tant qu'Expert
+2020-02-21T09:30:52+00:00 INFO  AJOUT CLIENT toto à ajouter un client
+2020-02-21T09:31:19+00:00 INFO  AJOUT OPERATION toto à ajouter une opération
+2020-02-21T09:31:27+00:00 DEBUG AJOUT OPERATION toto à valider un champ vide ou pas au bon format
+2020-02-21T09:31:27+00:00 DEBUG AJOUT OPERATION toto à valider un champ vide ou pas au bon format
+2020-02-21T09:31:27+00:00 DEBUG AJOUT OPERATION toto à valider un champ vide ou pas au bon format
+2020-02-21T09:31:27+00:00 INFO  AJOUT OPERATION toto à ajouter une opération à un utilisateur non existant
+2020-02-21T09:32:23+00:00 INFO  AJOUT OPERATION toto à ajouter une opération
+2020-02-21T09:32:34+00:00 INFO  FINIR OPERATION toto mit fin à une opération qui n'existe pas
+2020-02-21T09:32:40+00:00 DEBUG FINIR OPERATION toto à valider un champ vide ou pas au bon format
+2020-02-21T09:32:40+00:00 INFO  FINIR OPERATION toto mit fin à une opération qui n'existe pas
+2020-02-21T09:32:45+00:00 TRACE FINIR OPERATION toto a mit fin à une opération
+2020-02-21T09:35:18+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:18+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:18+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:18+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:18+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:23+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:23+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:23+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:23+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:24+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:24+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:24+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:24+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:24+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:24+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:24+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:24+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:24+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:24+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:24+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:24+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:25+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:25+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:25+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:25+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:18+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:18+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:18+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:18+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:39+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:39+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:39+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:39+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:39+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:39+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:39+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:39+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:39+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:39+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:40+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:40+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:40+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:40+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:40+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:40+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:40+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:40+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:40+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:40+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:41+00:00 DEBUG AJOUT UTILISATEUR titititi78 à valider un champ vide
+2020-02-21T09:36:42+00:00 DEBUG AJOUT UTILISATEUR titititi78 à valider un champ vide
+2020-02-21T09:36:42+00:00 DEBUG AJOUT UTILISATEUR titititi78 à valider un champ vide
+2020-02-21T09:36:42+00:00 DEBUG AJOUT UTILISATEUR titititi78 à valider un champ vide
+2020-02-21T09:36:44+00:00 DEBUG AJOUT UTILISATEUR titititi78 à valider un champ vide
+2020-02-21T09:36:44+00:00 DEBUG AJOUT UTILISATEUR titititi78 à valider un champ vide
+2020-02-21T09:36:44+00:00 DEBUG AJOUT UTILISATEUR titititi78 à valider un champ vide
+2020-02-21T09:36:44+00:00 DEBUG AJOUT UTILISATEUR titititi78 à valider un champ vide
+2020-02-21T09:36:44+00:00 DEBUG AJOUT UTILISATEUR titititi78 à valider un champ vide
+2020-02-21T09:36:47+00:00 DEBUG AJOUT UTILISATEUR titititi à valider un champ vide
+2020-02-21T09:36:47+00:00 DEBUG AJOUT UTILISATEUR titititi à valider un champ vide
+2020-02-21T09:36:47+00:00 DEBUG AJOUT UTILISATEUR titititi à valider un champ vide
+2020-02-21T09:36:48+00:00 DEBUG AJOUT UTILISATEUR titititi à valider un champ vide
+2020-02-21T09:36:48+00:00 DEBUG AJOUT UTILISATEUR titititi à valider un champ vide
+2020-02-21T09:36:48+00:00 DEBUG AJOUT UTILISATEUR titititi à valider un champ vide
+2020-02-21T09:36:48+00:00 DEBUG AJOUT UTILISATEUR titititi à valider un champ vide
+2020-02-21T09:36:49+00:00 DEBUG AJOUT UTILISATEUR titititi à valider un champ vide
+2020-02-21T09:36:49+00:00 DEBUG AJOUT UTILISATEUR titititi à valider un champ vide
+2020-02-21T09:36:50+00:00 DEBUG AJOUT UTILISATEUR titititi à valider un champ vide
+2020-02-21T09:36:50+00:00 DEBUG AJOUT UTILISATEUR titititi à valider un champ vide
+2020-02-21T09:36:50+00:00 DEBUG AJOUT UTILISATEUR titititi à valider un champ vide
+2020-02-21T09:36:50+00:00 DEBUG AJOUT UTILISATEUR titititi à valider un champ vide
+2020-02-21T09:36:55+00:00 TRACE AJOUT UTILISATEUR toto a ajouter un utilisateur
+2020-02-21T09:42:19+00:00 TRACE DECONNEXION L'utilisateur toto s'est déconnecté
+2020-02-21T09:42:28+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-21T09:42:28+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-21T09:43:00+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-21T09:43:00+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-21T09:43:32+00:00 TRACE CONNEXION L'utilisateur adn s'est connecté en tant qu'Expert

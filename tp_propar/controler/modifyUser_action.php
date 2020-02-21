@@ -24,7 +24,7 @@ if ($_POST) {
         $log->debug("$login à valider un champ vide ou pas au bon format");
         $validation = false;
     }
-    if (isset($_POST['type']) && !empty($_POST['type'])) {
+    if (isset($_POST['type']) && !empty($_POST['type']) && preg_match("/^[a-zA-Z]+$/",$_POST['type'])) {
         $type = $_POST['type'];
     } else {
         $log->debug("$login à valider un champ vide");
