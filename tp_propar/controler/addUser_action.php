@@ -24,19 +24,19 @@ if ($_POST) {
         $log->debug("$login à valider un champ vide");
         $validation = false;
     }
-    if (isset($_POST['prenom']) && !empty($_POST['prenom']) && preg_match("/^[a-zA-Z]+$/",$_POST['nom'])) {
+    if (isset($_POST['prenom']) && !empty($_POST['prenom']) && preg_match("/^[a-zA-Z]+$/",$_POST['prenom'])) {
         $prenom = $_POST['prenom'];
     } else {
         $log->debug("$login à valider un champ vide");
         $validation = false;
     }
-    if (isset($_POST['type']) && !empty($_POST['type']) && preg_match("/^[a-zA-Z]+$/",$_POST['nom'])) {
+    if (isset($_POST['type']) && !empty($_POST['type']) && preg_match("/^[a-zA-Z]+$/",$_POST['type'])) {
         $type = $_POST['type'];
     } else {
         $log->debug("$login à valider un champ vide");
         $validation = false;
     }
-    if (isset($_POST['login']) && !empty($_POST['login']) && preg_match("/^[a-zA-Z]+$/",$_POST['nom'])) {
+    if (isset($_POST['login']) && !empty($_POST['login']) && preg_match("/^[a-zA-Z]+$/",$_POST['login'])) {
         $login = $_POST['login'];
     } else {
         $log->debug("$login à valider un champ vide");
@@ -51,7 +51,7 @@ if ($_POST) {
     }
 }
 //Verification de l'existence de l'utilisateur, si il existe déjà en BDD, renvoie vers erreur
-$check = Expert::checkUser($nom, $prenom, $type);
+$check = Expert::checkUser($nom, $prenom);
 
 if ($check) {
     $log->info("$login a ajouter un utilisateur déjà existant");

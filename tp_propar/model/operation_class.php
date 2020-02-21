@@ -91,6 +91,7 @@ class Operation {
         $db->query("UPDATE operation SET statut = 'Terminer' WHERE id_ope = $idOpe");
         $db->query("DELETE FROM operation WHERE id_ope = $idOpe");
     }
+   
 
     /**
      * Get the value of _descr

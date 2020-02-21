@@ -101,13 +101,13 @@ if (!isset($_SESSION['login'])) {
                 <form action="../controler/addOpe_action.php" method="post">
                     <div class="row">
                         <div class="col-md-4  form-group" data-for="ID client">
-                            <input type="text" class="form-control" name="id_client" placeholder="Identifiant client" required>
+                            <input type="text" class="form-control" name="id_client" id="id_client" placeholder="Identifiant client" required>
                         </div>
                         <div class="col-md-4  form-group" data-for="ID employé">
-                            <input type="text" class="form-control" name="id_user" placeholder="Attribuer à l'employer (ID)" required>
+                            <input type="text" class="form-control" name="id_user" id="id_user" placeholder="Attribuer à l'employer (ID)" required>
                         </div>
                         <div class="col-md-4  form-group" data-for="coût">
-                            <input type="text" class="form-control" name="cout" placeholder="Coût de l'opération" required>
+                            <input type="text" class="form-control" name="cout" id="cout" placeholder="Coût de l'opération" required>
                         </div>
                         <div class="col-md-12 form-group" data-for="message">
                             <textarea type ="text" name="descr" data-form-field="Message" class="form-control display-7" placeholder="Decription de l'opération"></textarea>

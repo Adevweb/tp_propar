@@ -27,10 +27,10 @@ class Expert extends Employe {
 
     }
     
-    public static function checkUser($nom, $prenom, $type) : bool {
+    public static function checkUser($nom, $prenom) : bool {
         $dbi = Singleton::getInstance();
         $db=$dbi->getConnection();
-        $result = $db->query("SELECT nom, prenom, type FROM utilisateur WHERE nom = '$nom' AND prenom = '$prenom' AND type = '$type'");
+        $result = $db->query("SELECT nom, prenom FROM utilisateur WHERE nom = '$nom' AND prenom = '$prenom'");
         $result = $result->fetch(PDO::FETCH_ASSOC);
         $bool = false;
         //return $result;

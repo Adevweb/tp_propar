@@ -6,7 +6,9 @@ $ca = $_SESSION['ca'];
 if (!isset($_SESSION['login'])) {
   header('location: connexion.php');
 }
-
+if ($_SESSION['type'] != 'EXPERT') {
+  header('location: homeUser.php');
+}
 ?>
 <!doctype html>
 <html lang="fr">

@@ -4,11 +4,15 @@ session_start();
 
 $id_user = $_SESSION['id_user'];
 $login = $_SESSION['login'];
+$type = $_SESSION['type'];
 $list = $_SESSION['listOpeCurrent'];
 $finishList = $_SESSION['finishList'];
 //Verification SI le login en session est vide, donc un accès par URL -> redirection vers page connexion.
 if (!isset($_SESSION['login'])) {
     header('location: connexion.php');
+}
+if ($type == 'EXPERT') {
+    header('location: homeAdmin.php');
 }
 ?>
 
