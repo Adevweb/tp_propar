@@ -177,18 +177,18 @@ if (!isset($_SESSION['login'])) {
                     <div class="row d-flex justify-content-center">
                         <div class="col-md-12">
                             <table id="finishOp" class="table table-hover">
-                                <thead class="thead-dark">
+                                <thead class="justifiy-content-center">
                                     <tr>
-                                        <th class="text-left"><strong class="font-weight-bold font-italic">#</strong></th>
-                                        <th class="text-center"><strong class="font-weight-bold font-italic">Description</strong></th>
-                                        <th class="text-center"><strong class="font-weight-bold font-italic">Type d'Opé</strong></th>
-                                        <th class="text-center"><strong class="font-weight-bold font-italic">Statut</strong></th>
-                                        <th class="text-center"><strong class="font-weight-bold font-italic">Coût</strong></th>
-                                        <th class="text-center"><strong class="font-weight-bold font-italic">Date commencement</strong></th>
-                                        <th class="text-center"><strong class="font-weight-bold font-italic">Ajouter par n° </strong></th>
-                                        <th class="text-center"><strong class="font-weight-bold font-italic">Effectuer n°</strong></th>
-                                        <th class="text-center"><strong class="font-weight-bold font-italic">ID client</strong></th>
-                                        <th class="text-center"><strong class="font-weight-bold font-italic">Date de fin</strong></th>
+                                        <th class="text-left table-info"><strong class="font-weight-bold font-italic">#</strong></th>
+                                        <th class="text-center table-info"><strong class="font-weight-bold font-italic">Description</strong></th>
+                                        <th class="text-center table-info"><strong class="font-weight-bold font-italic">Type d'Opé</strong></th>
+                                        <th class="text-center table-info"><strong class="font-weight-bold font-italic">Statut</strong></th>
+                                        <th class="text-center table-info"><strong class="font-weight-bold font-italic">Coût</strong></th>
+                                        <th class="text-center table-info"><strong class="font-weight-bold font-italic">Date commencement</strong></th>
+                                        <th class="text-center table-info"><strong class="font-weight-bold font-italic">Ajouter par n° </strong></th>
+                                        <th class="text-center table-info"><strong class="font-weight-bold font-italic">Effectuer n°</strong></th>
+                                        <th class="text-center table-info"><strong class="font-weight-bold font-italic">ID client</strong></th>
+                                        <th class="text-center table-info"><strong class="font-weight-bold font-italic">Date de fin</strong></th>
                                     </tr>
                                 </thead>
                                 <tbody>

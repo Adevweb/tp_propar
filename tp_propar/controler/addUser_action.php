@@ -17,34 +17,35 @@ $validation = true;
 //Verifie que les champs ne sont pas vides : boolean
 if ($_POST) {
     //Si les champs ne sont pas vides...
-    if (isset($_POST['nom']) && !empty($_POST['nom'])) {
+    if (isset($_POST['nom']) && !empty($_POST['nom']) && preg_match("/^[a-zA-Z]+$/",$_POST['nom'])) {
         //Stock la variables $_POST dans une variable
         $nom = $_POST['nom'];
     } else {
         $log->debug("$login à valider un champ vide");
         $validation = false;
     }
-    if (isset($_POST['prenom']) && !empty($_POST['prenom'])) {
+    if (isset($_POST['prenom']) && !empty($_POST['prenom']) && preg_match("/^[a-zA-Z]+$/",$_POST['nom'])) {
         $prenom = $_POST['prenom'];
     } else {
         $log->debug("$login à valider un champ vide");
         $validation = false;
     }
-    if (isset($_POST['type']) && !empty($_POST['type'])) {
+    if (isset($_POST['type']) && !empty($_POST['type']) && preg_match("/^[a-zA-Z]+$/",$_POST['nom'])) {
         $type = $_POST['type'];
     } else {
         $log->debug("$login à valider un champ vide");
         $validation = false;
     }
-    if (isset($_POST['login']) && !empty($_POST['login'])) {
+    if (isset($_POST['login']) && !empty($_POST['login']) && preg_match("/^[a-zA-Z]+$/",$_POST['nom'])) {
         $login = $_POST['login'];
     } else {
         $log->debug("$login à valider un champ vide");
         $validation = false;
     }
-    if (isset($_POST['mdp']) && !empty($_POST['mdp'])) {
+    if (isset($_POST['mdp']) && !empty($_POST['mdp']) && preg_match('/^(?=.*[a-z])(?=.*\d).{6,30}$/i', $_POST['mdp'])) {
         $mdp = md5($_POST['mdp']);
     } else {
+        //header('location: ../view/error.php');
         $log->debug("$login à valider un champ vide");
         $validation = false;
     }
@@ -54,15 +55,19 @@ $check = Expert::checkUser($nom, $prenom, $type);
 
 if ($check) {
     $log->info("$login a ajouter un utilisateur déjà existant");
-    header('location: ../view/error.php');
-    die();
+    //header('location: ../view/error.php');
+    //die();
+    echo "exist";
 }
 
 //Si il n'existe pas, il est créé : redirection vers success
 if ($validation) {
     $log->trace("$loginUser a ajouter un utilisateur");
     Expert::createUser($nom, $prenom, $type, $login, $mdp);
-    header('location: ../view/success.php');
+    //header('location: ../view/success.php');
+    echo "success";
+} else {
+    echo "failed";
 }
 
 ?>

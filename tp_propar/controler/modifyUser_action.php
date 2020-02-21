@@ -17,14 +17,14 @@ $validation = true;
 //Verifie que les champs ne sont pas vides : boolean
 if ($_POST) {
     //Si les champs ne sont pas vides...
-    if (isset($_POST['id_user']) && !empty($_POST['id_user']) && preg_match('[0-9]',$_POST['id_user'])) {
+    if (isset($_POST['id_user']) && !empty($_POST['id_user']) && preg_match('[\d]',$_POST['id_user'])) {
         // On stocke donc la valeur du champ dans une variable.
         $id_user = $_POST['id_user'];
     } else {
         $log->debug("$login à valider un champ vide ou pas au bon format");
         $validation = false;
     }
-    if (isset($_POST['type']) && !empty($_POST['type'])) {
+    if (isset($_POST['type']) && !empty($_POST['type']) && preg_match("/^[a-zA-Z]+$/",$_POST['type'])) {
         $type = $_POST['type'];
     } else {
         $log->debug("$login à valider un champ vide");
