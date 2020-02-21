@@ -62,7 +62,7 @@ class Expert extends Employe {
 
     
     
-    public static function updateUser ($id_user, $type) {
+    public static function updateUser ($id_user, $type) : void {
         //Met à jour le type de User
         //Récupération de la connexion à la BDD via Singleton
         $dbi = Singleton::getInstance();
