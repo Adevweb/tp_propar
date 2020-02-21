@@ -232,3 +232,83 @@ Stack trace:
 2020-02-21T09:43:00+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
 2020-02-21T09:43:00+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
 2020-02-21T09:43:32+00:00 TRACE CONNEXION L'utilisateur adn s'est connecté en tant qu'Expert
+2020-02-21T09:58:21+00:00 TRACE DECONNEXION L'utilisateur adn s'est déconnecté
+2020-02-21T09:58:32+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-21T09:58:32+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-21T09:59:06+00:00 TRACE CONNEXION L'utilisateur toto s'est connecté en tant qu'Expert
+2020-02-21T09:59:29+00:00 DEBUG AJOUT OPERATION toto à valider un champ vide ou pas au bon format
+2020-02-21T09:59:29+00:00 DEBUG AJOUT OPERATION toto à valider un champ vide ou pas au bon format
+2020-02-21T09:59:29+00:00 DEBUG AJOUT OPERATION toto à valider un champ vide ou pas au bon format
+2020-02-21T09:59:29+00:00 INFO  AJOUT OPERATION toto à ajouter une opération à un utilisateur non existant
+2020-02-21T10:00:17+00:00 TRACE AJOUT UTILISATEUR toto a ajouter un utilisateur
+2020-02-21T10:03:02+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T10:03:37+00:00 TRACE AJOUT UTILISATEUR toto a ajouter un utilisateur
+2020-02-21T10:03:47+00:00 TRACE DECONNEXION L'utilisateur toto s'est déconnecté
+2020-02-21T10:03:53+00:00 TRACE CONNEXION L'utilisateur adn s'est connecté en tant qu'Expert
+2020-02-21T10:05:04+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T10:06:08+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T10:09:32+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T10:10:49+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T10:11:17+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T10:12:23+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T10:12:59+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T10:13:45+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T10:14:24+00:00 TRACE FINIR OPERATION adn a mit fin à une opération
+2020-02-21T10:19:33+00:00 TRACE DECONNEXION L'utilisateur adn s'est déconnecté
+2020-02-21T10:20:12+00:00 TRACE CONNEXION L'utilisateur adn s'est connecté en tant qu'Expert
+2020-02-21T10:23:04+00:00 TRACE DECONNEXION L'utilisateur adn s'est déconnecté
+2020-02-21T10:23:29+00:00 TRACE CONNEXION L'utilisateur adn s'est connecté en tant qu'Expert
+2020-02-21T10:24:11+00:00 DEBUG AJOUT UTILISATEUR adn à valider un champ vide
+2020-02-21T10:24:11+00:00 INFO  AJOUT UTILISATEUR adn a ajouter un utilisateur déjà existant
+2020-02-21T10:24:42+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:43+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:44+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:44+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:44+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:44+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:45+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:45+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:45+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:45+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:45+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:46+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:46+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:46+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:46+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:46+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:46+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:47+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:47+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:47+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:47+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:47+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:47+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:48+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:48+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:51+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:52+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:52+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:52+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:52+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:25:00+00:00 TRACE AJOUT UTILISATEUR adn a ajouter un utilisateur
+2020-02-21T10:25:41+00:00 TRACE FINIR OPERATION adn a mit fin à une opération
+2020-02-21T10:26:00+00:00 TRACE DECONNEXION L'utilisateur adn s'est déconnecté
+2020-02-21T10:26:10+00:00 TRACE CONNEXION L'utilisateur adn s'est connecté en tant qu'Expert
+2020-02-21T10:26:22+00:00 TRACE DECONNEXION L'utilisateur adn s'est déconnecté
+2020-02-21T10:26:34+00:00 TRACE CONNEXION L'utilisateur carvalate s'est connecté en tant qu'utilisateur
+2020-02-21T10:27:57+00:00 TRACE DECONNEXION L'utilisateur carvalate s'est déconnecté
+2020-02-21T10:28:03+00:00 TRACE CONNEXION L'utilisateur adn s'est connecté en tant qu'Expert
+2020-02-21T10:28:29+00:00 TRACE DECONNEXION L'utilisateur adn s'est déconnecté
+2020-02-21T10:37:17+00:00 TRACE CONNEXION L'utilisateur adn s'est connecté en tant qu'Expert
+2020-02-21T10:37:31+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T10:41:21+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T10:42:19+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T10:45:22+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T10:54:43+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T11:02:46+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T11:03:59+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T11:05:39+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T11:10:03+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T11:10:47+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T11:10:58+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T11:12:36+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
