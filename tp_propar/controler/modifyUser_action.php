@@ -17,7 +17,7 @@ $validation = true;
 //Verifie que les champs ne sont pas vides : boolean
 if ($_POST) {
     //Si les champs ne sont pas vides...
-    if (isset($_POST['id_user']) && !empty($_POST['id_user']) && preg_match('[0-9]',$_POST['id_user'])) {
+    if (isset($_POST['id_user']) && !empty($_POST['id_user']) && preg_match('[\d]',$_POST['id_user'])) {
         // On stocke donc la valeur du champ dans une variable.
         $id_user = $_POST['id_user'];
     } else {

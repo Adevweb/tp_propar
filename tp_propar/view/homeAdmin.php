@@ -3,7 +3,7 @@ require_once '../model/operation_class.php';
 session_start();
 
 $id_user = $_SESSION['id_user'];
-
+$login = $_SESSION['login'];
 $list = $_SESSION['listOpeCurrent'];
 $finishList = $_SESSION['finishList'];
 //Verification SI le login en session est vide, donc un accès par URL -> redirection vers page connexion.
@@ -98,7 +98,7 @@ if ($_SESSION['type'] != 'EXPERT') {
   <div class="container">
     <div class="row col-md-12">
       <h3 class="display-4 col-md-12 text-center centerTitle">Vos Actions</h3>
-      <p class="h5 col-md-12 text-center centerSSTitle">Actions en tant qu'admin</p>
+      <p class="h5 col-md-12 text-center centerSSTitle">Connecté en tant qu'<?php echo $login ?></p>
     </div>
     <!-- PREMIERE LIGNE CONTENU SECTION -->
     <section>
@@ -146,7 +146,7 @@ if ($_SESSION['type'] != 'EXPERT') {
         <h3 class="display-4 col-12 text-center centerTitle">Opérations en cours</h3>
       </div>
     </div>
-    <!-- FORMULAIRE -->
+    <!-- TABLEAU OPERATIONS EN COURS -->
     <div class="container ajouter">
       <div class="row justify-content-center">
         <div class="">
@@ -188,10 +188,13 @@ if ($_SESSION['type'] != 'EXPERT') {
 
     <div class="container">
       <div class="row col-12">
-        <h3 class="display-4 col-12 text-center centerTitle">Opérations en terminée</h3>
+        <h3 class="display-4 col-12 text-center centerTitle">Opérations terminées</h3>
       </div>
     </div>
-    <!-- FORMULAIRE -->
+    <!-- FIN TABLEAU OPERATIONS EN COURS -->
+
+
+    <!-- TABLEAU OPERATIONS TERMINEES -->
     <div class="container ajouter">
       <div class="row justify-content-center">
         <div class="">
@@ -231,6 +234,9 @@ if ($_SESSION['type'] != 'EXPERT') {
       </div>
     </div>
   </div>
+  <!-- FIN TABLEAU OPERATIONS TERMINEES -->
+
+
 </body>
 
 </html>

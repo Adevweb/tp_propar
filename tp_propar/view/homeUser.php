@@ -3,7 +3,7 @@ require_once '../model/operation_class.php';
 session_start();
 
 $id_user = $_SESSION['id_user'];
-
+$login = $_SESSION['login'];
 $list = $_SESSION['listOpeCurrent'];
 $finishList = $_SESSION['finishList'];
 //Verification SI le login en session est vide, donc un accès par URL -> redirection vers page connexion.
@@ -94,7 +94,7 @@ if (!isset($_SESSION['login'])) {
     <div class="container">
         <div class="row col-12">
             <h3 class="display-4 col-12 text-center centerTitle">Vos Actions</h3>
-            <p class="h5 col-12 text-center centerSSTitle">Actions en tant qu'employé</p>
+            <p class="h5 col-12 text-center centerSSTitle">Connecté en tant qu'<?php echo $login ?></p>
         </div>
 
         <!-- LIGNE CONTENU SECTION -->
@@ -125,7 +125,8 @@ if (!isset($_SESSION['login'])) {
                 <h3 class="display-4 col-12 text-center centerTitle">Opérations en cours</h3>
             </div>
         </div>
-        <!-- FORMULAIRE -->
+
+        <!-- TABLEAU OPERATIONS EN COURS -->
         <div class="container ajouter">
             <div class="row justify-content-center">
                 <div class="currentOp">
@@ -166,10 +167,13 @@ if (!isset($_SESSION['login'])) {
 
         <div class="container">
             <div class="row col-12">
-                <h3 class="display-4 col-12 text-center centerTitle">Opérations en terminée</h3>
+                <h3 class="display-4 col-12 text-center centerTitle">Opérations terminées</h3>
             </div>
         </div>
-        <!-- FORMULAIRE -->
+        <!-- FIN TABLEAU OPERATIONS EN COURS -->
+
+
+        <!-- TABLEAU OPERATIONS TERMINEES -->
         <div class="container ajouter">
             <div class="row justify-content-center">
                 <div class="">
@@ -177,18 +181,18 @@ if (!isset($_SESSION['login'])) {
                     <div class="row d-flex justify-content-center">
                         <div class="col-md-12">
                             <table id="finishOp" class="table table-hover">
-                                <thead class="thead-dark">
+                                <thead class="justify-content-center">
                                     <tr>
-                                        <th class="text-left"><strong class="font-weight-bold font-italic">#</strong></th>
-                                        <th class="text-center"><strong class="font-weight-bold font-italic">Description</strong></th>
-                                        <th class="text-center"><strong class="font-weight-bold font-italic">Type d'Opé</strong></th>
-                                        <th class="text-center"><strong class="font-weight-bold font-italic">Statut</strong></th>
-                                        <th class="text-center"><strong class="font-weight-bold font-italic">Coût</strong></th>
-                                        <th class="text-center"><strong class="font-weight-bold font-italic">Date commencement</strong></th>
-                                        <th class="text-center"><strong class="font-weight-bold font-italic">Ajouter par n° </strong></th>
-                                        <th class="text-center"><strong class="font-weight-bold font-italic">Effectuer n°</strong></th>
-                                        <th class="text-center"><strong class="font-weight-bold font-italic">ID client</strong></th>
-                                        <th class="text-center"><strong class="font-weight-bold font-italic">Date de fin</strong></th>
+                                        <th class="text-left table-info"><strong class="font-weight-bold font-italic">#</strong></th>
+                                        <th class="text-center table-info"><strong class="font-weight-bold font-italic">Description</strong></th>
+                                        <th class="text-center table-info"><strong class="font-weight-bold font-italic">Type d'Opé</strong></th>
+                                        <th class="text-center table-info"><strong class="font-weight-bold font-italic">Statut</strong></th>
+                                        <th class="text-center table-info"><strong class="font-weight-bold font-italic">Coût</strong></th>
+                                        <th class="text-center table-info"><strong class="font-weight-bold font-italic">Date commencement</strong></th>
+                                        <th class="text-center table-info"><strong class="font-weight-bold font-italic">Ajouter par n° </strong></th>
+                                        <th class="text-center table-info"><strong class="font-weight-bold font-italic">Effectuer n°</strong></th>
+                                        <th class="text-center table-info"><strong class="font-weight-bold font-italic">ID client</strong></th>
+                                        <th class="text-center table-info"><strong class="font-weight-bold font-italic">Date de fin</strong></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -209,6 +213,8 @@ if (!isset($_SESSION['login'])) {
             </div>
         </div>
     </div>
+    <!-- FIN TABLEAU OPERATIONS TERMINEES -->
+
 </body>
 
 </html>

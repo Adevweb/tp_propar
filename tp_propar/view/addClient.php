@@ -46,7 +46,7 @@ if (!isset($_SESSION['login'])) {
     </div>
   </div>
 
-  <!-- FORMULAIRE -->
+  <!-- FORMULAIRE AJOUT CLIENT -->
   <div class="container ajouter">
     <div class="row justify-content-center">
       <form action="../controler/addClient_action.php" method="post">
@@ -67,7 +67,7 @@ if (!isset($_SESSION['login'])) {
     </form>
   </div>
   </div>
-  <!-- FIN FORMULAIRE -->
+  <!-- FIN FORMULAIRE AJOUT CLIENT-->
 
   <!-- BOUTON MENU -->
 

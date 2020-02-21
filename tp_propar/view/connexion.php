@@ -3,7 +3,7 @@
 <html lang="fr">
 
 <head>
-    <title>Ajouter une opération</title>
+    <title>Connexion</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -42,7 +42,7 @@
         </div>
     </div>
 
-     <!-- FORMULAIRE -->
+     <!-- FORMULAIRE DE CONNEXION -->
     <div class="container ajouter">
         <div class="row justify-content-center align-items-center">
             <div class="col-md-4">
@@ -65,7 +65,7 @@
             </div>
         </div>
     </div>
-    <!-- FIN FORMULAIRE -->
+    <!-- FIN FORMULAIRE DE CONNEXION-->
 
 
 </body>

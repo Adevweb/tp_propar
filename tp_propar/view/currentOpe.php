@@ -17,7 +17,7 @@ if (!isset($_SESSION['login'])) {
 <html lang="fr">
 
 <head>
-    <title>Ajouter une opération</title>
+    <title>Opération en cours</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -79,7 +79,7 @@ if (!isset($_SESSION['login'])) {
         </div>
     </div>
 
-    <!-- FORMULAIRE -->
+    <!-- TABLEAU DES OPERATIONS EN COURS -->
     <div class="container ajouter">
         <div class="row justify-content-center">
             <div class="">
@@ -118,7 +118,7 @@ if (!isset($_SESSION['login'])) {
 
         </div>
     </div>
-    <!-- FIN FORMULAIRE -->
+    <!-- FIN TABLEAU DES OPERATIONS EN COURS -->
 
     <!-- BOUTON MENU -->
 

@@ -72,7 +72,7 @@ if (!isset($_SESSION['login'])) {
     </div>
   </div>
 
-  <!-- FORMULAIRE -->
+  <!-- FORMULAIRE AJOUT EMPLOYE -->
   <div class="container ajouter">
     <div class="row justify-content-center">
       <form action="../controler/addUser_action.php" method="post">
@@ -107,7 +107,7 @@ if (!isset($_SESSION['login'])) {
       </form>
     </div>
   </div>
-  <!-- FIN FORMULAIRE -->
+  <!-- FIN FORMULAIRE AJOUT EMPLOYE-->
 
 
   <div class="container">
@@ -118,7 +118,7 @@ if (!isset($_SESSION['login'])) {
   </div>
 
 
-  <!-- FORMULAIRE -->
+  <!-- FORMULAIRE MODIFIER EMPLOYE -->
   <div class="container ajouter2">
     <div class="row justify-content-center">
       <form action="../controler/modifyUser_action.php" method="post">
@@ -169,7 +169,7 @@ if (!isset($_SESSION['login'])) {
         </div>
     </div>
   </div>
-  <!-- FIN FORMULAIRE -->
+  <!-- FIN FORMULAIRE MODIFIER EMPLOYE-->
 
   <!-- BOUTON MENU -->
 

@@ -73,6 +73,7 @@ if (!isset($_SESSION['login'])) {
             </a>
         </div>
     </div>
+    
     <!-- SECTION -->
     <div class="container">
         <div class="row col-12">
@@ -81,7 +82,7 @@ if (!isset($_SESSION['login'])) {
         </div>
     </div>
 
-    <!-- FORMULAIRE -->
+    <!-- TERMINER UNE OPERATION -->
     <div class="container ajouter">
         <div class="row justify-content-center">
             <form action="../controler/endOpe_action.php" method="POST">
@@ -91,7 +92,7 @@ if (!isset($_SESSION['login'])) {
                     </div>
                     
                     <div class="display-5 col-12 text-center">
-                        <button type="submit"  class="btn btn-light" value="Ajouter"><span class="fa fa-plus-circle"></span> Ajouter</button>
+                        <button type="submit"  class="btn btn-light" value="Ajouter"><span class="fa fa-plus-circle"></span> Terminer</button>
                     </div>
                 </div>
             </form>
@@ -99,7 +100,7 @@ if (!isset($_SESSION['login'])) {
 
 
     </div>
-    <!-- FIN FORMULAIRE -->
+    <!-- FIN TERMINER UNE OPERATION -->
 
 
     <div class="container">
@@ -108,7 +109,7 @@ if (!isset($_SESSION['login'])) {
         </div>
     </div>
 
-    <!-- FORMULAIRE -->
+    <!-- TABLEAU DES OPERATIONS EN COURS -->
     <div class="container ajouter2">
         <div class="row justify-content-center">
             <div class="">
@@ -149,7 +150,7 @@ if (!isset($_SESSION['login'])) {
 
         </div>
     </div>
-    <!-- FIN FORMULAIRE -->
+    <!-- TABLEAU DES OPERATIONS EN COURS -->
 
     <!-- BOUTON MENU -->
 
