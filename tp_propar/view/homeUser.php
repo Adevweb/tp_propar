@@ -98,7 +98,7 @@ if ($type == 'EXPERT') {
     <div class="container">
         <div class="row col-12">
             <h3 class="display-4 col-12 text-center centerTitle">Vos Actions</h3>
-            <p class="h5 col-12 text-center centerSSTitle">Connecté en tant qu'<?php echo $login ?></p>
+            <p class="h5 col-12 text-center centerSSTitle">Connecté en tant que <?php echo $login ?></p>
         </div>
 
         <!-- LIGNE CONTENU SECTION -->

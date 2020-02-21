@@ -312,3 +312,31 @@ Stack trace:
 2020-02-21T11:10:47+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
 2020-02-21T11:10:58+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
 2020-02-21T11:12:36+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T13:39:56+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('adn', 'a88d4ae7dc2a22f...')
+#1 {main}
+2020-02-21T13:40:09+00:00 TRACE CONNEXION L'utilisateur adn s'est connecté en tant qu'Expert
+2020-02-21T13:40:15+00:00 TRACE FINIR OPERATION adn a mit fin à une opération
+2020-02-21T13:40:20+00:00 TRACE FINIR OPERATION adn a mit fin à une opération
+2020-02-21T13:40:25+00:00 TRACE FINIR OPERATION adn a mit fin à une opération
+2020-02-21T13:40:30+00:00 TRACE FINIR OPERATION adn a mit fin à une opération
+2020-02-21T13:49:09+00:00 TRACE AJOUT UTILISATEUR adn a ajouter un utilisateur
+2020-02-21T13:49:23+00:00 TRACE DECONNEXION L'utilisateur adn s'est déconnecté
+2020-02-21T13:49:29+00:00 TRACE CONNEXION L'utilisateur john s'est connecté en tant qu'Expert
+2020-02-21T13:49:45+00:00 INFO  AJOUT OPERATION john à ajouter une opération à un utilisateur non existant
+2020-02-21T13:50:11+00:00 INFO  AJOUT CLIENT john à ajouter un client
+2020-02-21T13:50:37+00:00 INFO  AJOUT OPERATION john à ajouter une opération
+2020-02-21T13:50:47+00:00 TRACE FINIR OPERATION john a mit fin à une opération
+2020-02-21T13:55:30+00:00 INFO  AJOUT OPERATION john à ajouter une opération
+2020-02-21T13:55:37+00:00 TRACE FINIR OPERATION john a mit fin à une opération
+2020-02-21T13:59:02+00:00 TRACE DECONNEXION L'utilisateur john s'est déconnecté
+2020-02-21T13:59:17+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('adnbnt', 'fe6ad6a10bea1c7...')
+#1 {main}
+2020-02-21T13:59:22+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-21T13:59:32+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
+2020-02-21T14:02:38+00:00 TRACE AJOUT UTILISATEUR adnbnt a ajouter un utilisateur
+2020-02-21T14:02:46+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-21T14:03:01+00:00 TRACE CONNEXION L'utilisateur john s'est connecté en tant qu'Expert

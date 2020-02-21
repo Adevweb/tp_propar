@@ -1,3 +1,4 @@
+/* TRIGGER POUR ALIMENTER LA TABLE end_ope PAR LES OPERATIONS SUPPRIMES DE LA TALBE operation */
 DELIMITER //
 	CREATE TRIGGER end_of_ope
     BEFORE DELETE ON operation
@@ -11,7 +12,7 @@ DELIMITER //
         cout,
         date_comm,
         id_user,
-        id_user_FAIT, /* Verif BDD le nom */
+        id_user_FAIT,
         id_client,
         end_date
         )

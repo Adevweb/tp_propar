@@ -20,7 +20,8 @@ class Expert extends Employe {
     }
 
     public static function createUser($nom, $prenom, $type, $login, $mdp) : void {
-
+        //Insert un utilisateur en BDD
+        //Récupération de la connexion à la bdd par Singleton
         $dbi = Singleton::getInstance();
         $db=$dbi->getConnection();
         $db->query("INSERT INTO utilisateur (nom, prenom, type, login, mdp) VALUES ('$nom', '$prenom', '$type', '$login', '$mdp')");
@@ -28,13 +29,15 @@ class Expert extends Employe {
     }
     
     public static function checkUser($nom, $prenom) : bool {
+        //Verifie si l'utilisateur existe en BDD par le nom et prénom
+        //Récupération de la connexion en BDD par Singleton
         $dbi = Singleton::getInstance();
         $db=$dbi->getConnection();
         $result = $db->query("SELECT nom, prenom FROM utilisateur WHERE nom = '$nom' AND prenom = '$prenom'");
         $result = $result->fetch(PDO::FETCH_ASSOC);
+        //Set la variable à false.
         $bool = false;
-        //return $result;
-        
+        //Si le $result est rempli c'est que l'utilisateur existe en BDD
         if (isset($result) && !empty($result)) {
             $bool = true;
         }
@@ -42,13 +45,15 @@ class Expert extends Employe {
     }
 
     public static function checkUserModify($id_user) : bool {
+        //Verifie si l'utilisateur existe en BDD par l'id
+        //Récupération de la connexion à la bdd par Singleton
         $dbi = Singleton::getInstance();
         $db=$dbi->getConnection();
         $result = $db->query("SELECT id_user, type FROM utilisateur WHERE id_user = '$id_user'");
         $result = $result->fetch(PDO::FETCH_ASSOC);
+        //Set la variable à false.
         $bool = false;
-        //return $result;
-        
+        //Si le tableau retourné est rempli c'est que l'utilisateur existe en BDD
         if (isset($result) && !empty($result)) {
             $bool = true;
         }
@@ -58,15 +63,21 @@ class Expert extends Employe {
     
     
     public static function updateUser ($id_user, $type) {
+        //Met à jour le type de User
+        //Récupération de la connexion à la BDD via Singleton
         $dbi = Singleton::getInstance();
         $db=$dbi->getConnection();
+        //Update de l'utilisateur via son id
         $db->query("UPDATE utilisateur SET type = '$type' WHERE id_user = $id_user");
     }
 
     public static function userList() {
+        // Récupère la liste des utilisateurs
+        // Récupération de la connexion à la BDD via Singleton
             $dbi = Singleton::getInstance();
             $db=$dbi->getConnection();
             $result = $db->query("SELECT id_user, nom, prenom, type FROM utilisateur");
+            //$resultat avec le numéro de colonne en clés
             $result = $result->fetchAll(PDO::FETCH_NUM);
             return $result;
     }
