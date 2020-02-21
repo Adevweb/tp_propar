@@ -133,7 +133,7 @@ if (!isset($_SESSION['login'])) {
 
                     <div class="row d-flex justify-content-center">
                         <div class="col-md-12">
-                            <table id="" class="table table-hover table-sm">
+                            <table id="" class="table table-hover">
                                 <thead class="justify-content-center">
                                     <tr>
                                         <th class="text-left table-info"><strong class="font-weight-bold font-italic">#</strong></th>

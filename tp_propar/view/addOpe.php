@@ -110,7 +110,7 @@ if (!isset($_SESSION['login'])) {
                             <input type="text" class="form-control" name="cout" placeholder="Coût de l'opération" required>
                         </div>
                         <div class="col-md-12 form-group" data-for="message">
-                            <textarea name="descr" data-form-field="Message" class="form-control display-7" placeholder="Decription de l'opération"></textarea>
+                            <textarea type ="text" name="descr" data-form-field="Message" class="form-control display-7" placeholder="Decription de l'opération"></textarea>
                         </div>
                         <div class="display-5 col-12 text-center">
                             <button type="submit" id="addOpe" class="btn btn-light" value="Ajouter"><span class="fa fa-plus-circle"></span> Ajouter</button>
