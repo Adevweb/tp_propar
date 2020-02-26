@@ -1,11 +1,9 @@
 <?php
 require_once '../model/operation_class.php';
+
+
 session_start();
 
-$id_user = $_SESSION['id_user'];
-$login = $_SESSION['login'];
-$list = $_SESSION['listOpeCurrent'];
-$finishList = $_SESSION['finishList'];
 //Verification SI le login en session est vide, donc un accès par URL -> redirection vers page connexion.
 if (!isset($_SESSION['login'])) {
   header('location: connexion.php');
@@ -15,6 +13,13 @@ correspond au type de profil. */
 if ($_SESSION['type'] != 'EXPERT') {
   header('location: homeUser.php');
 }
+
+$type = $_SESSION['type'];
+$id_user = $_SESSION['id_user'];
+$login = $_SESSION['login'];
+$list = $_SESSION['listOpeCurrent'];
+$finishList = $_SESSION['finishList'];
+
 ?>
 
 <!doctype html>

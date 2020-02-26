@@ -1,4 +1,16 @@
+<?php
+require '../lib/vendor/autoload.php';
+use \Firebase\JWT\JWT;
+session_start();
 
+if (isset($_COOKIE['authen']) && !empty($_COOKIE['authen'])) {
+    $_SESSION['typeConn'] = 'jwt';
+    header('location: ../controler/cnx_action.php');
+} else {
+    $_SESSION['typeConn'] = 'normal';
+}
+
+?>
 <!doctype html>
 <html lang="fr">
 

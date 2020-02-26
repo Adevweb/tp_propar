@@ -11,7 +11,9 @@ $log = Logger::getLogger('DECONNEXION');
 
 $login = $_SESSION['login'];
 $log->trace("L'utilisateur $login s'est déconnecté");
+
 session_destroy();
+setcookie("authen", '', time() - 1, '/');
 
 header('location: ../view/connexion.php');
 
