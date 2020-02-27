@@ -60,12 +60,12 @@ class Client {
         return $bool;
     }
 
-    public static function createClient($nom, $prenom, $user_id) : void {
+    public static function createClient($nom, $prenom, $user_id, $adresse) : void {
         //Récupération de la connexion à la BDD par Singleton
         $dbi = Singleton::getInstance();
         $db=$dbi->getConnection();
         //Insertion du nouveau client en BDD
-        $db->query("INSERT INTO client (nom, prenom, id_user) VALUES ('$nom', '$prenom', '$user_id')");
+        $db->query("INSERT INTO client (nom, prenom, id_user, adresse) VALUES ('$nom', '$prenom', '$user_id', '$adresse')");
     }
 
     public static function clientList() : array {
@@ -73,7 +73,7 @@ class Client {
         //Récupération de la connexion à la BDD par Singleton
         $dbi = Singleton::getInstance();
         $db=$dbi->getConnection();
-        $result = $db->query("SELECT id_client, nom, prenom FROM client  ");
+        $result = $db->query("SELECT id_client, nom, prenom, adresse FROM client  ");
         //$resultat sous forme de tableau avec le numéro de colonne
         $result = $result->fetchAll(PDO::FETCH_NUM);
         return $result;

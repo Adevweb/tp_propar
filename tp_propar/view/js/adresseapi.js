@@ -6,7 +6,7 @@ $('#adresse').autocomplete({
       dataType: 'json', // on spécifie bien que le type de données est en JSON
       data: {
         q: $('#adresse').val(), // on donne la chaîne de caractère tapée dans le champ de recherche
-        limit: 15
+        limit: 5
       },
       success: function(data) {
         reponse($.map(data.features, function(item) {

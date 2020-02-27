@@ -30,6 +30,12 @@ if ($_POST) {
         $log->debug("$login à valider un champ vide");
         $validation = false;
     }
+    if (isset($_POST['adresse']) && !empty($_POST['adresse']) /*&& preg_match("/^[a-zA-Z0-9]+$/",$_POST['adresse'])*/) {
+        $adresse = htmlentities($_POST['adresse'], ENT_QUOTES);
+    } else {
+        $log->debug("$login à valider un champ vide");
+        $validation = false;
+    }
     
 }
 
@@ -46,7 +52,7 @@ if ($check) {
 /* Si les champs sont remplis et que le client n'existe pas déjà, alors création d'un nouveau client en BDD
 redirection vers success ou error */
 if ($validation) {
-    Client::createClient($nom, $prenom, $id_user); 
+    Client::createClient($nom, $prenom, $id_user, $adresse); 
     $log->info("$login à ajouter un client");
     header('location: ../view/success.php');
 } else {

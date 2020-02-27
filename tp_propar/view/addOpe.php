@@ -133,6 +133,7 @@ if (!isset($_SESSION['login'])) {
                             <th class="text-left table-info"><strong class="font-weight-bold font-italic">#</strong></th>
                             <th class="text-center table-info"><strong class="font-weight-bold font-italic">NOM</strong></th>
                             <th class="text-center table-info"><strong class="font-weight-bold font-italic">Prénom</strong></th>
+                            <th class="text-center table-info"><strong class="font-weight-bold font-italic">Adresse</strong></th>
                         </tr>
                     </thead>
                     <tbody>
