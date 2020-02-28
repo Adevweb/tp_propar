@@ -1,4 +1,9 @@
 ﻿TP_PROPAR : Laurie Brun et Adrien Benoit 
+ 
+ EXPLICATIONS DU TP : 
+ Après avoir été en formation intensive d'un peu plus de 3 mois, nous avons fait un TP qui est une application interne d'une entreprise de nettoyage. Les specs sont dans le dossier. C'est le premier projet dans lequel on utilise la programmation orientée objet et d'autres technologies qui nous ont été imposés au fur et à mesure du projet. (JWT, l'autocomplétion des adresses a été imposés une fois que le projet était rendue). 
+ Je suis conscient que le code n'est pas parfait, qu'il peut être largement amélioré/optimiser. Que l'on a peut-être pas respecté des règles d'or dans notre façon de développer, et l'on s'excuse d'avance pour cela. Notre seul excuse est le délai : Une semaine pour découvrir les technos, les implémenter etc. Au final, on a eu un peu plus de temps, notamment pour l'ajoute de JWT et l'autocomplétion des adresses.
+ 
 
 -Upload la BDD propar.sql présente dans BDD>propar.sql : Les triggers et procédure stockée y sont présent
 
@@ -13,6 +18,8 @@
 
 - /!\ Pour créer un utilisateur : mettre un mot de passe avec au moins 1 lettres et 1 chiffres d'une taille comprise entre 6 et 30 caractères./!\
 (Si vous le créer manuellement en BDD et que vous ne respectez pas cela, vous ne pourrez pas vous connecter par la suite (regex + md5))
+/!\ Pour créer un client : Ajouter une opération en mettant un client inconnu, cela vous mènera vers une page d'ajout de client.
+Ajoutez le client et renouvelez votre ajoute d'opération /!\
 
 ////////////////////////////////////////////////////////////////////
 
@@ -40,6 +47,7 @@ Trello : https://trello.com/b/mp1NO9ar/propar
 Ajax/Js : src/tp_propar/view/js
 view/connexion.php appel view/js/cnx.js qui cible controler/cnx_action.php pour la validation des login
 view/addUser.php appel view/js/addUser.js qui cible controler/addUser_action.php pour l'ajout d'un utilisateur
+view/addClient.php fait des appels ajax pour obtenir les adresse via l'API : https://geo.api.gouv.fr/adresse
 
 POO : /model
 - Classe abstraite : employe_class.php
