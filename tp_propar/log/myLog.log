@@ -1,0 +1,875 @@
+2020-02-20T10:27:22+00:00 TRACE CONNEXION L'utilisateur lolo s'est connecté en tant qu'utilisateur
+2020-02-20T10:29:37+00:00 TRACE CONNEXION L'utilisateur lolo s'est connecté en tant qu'utilisateur
+2020-02-20T10:29:38+00:00 TRACE CONNEXION L'utilisateur lolo s'est connecté en tant qu'utilisateur
+2020-02-20T10:29:38+00:00 TRACE CONNEXION L'utilisateur lolo s'est connecté en tant qu'utilisateur
+2020-02-20T10:29:39+00:00 TRACE CONNEXION L'utilisateur lolo s'est connecté en tant qu'utilisateur
+2020-02-20T10:31:14+00:00 TRACE CONNEXION L'utilisateur lolo s'est connecté en tant qu'utilisateur
+2020-02-20T10:32:54+00:00 TRACE CONNEXION L'utilisateur lolo s'est connecté en tant qu'utilisateur
+2020-02-20T10:33:02+00:00 TRACE DECONNEXION L'utilisateur lolo s'est déconnecté
+2020-02-20T10:33:27+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-20T10:35:00+00:00 TRACE AJOUT UTILISATEUR adnbnt a ajouter un utilisateur
+2020-02-20T10:35:08+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-20T10:35:15+00:00 TRACE CONNEXION L'utilisateur alex s'est connecté en tant qu'utilisateur
+2020-02-20T10:35:30+00:00 TRACE DECONNEXION L'utilisateur alex s'est déconnecté
+2020-02-20T10:35:35+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:38
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('md5', '202cb962ac59075...')
+#1 {main}
+2020-02-20T10:35:59+00:00 TRACE CONNEXION L'utilisateur md5 s'est connecté en tant qu'Expert
+2020-02-20T10:36:06+00:00 TRACE DECONNEXION L'utilisateur md5 s'est déconnecté
+2020-02-20T10:38:15+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-20T12:05:57+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
+2020-02-20T12:19:09+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
+2020-02-20T12:19:18+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
+2020-02-20T12:19:32+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
+2020-02-20T12:37:55+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-20T12:37:59+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:38
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('hgfhgf', 'b2dec7ee96f5b47...')
+#1 {main}
+2020-02-20T12:38:10+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-20T14:19:45+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-20T14:19:48+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:38
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('cgfhfh', '30bea55b94dffa9...')
+#1 {main}
+2020-02-20T14:20:02+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-20T14:28:56+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-20T14:29:00+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-20T14:31:25+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-20T14:33:15+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-20T14:33:21+00:00 INFO  FINIR OPERATION adnbnt mit fin à une opération qui n'existe pas
+2020-02-20T14:33:28+00:00 INFO  FINIR OPERATION adnbnt mit fin à une opération qui n'existe pas
+2020-02-20T14:36:36+00:00 INFO  FINIR OPERATION adnbnt mit fin à une opération qui n'existe pas
+2020-02-20T14:36:43+00:00 INFO  FINIR OPERATION adnbnt mit fin à une opération qui n'existe pas
+2020-02-20T14:38:42+00:00 INFO  FINIR OPERATION adnbnt mit fin à une opération qui n'existe pas
+2020-02-20T14:39:44+00:00 INFO  FINIR OPERATION adnbnt mit fin à une opération qui n'existe pas
+2020-02-20T14:40:58+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
+2020-02-20T14:52:46+00:00 DEBUG AJOUT OPERATION adnbnt à valider un champ vide
+2020-02-20T14:53:54+00:00 DEBUG AJOUT OPERATION adnbnt à valider un champ vide
+2020-02-20T14:55:09+00:00 DEBUG AJOUT OPERATION adnbnt à valider un champ vide
+2020-02-20T15:00:20+00:00 DEBUG FINIR OPERATION adnbnt à valider un champ vide ou pas au bon format
+2020-02-20T15:00:20+00:00 INFO  FINIR OPERATION adnbnt mit fin à une opération qui n'existe pas
+2020-02-20T15:01:58+00:00 DEBUG MODIF UTILISATEUR  à valider un champ vide ou pas au bon format
+2020-02-20T15:01:58+00:00 INFO  MODIF UTILISATEUR  à modifier un utilisateur qui n'existe pas
+2020-02-20T15:09:07+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-20T15:09:10+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-20T15:10:08+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-20T15:10:30+00:00 INFO  AJOUT UTILISATEUR adnbnt a ajouter un utilisateur déjà existant
+2020-02-20T15:10:58+00:00 TRACE AJOUT UTILISATEUR adnbnt a ajouter un utilisateur
+2020-02-20T15:11:03+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-20T15:11:38+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:38
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('admin', 'a88d4ae7dc2a22f...')
+#1 {main}
+2020-02-20T15:12:07+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:38
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('admin', 'a88d4ae7dc2a22f...')
+#1 {main}
+2020-02-20T15:12:07+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:38
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('admin', 'a88d4ae7dc2a22f...')
+#1 {main}
+2020-02-20T15:12:08+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:38
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('admin', 'a88d4ae7dc2a22f...')
+#1 {main}
+2020-02-20T15:12:08+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:38
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('admin', 'a88d4ae7dc2a22f...')
+#1 {main}
+2020-02-20T15:12:09+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:38
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('admin', 'a88d4ae7dc2a22f...')
+#1 {main}
+2020-02-20T15:12:09+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:38
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('admin', 'a88d4ae7dc2a22f...')
+#1 {main}
+2020-02-20T15:12:09+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:38
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('admin', 'a88d4ae7dc2a22f...')
+#1 {main}
+2020-02-20T15:12:51+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:38
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('admin', 'a88d4ae7dc2a22f...')
+#1 {main}
+2020-02-20T15:13:26+00:00 TRACE CONNEXION L'utilisateur toto s'est connecté en tant qu'Expert
+2020-02-20T15:13:58+00:00 TRACE DECONNEXION L'utilisateur toto s'est déconnecté
+2020-02-20T15:14:02+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-20T15:14:15+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-20T15:15:16+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-20T15:15:25+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-20T15:16:02+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-20T15:16:14+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-20T15:16:53+00:00 TRACE CONNEXION L'utilisateur toto s'est connecté en tant qu'Expert
+2020-02-20T15:22:48+00:00 DEBUG AJOUT UTILISATEUR adnbnt à valider un champ vide
+2020-02-20T15:25:05+00:00 TRACE AJOUT UTILISATEUR toto a ajouter un utilisateur
+2020-02-20T15:25:59+00:00 TRACE AJOUT UTILISATEUR toto a ajouter un utilisateur
+2020-02-21T07:55:17+00:00 TRACE CONNEXION L'utilisateur toto s'est connecté en tant qu'Expert
+2020-02-21T07:55:41+00:00 TRACE AJOUT UTILISATEUR toto a ajouter un utilisateur
+2020-02-21T07:56:40+00:00 TRACE DECONNEXION L'utilisateur toto s'est déconnecté
+2020-02-21T07:56:46+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-21T07:56:54+00:00 TRACE CONNEXION L'utilisateur adn s'est connecté en tant qu'Expert
+2020-02-21T08:03:09+00:00 TRACE DECONNEXION L'utilisateur adn s'est déconnecté
+2020-02-21T08:03:15+00:00 TRACE CONNEXION L'utilisateur toto s'est connecté en tant qu'Expert
+2020-02-21T08:05:53+00:00 TRACE AJOUT UTILISATEUR toto a ajouter un utilisateur
+2020-02-21T08:05:56+00:00 TRACE DECONNEXION L'utilisateur toto s'est déconnecté
+2020-02-21T08:06:01+00:00 TRACE CONNEXION L'utilisateur lolo s'est connecté en tant qu'utilisateur
+2020-02-21T08:09:05+00:00 TRACE DECONNEXION L'utilisateur lolo s'est déconnecté
+2020-02-21T08:09:09+00:00 TRACE CONNEXION L'utilisateur adn s'est connecté en tant qu'Expert
+2020-02-21T08:09:29+00:00 DEBUG AJOUT UTILISATEUR bribri à valider un champ vide
+2020-02-21T08:32:47+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T08:32:47+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T08:32:47+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T08:32:47+00:00 DEBUG AJOUT UTILISATEUR lol à valider un champ vide
+2020-02-21T08:33:11+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T08:33:11+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T08:33:11+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T08:33:11+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T08:33:11+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T08:33:11+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T08:33:12+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T08:33:12+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T08:33:12+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T08:46:04+00:00 TRACE AJOUT UTILISATEUR adn a ajouter un utilisateur
+2020-02-21T08:47:45+00:00 DEBUG AJOUT UTILISATEUR lolo à valider un champ vide
+2020-02-21T08:47:52+00:00 TRACE AJOUT UTILISATEUR adn a ajouter un utilisateur
+2020-02-21T09:23:58+00:00 DEBUG MODIF UTILISATEUR  à valider un champ vide ou pas au bon format
+2020-02-21T09:23:58+00:00 INFO  MODIF UTILISATEUR  à modifier un utilisateur qui n'existe pas
+2020-02-21T09:25:03+00:00 DEBUG MODIF UTILISATEUR  à valider un champ vide ou pas au bon format
+2020-02-21T09:25:03+00:00 INFO  MODIF UTILISATEUR  à modifier un utilisateur qui n'existe pas
+2020-02-21T09:27:59+00:00 DEBUG MODIF UTILISATEUR  à valider un champ vide ou pas au bon format
+2020-02-21T09:27:59+00:00 INFO  MODIF UTILISATEUR  à modifier un utilisateur qui n'existe pas
+2020-02-21T09:30:16+00:00 TRACE DECONNEXION L'utilisateur adn s'est déconnecté
+2020-02-21T09:30:26+00:00 TRACE CONNEXION L'utilisateur toto s'est connecté en tant qu'Expert
+2020-02-21T09:30:52+00:00 INFO  AJOUT CLIENT toto à ajouter un client
+2020-02-21T09:31:19+00:00 INFO  AJOUT OPERATION toto à ajouter une opération
+2020-02-21T09:31:27+00:00 DEBUG AJOUT OPERATION toto à valider un champ vide ou pas au bon format
+2020-02-21T09:31:27+00:00 DEBUG AJOUT OPERATION toto à valider un champ vide ou pas au bon format
+2020-02-21T09:31:27+00:00 DEBUG AJOUT OPERATION toto à valider un champ vide ou pas au bon format
+2020-02-21T09:31:27+00:00 INFO  AJOUT OPERATION toto à ajouter une opération à un utilisateur non existant
+2020-02-21T09:32:23+00:00 INFO  AJOUT OPERATION toto à ajouter une opération
+2020-02-21T09:32:34+00:00 INFO  FINIR OPERATION toto mit fin à une opération qui n'existe pas
+2020-02-21T09:32:40+00:00 DEBUG FINIR OPERATION toto à valider un champ vide ou pas au bon format
+2020-02-21T09:32:40+00:00 INFO  FINIR OPERATION toto mit fin à une opération qui n'existe pas
+2020-02-21T09:32:45+00:00 TRACE FINIR OPERATION toto a mit fin à une opération
+2020-02-21T09:35:18+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:18+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:18+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:18+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:18+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:23+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:23+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:23+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:23+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:24+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:24+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:24+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:24+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:24+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:24+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:24+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:24+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:24+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:24+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:24+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:24+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:25+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:25+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:25+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:35:25+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:18+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:18+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:18+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:18+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:39+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:39+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:39+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:39+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:39+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:39+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:39+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:39+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:39+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:39+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:40+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:40+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:40+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:40+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:40+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:40+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:40+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:40+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:40+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:40+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T09:36:41+00:00 DEBUG AJOUT UTILISATEUR titititi78 à valider un champ vide
+2020-02-21T09:36:42+00:00 DEBUG AJOUT UTILISATEUR titititi78 à valider un champ vide
+2020-02-21T09:36:42+00:00 DEBUG AJOUT UTILISATEUR titititi78 à valider un champ vide
+2020-02-21T09:36:42+00:00 DEBUG AJOUT UTILISATEUR titititi78 à valider un champ vide
+2020-02-21T09:36:44+00:00 DEBUG AJOUT UTILISATEUR titititi78 à valider un champ vide
+2020-02-21T09:36:44+00:00 DEBUG AJOUT UTILISATEUR titititi78 à valider un champ vide
+2020-02-21T09:36:44+00:00 DEBUG AJOUT UTILISATEUR titititi78 à valider un champ vide
+2020-02-21T09:36:44+00:00 DEBUG AJOUT UTILISATEUR titititi78 à valider un champ vide
+2020-02-21T09:36:44+00:00 DEBUG AJOUT UTILISATEUR titititi78 à valider un champ vide
+2020-02-21T09:36:47+00:00 DEBUG AJOUT UTILISATEUR titititi à valider un champ vide
+2020-02-21T09:36:47+00:00 DEBUG AJOUT UTILISATEUR titititi à valider un champ vide
+2020-02-21T09:36:47+00:00 DEBUG AJOUT UTILISATEUR titititi à valider un champ vide
+2020-02-21T09:36:48+00:00 DEBUG AJOUT UTILISATEUR titititi à valider un champ vide
+2020-02-21T09:36:48+00:00 DEBUG AJOUT UTILISATEUR titititi à valider un champ vide
+2020-02-21T09:36:48+00:00 DEBUG AJOUT UTILISATEUR titititi à valider un champ vide
+2020-02-21T09:36:48+00:00 DEBUG AJOUT UTILISATEUR titititi à valider un champ vide
+2020-02-21T09:36:49+00:00 DEBUG AJOUT UTILISATEUR titititi à valider un champ vide
+2020-02-21T09:36:49+00:00 DEBUG AJOUT UTILISATEUR titititi à valider un champ vide
+2020-02-21T09:36:50+00:00 DEBUG AJOUT UTILISATEUR titititi à valider un champ vide
+2020-02-21T09:36:50+00:00 DEBUG AJOUT UTILISATEUR titititi à valider un champ vide
+2020-02-21T09:36:50+00:00 DEBUG AJOUT UTILISATEUR titititi à valider un champ vide
+2020-02-21T09:36:50+00:00 DEBUG AJOUT UTILISATEUR titititi à valider un champ vide
+2020-02-21T09:36:55+00:00 TRACE AJOUT UTILISATEUR toto a ajouter un utilisateur
+2020-02-21T09:42:19+00:00 TRACE DECONNEXION L'utilisateur toto s'est déconnecté
+2020-02-21T09:42:28+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-21T09:42:28+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-21T09:43:00+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-21T09:43:00+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-21T09:43:32+00:00 TRACE CONNEXION L'utilisateur adn s'est connecté en tant qu'Expert
+2020-02-21T09:58:21+00:00 TRACE DECONNEXION L'utilisateur adn s'est déconnecté
+2020-02-21T09:58:32+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-21T09:58:32+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-21T09:59:06+00:00 TRACE CONNEXION L'utilisateur toto s'est connecté en tant qu'Expert
+2020-02-21T09:59:29+00:00 DEBUG AJOUT OPERATION toto à valider un champ vide ou pas au bon format
+2020-02-21T09:59:29+00:00 DEBUG AJOUT OPERATION toto à valider un champ vide ou pas au bon format
+2020-02-21T09:59:29+00:00 DEBUG AJOUT OPERATION toto à valider un champ vide ou pas au bon format
+2020-02-21T09:59:29+00:00 INFO  AJOUT OPERATION toto à ajouter une opération à un utilisateur non existant
+2020-02-21T10:00:17+00:00 TRACE AJOUT UTILISATEUR toto a ajouter un utilisateur
+2020-02-21T10:03:02+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-21T10:03:37+00:00 TRACE AJOUT UTILISATEUR toto a ajouter un utilisateur
+2020-02-21T10:03:47+00:00 TRACE DECONNEXION L'utilisateur toto s'est déconnecté
+2020-02-21T10:03:53+00:00 TRACE CONNEXION L'utilisateur adn s'est connecté en tant qu'Expert
+2020-02-21T10:05:04+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T10:06:08+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T10:09:32+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T10:10:49+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T10:11:17+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T10:12:23+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T10:12:59+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T10:13:45+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T10:14:24+00:00 TRACE FINIR OPERATION adn a mit fin à une opération
+2020-02-21T10:19:33+00:00 TRACE DECONNEXION L'utilisateur adn s'est déconnecté
+2020-02-21T10:20:12+00:00 TRACE CONNEXION L'utilisateur adn s'est connecté en tant qu'Expert
+2020-02-21T10:23:04+00:00 TRACE DECONNEXION L'utilisateur adn s'est déconnecté
+2020-02-21T10:23:29+00:00 TRACE CONNEXION L'utilisateur adn s'est connecté en tant qu'Expert
+2020-02-21T10:24:11+00:00 DEBUG AJOUT UTILISATEUR adn à valider un champ vide
+2020-02-21T10:24:11+00:00 INFO  AJOUT UTILISATEUR adn a ajouter un utilisateur déjà existant
+2020-02-21T10:24:42+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:43+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:44+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:44+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:44+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:44+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:45+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:45+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:45+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:45+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:45+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:46+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:46+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:46+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:46+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:46+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:46+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:47+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:47+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:47+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:47+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:47+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:47+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:48+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:48+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:51+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:52+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:52+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:52+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:24:52+00:00 DEBUG AJOUT UTILISATEUR carvalate à valider un champ vide
+2020-02-21T10:25:00+00:00 TRACE AJOUT UTILISATEUR adn a ajouter un utilisateur
+2020-02-21T10:25:41+00:00 TRACE FINIR OPERATION adn a mit fin à une opération
+2020-02-21T10:26:00+00:00 TRACE DECONNEXION L'utilisateur adn s'est déconnecté
+2020-02-21T10:26:10+00:00 TRACE CONNEXION L'utilisateur adn s'est connecté en tant qu'Expert
+2020-02-21T10:26:22+00:00 TRACE DECONNEXION L'utilisateur adn s'est déconnecté
+2020-02-21T10:26:34+00:00 TRACE CONNEXION L'utilisateur carvalate s'est connecté en tant qu'utilisateur
+2020-02-21T10:27:57+00:00 TRACE DECONNEXION L'utilisateur carvalate s'est déconnecté
+2020-02-21T10:28:03+00:00 TRACE CONNEXION L'utilisateur adn s'est connecté en tant qu'Expert
+2020-02-21T10:28:29+00:00 TRACE DECONNEXION L'utilisateur adn s'est déconnecté
+2020-02-21T10:37:17+00:00 TRACE CONNEXION L'utilisateur adn s'est connecté en tant qu'Expert
+2020-02-21T10:37:31+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T10:41:21+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T10:42:19+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T10:45:22+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T10:54:43+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T11:02:46+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T11:03:59+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T11:05:39+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T11:10:03+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T11:10:47+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T11:10:58+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T11:12:36+00:00 INFO  AJOUT OPERATION adn à ajouter une opération
+2020-02-21T13:39:56+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('adn', 'a88d4ae7dc2a22f...')
+#1 {main}
+2020-02-21T13:40:09+00:00 TRACE CONNEXION L'utilisateur adn s'est connecté en tant qu'Expert
+2020-02-21T13:40:15+00:00 TRACE FINIR OPERATION adn a mit fin à une opération
+2020-02-21T13:40:20+00:00 TRACE FINIR OPERATION adn a mit fin à une opération
+2020-02-21T13:40:25+00:00 TRACE FINIR OPERATION adn a mit fin à une opération
+2020-02-21T13:40:30+00:00 TRACE FINIR OPERATION adn a mit fin à une opération
+2020-02-21T13:49:09+00:00 TRACE AJOUT UTILISATEUR adn a ajouter un utilisateur
+2020-02-21T13:49:23+00:00 TRACE DECONNEXION L'utilisateur adn s'est déconnecté
+2020-02-21T13:49:29+00:00 TRACE CONNEXION L'utilisateur john s'est connecté en tant qu'Expert
+2020-02-21T13:49:45+00:00 INFO  AJOUT OPERATION john à ajouter une opération à un utilisateur non existant
+2020-02-21T13:50:11+00:00 INFO  AJOUT CLIENT john à ajouter un client
+2020-02-21T13:50:37+00:00 INFO  AJOUT OPERATION john à ajouter une opération
+2020-02-21T13:50:47+00:00 TRACE FINIR OPERATION john a mit fin à une opération
+2020-02-21T13:55:30+00:00 INFO  AJOUT OPERATION john à ajouter une opération
+2020-02-21T13:55:37+00:00 TRACE FINIR OPERATION john a mit fin à une opération
+2020-02-21T13:59:02+00:00 TRACE DECONNEXION L'utilisateur john s'est déconnecté
+2020-02-21T13:59:17+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('adnbnt', 'fe6ad6a10bea1c7...')
+#1 {main}
+2020-02-21T13:59:22+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-21T13:59:32+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
+2020-02-21T14:02:38+00:00 TRACE AJOUT UTILISATEUR adnbnt a ajouter un utilisateur
+2020-02-21T14:02:46+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-21T14:03:01+00:00 TRACE CONNEXION L'utilisateur john s'est connecté en tant qu'Expert
+2020-02-21T16:30:44+00:00 TRACE CONNEXION L'utilisateur john s'est connecté en tant qu'Expert
+2020-02-21T16:30:56+00:00 TRACE DECONNEXION L'utilisateur john s'est déconnecté
+2020-02-21T16:31:02+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('adn', 'a88d4ae7dc2a22f...')
+#1 {main}
+2020-02-21T16:31:23+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-21T16:32:37+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-24T09:46:32+00:00 TRACE CONNEXION L'utilisateur john s'est connecté en tant qu'Expert
+2020-02-24T09:46:59+00:00 TRACE DECONNEXION L'utilisateur john s'est déconnecté
+2020-02-24T09:54:36+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T09:57:28+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-24T09:58:12+00:00 INFO  AJOUT CLIENT adnbnt à ajouter un client
+2020-02-24T09:58:32+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
+2020-02-24T09:59:03+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
+2020-02-24T10:01:21+00:00 DEBUG AJOUT UTILISATEUR toto à valider un champ vide
+2020-02-24T10:01:29+00:00 TRACE AJOUT UTILISATEUR adnbnt a ajouter un utilisateur
+2020-02-24T10:02:14+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-24T10:02:22+00:00 TRACE CONNEXION L'utilisateur toto s'est connecté en tant qu'utilisateur
+2020-02-24T10:03:59+00:00 TRACE DECONNEXION L'utilisateur toto s'est déconnecté
+2020-02-24T12:46:09+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T12:46:18+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-24T12:46:26+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-24T12:46:36+00:00 TRACE CONNEXION L'utilisateur toto s'est connecté en tant qu'utilisateur
+2020-02-24T12:46:42+00:00 TRACE DECONNEXION L'utilisateur toto s'est déconnecté
+2020-02-24T12:46:51+00:00 TRACE CONNEXION L'utilisateur micha s'est connecté en tant qu'utilisateur
+2020-02-24T12:47:12+00:00 TRACE DECONNEXION L'utilisateur micha s'est déconnecté
+2020-02-24T12:49:55+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('admin', 'a88d4ae7dc2a22f...')
+#1 {main}
+2020-02-24T12:50:09+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-24T12:52:34+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération à un utilisateur non existant
+2020-02-24T12:52:48+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération à un utilisateur non existant
+2020-02-24T12:53:34+00:00 INFO  AJOUT CLIENT adnbnt à ajouter un client
+2020-02-24T12:54:15+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-24T12:54:19+00:00 TRACE CONNEXION L'utilisateur micha s'est connecté en tant qu'utilisateur
+2020-02-24T12:54:33+00:00 TRACE DECONNEXION L'utilisateur micha s'est déconnecté
+2020-02-24T12:54:45+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-24T12:55:14+00:00 INFO  AJOUT CLIENT adnbnt à ajouter un client
+2020-02-24T12:55:18+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-24T12:55:26+00:00 TRACE CONNEXION L'utilisateur micha s'est connecté en tant qu'utilisateur
+2020-02-24T12:56:53+00:00 TRACE DECONNEXION L'utilisateur micha s'est déconnecté
+2020-02-24T12:58:04+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-24T12:58:50+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
+2020-02-24T13:00:10+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-24T13:00:27+00:00 TRACE CONNEXION L'utilisateur micha s'est connecté en tant qu'utilisateur
+2020-02-24T13:01:39+00:00 TRACE DECONNEXION L'utilisateur micha s'est déconnecté
+2020-02-24T13:01:48+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-24T13:04:34+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
+2020-02-24T13:05:31+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-24T13:05:40+00:00 TRACE CONNEXION L'utilisateur toto s'est connecté en tant qu'utilisateur
+2020-02-24T13:06:33+00:00 INFO  AJOUT OPERATION toto à ajouter une opération
+2020-02-24T13:07:01+00:00 TRACE DECONNEXION L'utilisateur toto s'est déconnecté
+2020-02-24T13:07:06+00:00 TRACE CONNEXION L'utilisateur toto s'est connecté en tant qu'utilisateur
+2020-02-24T13:09:42+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-24T13:09:49+00:00 TRACE DECONNEXION L'utilisateur toto s'est déconnecté
+2020-02-24T13:09:58+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
+2020-02-24T13:10:00+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-24T13:10:00+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-24T13:10:05+00:00 TRACE CONNEXION L'utilisateur micha s'est connecté en tant qu'utilisateur
+2020-02-24T13:10:34+00:00 TRACE DECONNEXION L'utilisateur micha s'est déconnecté
+2020-02-24T13:10:39+00:00 TRACE CONNEXION L'utilisateur toto s'est connecté en tant qu'utilisateur
+2020-02-24T13:10:58+00:00 TRACE AJOUT OPERATION toto à ajouter une opération à un utilisateur qui été déjà à son maximum
+2020-02-24T13:11:13+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-24T13:11:15+00:00 TRACE DECONNEXION L'utilisateur toto s'est déconnecté
+2020-02-24T13:11:20+00:00 TRACE CONNEXION L'utilisateur micha s'est connecté en tant qu'utilisateur
+2020-02-24T13:11:22+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-24T13:11:36+00:00 TRACE DECONNEXION L'utilisateur micha s'est déconnecté
+2020-02-24T13:11:41+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
+2020-02-24T13:11:52+00:00 TRACE CONNEXION L'utilisateur toto s'est connecté en tant qu'utilisateur
+2020-02-24T13:12:05+00:00 TRACE AJOUT OPERATION toto à ajouter une opération à un utilisateur qui été déjà à son maximum
+2020-02-24T13:12:42+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
+2020-02-24T13:12:45+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-24T13:12:52+00:00 TRACE CONNEXION L'utilisateur toto s'est connecté en tant qu'utilisateur
+2020-02-24T13:12:59+00:00 TRACE DECONNEXION L'utilisateur toto s'est déconnecté
+2020-02-24T13:13:05+00:00 TRACE CONNEXION L'utilisateur micha s'est connecté en tant qu'utilisateur
+2020-02-24T13:13:24+00:00 TRACE DECONNEXION L'utilisateur micha s'est déconnecté
+2020-02-24T13:13:33+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-24T13:14:01+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
+2020-02-24T13:14:16+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
+2020-02-24T13:15:05+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération à un utilisateur non existant
+2020-02-24T13:16:23+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
+2020-02-24T13:17:45+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
+2020-02-24T13:18:55+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
+2020-02-24T13:21:27+00:00 DEBUG AJOUT OPERATION adnbnt à valider un champ vide ou pas au bon format
+2020-02-24T13:21:27+00:00 DEBUG AJOUT OPERATION adnbnt à valider un champ vide ou pas au bon format
+2020-02-24T13:23:24+00:00 DEBUG AJOUT OPERATION adnbnt à valider un champ vide ou pas au bon format
+2020-02-24T13:26:25+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('adnbnt', '68ebb0d86b6e885...')
+#1 {main}
+2020-02-24T13:26:25+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
+2020-02-24T13:26:45+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('adnbnt', '31797ad5426ba28...')
+#1 {main}
+2020-02-24T13:26:46+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('adnbnt', '31797ad5426ba28...')
+#1 {main}
+2020-02-24T13:26:47+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('adnbnt', '31797ad5426ba28...')
+#1 {main}
+2020-02-24T13:26:57+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('adnbnt', '31797ad5426ba28...')
+#1 {main}
+2020-02-24T13:27:23+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('adnbnt', 'b5eb9894c2ed0b3...')
+#1 {main}
+2020-02-24T13:27:24+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('adnbnt', 'b5eb9894c2ed0b3...')
+#1 {main}
+2020-02-24T13:27:35+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
+2020-02-24T13:28:47+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
+2020-02-24T13:31:43+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-24T13:31:50+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('adbnt', 'a88d4ae7dc2a22f...')
+#1 {main}
+2020-02-24T13:32:11+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-24T13:34:41+00:00 DEBUG FINIR OPERATION adnbnt à valider un champ vide ou pas au bon format
+2020-02-24T13:34:41+00:00 INFO  FINIR OPERATION adnbnt mit fin à une opération qui n'existe pas
+2020-02-24T13:35:50+00:00 DEBUG FINIR OPERATION adnbnt à valider un champ vide ou pas au bon format
+2020-02-24T13:35:50+00:00 INFO  FINIR OPERATION adnbnt mit fin à une opération qui n'existe pas
+2020-02-24T13:36:01+00:00 DEBUG FINIR OPERATION adnbnt à valider un champ vide ou pas au bon format
+2020-02-24T13:36:02+00:00 INFO  FINIR OPERATION adnbnt mit fin à une opération qui n'existe pas
+2020-02-24T13:36:22+00:00 INFO  FINIR OPERATION adnbnt mit fin à une opération qui n'existe pas
+2020-02-24T13:39:10+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:10+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:12+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:12+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:21+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:21+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:22+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:22+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:23+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:23+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:23+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:23+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:23+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:23+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:24+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:24+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:24+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:24+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:24+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:24+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:24+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:24+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:28+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:28+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:29+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:29+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:29+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:29+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:29+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:39:30+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:40:40+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:40:56+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-24T13:41:57+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:42:11+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:42:11+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:42:12+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:42:12+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:42:12+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:42:12+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:42:12+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:42:12+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:42:12+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:42:12+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:42:13+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:42:13+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:42:13+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:42:13+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:42:14+00:00 DEBUG FINIR OPERATION adnbnt à valider un champ vide ou pas au bon format
+2020-02-24T13:42:14+00:00 INFO  FINIR OPERATION adnbnt mit fin à une opération qui n'existe pas
+2020-02-24T13:43:22+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('admin', 'ebb82427369cc3f...')
+#1 {main}
+2020-02-24T13:43:24+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('admin', 'ebb82427369cc3f...')
+#1 {main}
+2020-02-24T13:43:25+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('admin', 'ebb82427369cc3f...')
+#1 {main}
+2020-02-24T13:43:27+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('admin', 'ebb82427369cc3f...')
+#1 {main}
+2020-02-24T13:43:37+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('admin', 'ebb82427369cc3f...')
+#1 {main}
+2020-02-24T13:43:38+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('admin', 'ebb82427369cc3f...')
+#1 {main}
+2020-02-24T13:43:38+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('admin', 'ebb82427369cc3f...')
+#1 {main}
+2020-02-24T13:43:38+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('admin', 'ebb82427369cc3f...')
+#1 {main}
+2020-02-24T13:43:39+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('admin', 'ebb82427369cc3f...')
+#1 {main}
+2020-02-24T13:43:44+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('admin', 'ebb82427369cc3f...')
+#1 {main}
+2020-02-24T13:43:45+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('admin', 'ebb82427369cc3f...')
+#1 {main}
+2020-02-24T13:43:45+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('admin', 'ebb82427369cc3f...')
+#1 {main}
+2020-02-24T13:43:45+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('admin', 'ebb82427369cc3f...')
+#1 {main}
+2020-02-24T13:44:55+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('adadnbnt', 'ebb82427369cc3f...')
+#1 {main}
+2020-02-24T13:44:56+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('adadnbnt', 'ebb82427369cc3f...')
+#1 {main}
+2020-02-24T13:44:57+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('adadnbnt', 'ebb82427369cc3f...')
+#1 {main}
+2020-02-24T13:44:57+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('adadnbnt', 'ebb82427369cc3f...')
+#1 {main}
+2020-02-24T13:45:26+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:45:27+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:45:28+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:45:28+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:45:30+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:45:30+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:45:31+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:45:31+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:45:31+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:45:31+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:45:45+00:00 DEBUG FINIR OPERATION adnbnt à valider un champ vide ou pas au bon format
+2020-02-24T13:45:45+00:00 INFO  FINIR OPERATION adnbnt mit fin à une opération qui n'existe pas
+2020-02-24T13:45:57+00:00 DEBUG FINIR OPERATION adnbnt à valider un champ vide ou pas au bon format
+2020-02-24T13:45:57+00:00 INFO  FINIR OPERATION adnbnt mit fin à une opération qui n'existe pas
+2020-02-24T13:46:27+00:00 TRACE AJOUT OPERATION adnbnt à ajouter une opération à un utilisateur qui été déjà à son maximum
+2020-02-24T13:46:44+00:00 TRACE AJOUT OPERATION adnbnt à ajouter une opération à un utilisateur qui été déjà à son maximum
+2020-02-24T13:47:15+00:00 INFO  FINIR OPERATION adnbnt mit fin à une opération qui n'existe pas
+2020-02-24T13:47:23+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
+2020-02-24T13:47:28+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('adadnbnt', 'bc30e9b004c7901...')
+#1 {main}
+2020-02-24T13:47:29+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(40): Connexion::checkUser('adadnbnt', 'bc30e9b004c7901...')
+#1 {main}
+2020-02-24T13:47:33+00:00 DEBUG FINIR OPERATION adnbnt à valider un champ vide ou pas au bon format
+2020-02-24T13:47:33+00:00 INFO  FINIR OPERATION adnbnt mit fin à une opération qui n'existe pas
+2020-02-24T13:47:34+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:47:34+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:47:38+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:47:38+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:47:38+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:47:38+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:47:38+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:47:38+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:47:41+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
+2020-02-24T13:47:47+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
+2020-02-24T13:48:16+00:00 DEBUG AJOUT CLIENT adnbnt à valider un champ vide
+2020-02-24T13:48:16+00:00 DEBUG AJOUT CLIENT adnbnt à valider un champ vide
+2020-02-24T13:48:16+00:00 WARN  AJOUT CLIENT Le client n'a pas pu être crée addClient_action.php
+2020-02-24T13:48:30+00:00 DEBUG FINIR OPERATION adnbnt à valider un champ vide ou pas au bon format
+2020-02-24T13:48:30+00:00 INFO  FINIR OPERATION adnbnt mit fin à une opération qui n'existe pas
+2020-02-24T13:49:16+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-24T13:49:16+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-24T13:49:16+00:00 INFO  AJOUT UTILISATEUR  a ajouter un utilisateur déjà existant
+2020-02-24T13:49:23+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-24T13:49:23+00:00 DEBUG AJOUT UTILISATEUR  à valider un champ vide
+2020-02-24T13:49:23+00:00 INFO  AJOUT UTILISATEUR  a ajouter un utilisateur déjà existant
+2020-02-24T13:51:57+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-24T13:52:19+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:52:26+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:52:37+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:52:37+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:52:43+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:52:43+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:52:47+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:52:47+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:53:03+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-24T13:53:17+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-24T13:53:54+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
+2020-02-24T14:13:28+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération
+2020-02-24T14:14:03+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-24T14:18:40+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-24T14:18:47+00:00 DEBUG FINIR OPERATION adnbnt à valider un champ vide ou pas au bon format
+2020-02-24T14:18:47+00:00 INFO  FINIR OPERATION adnbnt mit fin à une opération qui n'existe pas
+2020-02-24T14:19:14+00:00 DEBUG FINIR OPERATION adnbnt à valider un champ vide ou pas au bon format
+2020-02-24T14:19:14+00:00 INFO  FINIR OPERATION adnbnt mit fin à une opération qui n'existe pas
+2020-02-26T10:19:45+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-26T10:21:25+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T10:22:03+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-26T10:22:15+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T10:24:28+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-26T10:26:42+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T10:26:58+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-26T10:48:58+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T10:49:07+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-26T10:50:16+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T10:50:30+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-26T10:52:48+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T10:53:46+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-26T10:56:48+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T10:57:07+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-26T10:57:49+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T10:58:13+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-26T10:59:00+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T10:59:07+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-26T10:59:10+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T10:59:51+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-26T10:59:55+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T11:00:22+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-26T11:00:30+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T11:00:37+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-26T11:00:44+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T11:01:41+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-26T11:01:44+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T11:02:04+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-26T11:02:10+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T11:05:07+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-26T11:06:33+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T11:06:40+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-26T11:06:42+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T11:06:53+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-26T12:59:28+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T12:59:43+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-26T13:01:09+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T13:01:14+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-26T13:01:32+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T13:02:56+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-26T13:03:02+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T13:03:27+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-26T13:03:31+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T13:04:34+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-26T13:12:44+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T13:17:56+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-26T13:19:11+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T13:19:28+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-26T13:19:28+00:00 DEBUG CONNEXION L'utilisateur a réussi à valider un champ vide
+2020-02-26T13:21:31+00:00 TRACE DECONNEXION L'utilisateur  s'est déconnecté
+2020-02-26T13:23:27+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-26T13:45:55+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T13:46:01+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T13:47:59+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T13:48:53+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T13:49:26+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T13:53:18+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T14:15:09+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T14:15:48+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T14:17:11+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T14:17:21+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T14:17:22+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T14:17:22+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T14:17:22+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T14:18:03+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T14:18:03+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T14:18:04+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T14:18:04+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T14:18:04+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T14:18:09+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T14:18:10+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T14:18:10+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T14:19:13+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T14:19:15+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T14:19:15+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T14:19:16+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T14:19:16+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T14:19:22+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T14:20:12+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T14:20:47+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-26T14:21:27+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T14:21:39+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T14:22:19+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-26T14:22:52+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T14:23:42+00:00 WARN  CONNEXION Exception: L'utilisateur n'existe pas ! in C:\wamp64\www\propar\src\tp_propar\model\cnx_class.php:43
+Stack trace:
+#0 C:\wamp64\www\propar\src\tp_propar\controler\cnx_action.php(42): Connexion::checkUser(NULL, NULL)
+#1 {main}
+2020-02-26T14:28:12+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T14:28:13+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T14:28:14+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T14:28:15+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T14:28:15+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T14:28:15+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T14:28:15+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T14:28:16+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T14:28:16+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T14:28:16+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T14:28:17+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T14:28:17+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T14:29:00+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T14:29:23+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-26T14:29:56+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-26T14:52:14+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-27T12:31:38+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-27T12:41:33+00:00 DEBUG AJOUT CLIENT adnbnt à valider un champ vide
+2020-02-27T12:41:33+00:00 WARN  AJOUT CLIENT Le client n'a pas pu être crée addClient_action.php
+2020-02-27T12:42:19+00:00 DEBUG AJOUT CLIENT adnbnt à valider un champ vide
+2020-02-27T12:42:19+00:00 WARN  AJOUT CLIENT Le client n'a pas pu être crée addClient_action.php
+2020-02-27T12:42:50+00:00 INFO  AJOUT CLIENT adnbnt à ajouter un client
+2020-02-27T12:44:14+00:00 INFO  AJOUT CLIENT adnbnt à ajouter un client
+2020-02-27T12:46:34+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
+2020-02-27T12:47:01+00:00 DEBUG AJOUT CLIENT adnbnt à valider un champ vide
+2020-02-27T12:47:01+00:00 WARN  AJOUT CLIENT Le client n'a pas pu être crée addClient_action.php
+2020-02-27T12:48:14+00:00 DEBUG AJOUT CLIENT adnbnt à valider un champ vide
+2020-02-27T12:48:14+00:00 WARN  AJOUT CLIENT Le client n'a pas pu être crée addClient_action.php
+2020-02-27T12:48:39+00:00 INFO  AJOUT CLIENT adnbnt à ajouter un client
+2020-02-27T12:53:52+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-28T08:08:04+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-28T08:13:49+00:00 INFO  AJOUT CLIENT adnbnt à ajouter un client
+2020-02-28T08:16:16+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
+2020-02-28T08:16:52+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération

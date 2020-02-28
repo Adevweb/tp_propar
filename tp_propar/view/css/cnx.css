@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('font/Rubik/Bold/Rubik-Bold.eot');
+    src: url('font/Rubik/Bold/Rubik-Bold.eot?#iefix') format('embedded-opentype'),
+        url('font/Rubik/Bold/Rubik-Bold.woff2') format('woff2'),
+        url('font/Rubik/Bold/Rubik-Bold.woff') format('woff'),
+        url('font/Rubik/Bold/Rubik-Bold.ttf') format('truetype'),
+        url('font/Rubik/Bold/Rubik-Bold.svg#Rubik-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url('font/Rubik/Light/Rubik-Light.eot');
+    src: url('font/Rubik/Light/Rubik-Light.eot?#iefix') format('embedded-opentype'),
+        url('font/Rubik/Light/Rubik-Light.woff2') format('woff2'),
+        url('font/Rubik/Light/Rubik-Light.woff') format('woff'),
+        url('font/Rubik/Light/Rubik-Light.ttf') format('truetype'),
+        url('font/Rubik/Light/Rubik-Light.svg#Rubik-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lobster';
+    src: url('font/Lobster/Lobster-Regular.eot');
+    src: url('font/Lobster/Lobster-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/Lobster/Lobster-Regular.woff2') format('woff2'),
+        url('font/Lobster/Lobster-Regular.woff') format('woff'),
+        url('font/Lobster/Lobster-Regular.ttf') format('truetype'),
+        url('font/Lobster/Lobster-Regular.svg#Lobster-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    scroll-behavior: smooth;
+    font-family: 'Rubik';
+    font-weight: 300;
+}
+
+body {
+    padding : 0;
+    margin: 0;
+}
+
+/* HEADER */
+
+.headTitleLeft {
+    color : white;
+    font-family: 'Rubik';
+    font-weight: bold;
+    font-size : 3.2em;
+    text-shadow : 0px 0px 5px  #818D92;
+}
+.headTitleRight {
+    margin-right : 5%;
+    color : white;
+    text-shadow : 0px 0px 5px  #818D92;
+}
+.header  {
+    padding-top : 40px;
+    padding-bottom : 40px;
+    background-image: url("../img/back4.png");
+    background-size: cover;
+    font-size: 30px;
+}
+.fas {
+    font-size:50px;
+}
+.title {
+    font-family: 'Lobster';
+    color : rgba(92, 146, 137, 0.616);
+    padding-top: 30px;
+}
+.sstitle {
+    color: rgb(132, 138, 139);
+    padding-bottom: 30px;
+}
+
+.ajouter {
+    padding-top : 60px;
+    padding-bottom: 50px;
+    background-color: #f0efef;
+    box-shadow: 0px 0px 5px  #e2e0e0;
+    border-radius : 40px;
+
+}
+
+
+button[type=submit] {
+    border : none;
+    border-radius:20px;
+    font-size: 18px;
+    width : 170px;
+    align-content: center;
+    background-color: rgb(92, 146, 137, 0.616);
+    color : #ffffff;
+}
+

@@ -54,14 +54,15 @@ body {
     text-shadow : 0px 0px 5px  #818D92;
 }
 .headTitleRight {
-    margin-right : 5%;
+    margin-right : 5% !important;
     color : white;
     text-shadow : 0px 0px 5px  #818D92;
 }
 .header  {
-    padding-top : 10px;
+    padding-top : 20px;
     padding-bottom : 10px;
-    background-color : #FCD581;
+    background-image: url("../img/back4.png");
+    background-size: cover;
 }
 .fas {
     font-size:50px;
@@ -71,24 +72,19 @@ body {
 }
 .title {
     font-weight: bold !important;
-    color : rgb(71, 150, 240);
+    color : rgb(92, 146, 137, 0.616);
     padding-top:5%;
+    
 }
 section {
     margin-bottom : 8%;
     margin-top : 5%;
 }
-.btn {
-    margin-top : 5%;
-    border-radius: 45% !important;
-}
-.btn:hover {
-    background-color : rgb(71, 150, 240) !important;
-    border:none;
-}
+
 .centerTitle {
     font-family: 'Lobster' !important;
-    color : rgb(71, 150, 240);
+    color : rgb(92, 146, 137, 0.616);
+    padding-top: 30px;
 }
 .article {
     background-color: #f0efef;
@@ -111,3 +107,22 @@ img {
   #map_canvas img {
     max-width: none;
   }
+
+.button[type=button] {
+    background-color: rgb(92, 146, 137, 0.616);
+    color: #ffffff;
+    border:none;
+    margin-top : 5%;
+    border-radius: 45% !important;
+}
+
+th {
+    color:rgb(92, 146, 137);
+}
+table {
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+    border:none;
+    text-align : center;
+}
