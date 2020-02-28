@@ -869,3 +869,7 @@ Stack trace:
 2020-02-27T12:48:14+00:00 WARN  AJOUT CLIENT Le client n'a pas pu être crée addClient_action.php
 2020-02-27T12:48:39+00:00 INFO  AJOUT CLIENT adnbnt à ajouter un client
 2020-02-27T12:53:52+00:00 TRACE DECONNEXION L'utilisateur adnbnt s'est déconnecté
+2020-02-28T08:08:04+00:00 TRACE CONNEXION L'utilisateur adnbnt s'est connecté en tant qu'Expert
+2020-02-28T08:13:49+00:00 INFO  AJOUT CLIENT adnbnt à ajouter un client
+2020-02-28T08:16:16+00:00 INFO  AJOUT OPERATION adnbnt à ajouter une opération
+2020-02-28T08:16:52+00:00 TRACE FINIR OPERATION adnbnt a mit fin à une opération

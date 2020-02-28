@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  ven. 21 fév. 2020 à 13:56
--- Version du serveur :  5.7.26
--- Version de PHP :  7.2.18
+-- Généré le :  ven. 28 fév. 2020 à 08:14
+-- Version du serveur :  10.4.10-MariaDB
+-- Version de PHP :  7.3.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -45,18 +45,17 @@ CREATE TABLE IF NOT EXISTS `client` (
   `nom` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `prenom` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `id_user` int(11) NOT NULL,
+  `adresse` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id_client`),
   KEY `CLIENT_UTILISATEUR_FK` (`id_user`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Déchargement des données de la table `client`
 --
 
-INSERT INTO `client` (`id_client`, `nom`, `prenom`, `id_user`) VALUES
-(1, 'Titi', 'coco', 1),
-(3, 'TATA', 'CYNTHIA', 1),
-(4, 'CARRE', 'MOT', 1);
+INSERT INTO `client` (`id_client`, `nom`, `prenom`, `id_user`, `adresse`) VALUES
+(5, 'BRIGITTE', 'MACROU', 1, 'Avenue des Champs Elys&eacute;es 75008 Paris');
 
 --
 -- Déclencheurs `client`
@@ -92,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `end_ope` (
   KEY `OPERATION_UTILISATEUR_FK` (`id_user`),
   KEY `OPERATION_UTILISATEUR0_FK` (`id_user_FAIT`),
   KEY `OPERATION_CLIENT1_FK` (`id_client`)
-) ENGINE=InnoDB AUTO_INCREMENT=54 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=56 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Déchargement des données de la table `end_ope`
@@ -141,7 +140,11 @@ INSERT INTO `end_ope` (`id_ope`, `description`, `type`, `statut`, `cout`, `date_
 (47, 'test Mjuscule', 'Petite manoeuvre', 'Terminer', 50, '2020-02-21', 2, 2, 2, '2020-02-21'),
 (48, 'Nettoyage Hall d entree', 'Moyenne manoeuvre', 'Terminer', 2200, '2020-02-21', 2, 2, 2, '2020-02-21'),
 (49, 'nettoyage entrÃ©e', 'Petite manoeuvre', 'Terminer', 50, '2020-02-21', 2, 2, 1, '2020-02-21'),
-(50, 'pressing', 'Petite manoeuvre', 'Terminer', 430, '2020-02-21', 1, 1, 2, '2020-02-21');
+(50, 'pressing', 'Petite manoeuvre', 'Terminer', 430, '2020-02-21', 1, 1, 2, '2020-02-21'),
+(51, 'Nettoyage logement', 'Grosse manoeuvre', 'En cours', 2600, '2020-02-21', 1, 2, 4, '2020-02-28'),
+(52, 'Nettoyage du hall d&#039;entr&eacute;e', 'Grosse manoeuvre', 'En cours', 5000, '2020-02-21', 2, 2, 4, '2020-02-28'),
+(54, 'Nettoyage vitre', 'Petite manoeuvre', 'Terminer', 20, '2020-02-21', 1, 1, 4, '2020-02-21'),
+(55, 'Pressing', 'Petite manoeuvre', 'En cours', 120, '2020-02-21', 1, 1, 4, '2020-02-28');
 
 -- --------------------------------------------------------
 
@@ -165,16 +168,6 @@ CREATE TABLE IF NOT EXISTS `operation` (
   KEY `OPERATION_UTILISATEUR0_FK` (`id_user_FAIT`),
   KEY `OPERATION_CLIENT1_FK` (`id_client`)
 ) ENGINE=InnoDB AUTO_INCREMENT=56 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Déchargement des données de la table `operation`
---
-
-INSERT INTO `operation` (`id_ope`, `description`, `type`, `statut`, `cout`, `date_comm`, `id_user`, `id_user_FAIT`, `id_client`) VALUES
-(51, 'Nettoyage logement', 'Grosse manoeuvre', 'En cours', 2600, '2020-02-21', 1, 2, 4),
-(52, 'Nettoyage du hall d&#039;entr&eacute;e', 'Grosse manoeuvre', 'En cours', 5000, '2020-02-21', 2, 2, 4),
-(54, 'Nettoyage vitre', 'Petite manoeuvre', 'En cours', 20, '2020-02-21', 1, 1, 4),
-(55, 'Pressing', 'Petite manoeuvre', 'En cours', 120, '2020-02-21', 1, 1, 4);
 
 --
 -- Déclencheurs `operation`
